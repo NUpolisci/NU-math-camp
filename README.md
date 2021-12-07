@@ -6,4 +6,4 @@ In this repository there is a branch for each day of work, a checklist related t
 Each day has an accompanying checklist for those participating in the Math Camp activities. Please ensure that at the end of each working day that you are checking to make sure that you have completed all required tasks as continuing success in Math Camp, and the later coursework, will require that you are completing each of these day-to-day tasks. To get started, you will need to clone this repository to your own Git. 
 
 Each succesive days' materials will be housed in the following links: 
-[Day 1](/main/day1.md)
+[Day 1](day1)
