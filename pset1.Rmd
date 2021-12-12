@@ -1,6 +1,6 @@
 ---
-author: "Sarah Moore"
-date: "12/11/2021"
+author: "NAME"
+date: "DATE"
 output: pdf_document
 header-includes: 
  \usepackage{amsmath}
