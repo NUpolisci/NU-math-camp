@@ -7,7 +7,7 @@ Each day has an accompanying checklist for those participating in the Math Camp 
 
 Each succesive days' materials will be housed in the following links: 
 
-[Day 1](main/Day-1)
+[Day 1](day1.md)
 
 [Day 2](day2.md)
 
