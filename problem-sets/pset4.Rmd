@@ -1,0 +1,57 @@
+---
+author: "NAME"
+date: "DATE"
+output: pdf_document
+header-includes: 
+- \usepackage{amsmath}
+- \usepackage{amsfonts}
+- \usepackage{amssymb}
+- \usepackage{amsthm}
+- \usepackage{graphicx}
+- \usepackage{setspace}
+- \usepackage{fullpage}
+- \usepackage{color}
+- \usepackage{comment}
+- \usepackage{bm}
+- \usepackage{url}
+- \usepackage{hyperref}
+- \usepackage{color,hyperref}
+- \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+- \hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+---
+#Problem Set 4 - PS & SOC Math Prefresher
+
+This problem set requires more extensive work by hand, feel free to submit the responses for part 2& 3 as a scanned pdf (there are apps for this or you can convert to pdf) or a photo format. Due 48 hours after Math Camp concludes. 
+
+\begin{enumerate}
+\item Integrals: Foundations
+\begin{enumerate}
+
+\item What is an integral (e.g. what does it do?)
+\item Why would we use an integral?
+\item Calculate the area under $x^3$ on $[1,4]$ using rectangles. 
+\item (Follow up) Now, calculate the area a second time using smaller rectangles. 
+\item (Follow up) How do these areas compare? How does your finding here relate to the definition of an integral (above)?
+\end{enumerate}
+
+
+\item Integration Practice: Calculate the definite integrals for the following
+\begin{enumerate}
+\item $\int_1^4 x^3 dx$
+\item $\int_0^3 x dx$
+\item $\int_1^4 (6x^3-2) dx$
+\item $\int_4^6 x dx$
+\item $\int_0^y (e^x-2x^2)dx$
+\end{enumerate}
+
+
+\item Iterated Integration Practice: Calculate the  following
+\begin{enumerate}
+\item $\int_1^4  \int_0^2 (6x^3-2y)$ \textit{dx dy}
+\item $\int_0^1 \int_1^x 3x-4$ \textit{dy dx}
+\item $\int_0^1 \int_1^y 3x-4$ \textit{dx dy}
+\end{enumerate}
+
+\end{enumerate}
