@@ -1,6 +1,6 @@
 # Day 5
 
-To recap the information that was covered today, feel free to visit the [slides here](day-5-slides.pdf). 
+To recap the information that was covered today, feel free to visit the [slides here](/slides/day5_am_slides.pdf). 
 
 This [problem set](pset3.pdf) will cover foundations of derivative calculus. 
 
