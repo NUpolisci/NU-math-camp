@@ -7,4 +7,4 @@ This [problem set](pset2.pdf) will cover summation, limits and continuity of fun
 Please submit the problem set as a knitted pdf *and* the raw code .Rmd as *two* seperate files, just as they are included here as two separate files. Do this via a file commit to your cloned math camp repository. 
 
 Here is the .Rmd file that you can work with: 
-[Problem Set 2](pset2.Rmd)
+[Problem Set 2](problem-sets/pset2.Rmd)
