@@ -1,6 +1,6 @@
 # Day 2
 
-To recap the information that was covered today, feel free to visit the [slides here](day-2-slides.pdf). 
+To recap the information that was covered today, feel free to visit the slides [here](/slides/day2_am_slides.pdf). 
 
 This [problem set](problem-sets/pset1.pdf) covers the past two days and will assess your skills that we will cover over the past two days, algebraic expressions, and a few logical statements. It will be due at the beginning of class start on Day 3. 
 
