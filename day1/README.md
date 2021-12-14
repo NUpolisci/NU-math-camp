@@ -1,6 +1,6 @@
 # Day 1
 
-To recap the information that was covered today, feel free to visit the [slides here](day-1-slides.pdf). 
+To recap the information that was covered today, feel free to visit the slides [here](/slides/day1_am_slides.pdf).  
 
 This [problem set](https://github.com/sarah-moore/NU-math-camp/blob/68886c484d9113cd675066aed19b43eed7971452/problem-sets/pset1.pdf) will assess your skills that we will cover over the next two days, algebraic expressions, and a few logical statements. It will be due at the beginning of class start on Day 3. 
 
