@@ -1,6 +1,6 @@
-# Day 4
+# Day 5
 
-To recap the information that was covered today, feel free to visit the [slides here](/slides/day4_am_slides.pdf).  
+To recap the information that was covered today, feel free to visit the [slides here](/slides/day5-am.pdf).  
 
 This [problem set](/problem-sets/pset2.pdf) will cover summation, limits and continuity of functions, set theory, and some review of matrix algebra. It is due at the begining of class on Day 5.
 
