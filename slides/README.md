@@ -1,8 +1,8 @@
-Day 1: Introduction to Math Camp [AM](day1_intro.pdf) 
+Day 1: Introduction to Math Camp [AM](day1-am.pdf) 
 
-Day 2: Notation and Logic [AM](day2_am.pdf) / [PM](day1_pm_slides.pdf)
+Day 2: Notation and Logic [AM](day2-am.pdf) / [PM](day1_pm_slides.pdf)
 
-Day 3: Sequences and Sets [AM](day3_am.pdf) / [PM](day2_pm_slides.pdf)
+Day 3: Sequences and Sets [AM](day3-am.pdf) / [PM](day2_pm_slides.pdf)
 
 Day 4: Algebra Review [AM](day4_am.pdf) / [PM](day3_pm_slides.pdf)
 
