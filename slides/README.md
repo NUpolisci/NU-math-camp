@@ -1,18 +1,16 @@
-Day 0 [AM](day0_am_slides.pdf) 
+Day 1: Introduction to Math Camp [AM](day1_intro.pdf) 
 
-Day 1 [AM](day1_am_slides.pdf) / [PM](day1_pm_slides.pdf)
+Day 2: Notation and Logic [AM](day2_am.pdf) / [PM](day1_pm_slides.pdf)
 
-Day 2 [AM](day2_am_slides.pdf) / [PM](day2_pm_slides.pdf)
+Day 3: Sequences and Sets [AM](day3_am.pdf) / [PM](day2_pm_slides.pdf)
 
-Day 3 [AM](day3_am_slides.pdf) / [PM](day3_pm_slides.pdf)
+Day 4: Algebra Review [AM](day4_am.pdf) / [PM](day3_pm_slides.pdf)
 
-Day 4 [AM](day4_am_slides.pdf) / [PM](day4_pm_slides.pdf)
+Day 5: Matrix Algebra [AM](day5_am.pdf) / [PM](day4_pm_slides.pdf)
 
-Day 5 [AM](day5_am_slides.pdf) / [PM](day5_pm_slides.pdf)
+Day 6: Foundations of Calculus-- Derivatives [AM](day6_am.pdf) / [PM](day5_pm_slides.pdf)
 
-Day 6 [AM](day6_am_slides.pdf) / [PM](day6_pm_slides.pdf)
+Day 7: Foundations of Calculus-- Integrals [AM](day7_am.pdf) / [PM](day6_pm_slides.pdf)
 
-Day 7 [AM](day1_am_slides.pdf) / [PM](day7_pm_slides.pdf)
-
-Day 8 [AM](day1_am_slides.pdf) / [PM](day8_pm_slides.pdf)
+Day 8: [AM](day8_am.pdf) / [PM](day7_pm_slides.pdf)
 
