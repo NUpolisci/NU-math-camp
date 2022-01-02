@@ -7,8 +7,6 @@ Each day has an accompanying checklist for those participating in the Math Camp 
 
 Each succesive days' materials will be housed in the following links: 
 
-[Day 0](day0/README.md)
-
 [Day 1](day1/README.md)
 
 [Day 2](day2/README.md)
@@ -24,3 +22,5 @@ Each succesive days' materials will be housed in the following links:
 [Day 7](day7/README.md)
 
 [Day 8](day8/README.md)
+
+[Day 9](day9/README.md)
