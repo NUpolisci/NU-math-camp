@@ -1,6 +1,6 @@
-# Day 7
+# Day 8
 
-To recap the information that was covered today, feel free to visit the [slides here](/slides/day7_am_slides.pdf). 
+To recap the information that was covered today, feel free to visit the [slides here](/slides/day8-am.pdf). 
 
 This [problem set](/problem-sets/pset4.pdf) will cover foundations of integral calculus. It will be due 48 hours after class end on Day 8. 
 
