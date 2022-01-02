@@ -1,4 +1,4 @@
-Day 1: Introduction to Math Camp [AM](day1-am.pdf) 
+Day 1: Introduction to Math Camp [AM](day1-intro.pdf) 
 
 Day 2: Notation and Logic [AM](day2-am.pdf) / [PM](day1_pm_slides.pdf)
 
