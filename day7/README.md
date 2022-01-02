@@ -1,6 +1,6 @@
-# Day 6
+# Day 7
 
-To recap the information that was covered today, feel free to visit the [slides here](/slides/day6_am_slides.pdf). 
+To recap the information that was covered today, feel free to visit the [slides here](/slides/day7-am.pdf). 
 
 This [problem set](/problem-sets/pset3.pdf) will cover foundations of derivative calculus. It will be due at the beginning of class on Day 7. 
 
