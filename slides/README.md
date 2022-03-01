@@ -14,3 +14,5 @@ Day 7: Foundations of Calculus, Derivatives II [AM](day7-am.pdf) / [PM](day6_pm_
 
 Day 8: Foundations of Calculus, Integrals [AM](day8-am.pdf) / [PM](day7_pm_slides.pdf)
 
+Day 9: Concepts in Probability [AM](day9-am.pdf)/PM
+
