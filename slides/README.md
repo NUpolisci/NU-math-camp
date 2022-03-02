@@ -16,3 +16,4 @@ Day 8: Foundations of Calculus, Integrals [AM](day8-am.pdf) / [PM](day7_pm_slide
 
 Day 9: Concepts in Probability [AM](day9-am.pdf)/PM
 
+Day 10: Review and Q&A [AM](day10-am.pdf)
