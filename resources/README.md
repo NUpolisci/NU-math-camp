@@ -4,6 +4,8 @@
 
 - [NU Counseling and Pyschological Services](https://www.northwestern.edu/counseling/) is a good place for getting referred out to local therapists and mental health providers. Otherwise, you can browse the [Aetna Provider Finder](https://www.aetna.com/individuals-families/find-a-doctor.html) for a provider that is in-network with your student health insurance. 
 
+- [Northwestern VPN](https://www.it.northwestern.edu/oncampus/vpn/) for reliable, secure connections to university pages and resources while away from campus. 
+
 - [Obsidian](https://obsidian.md/) for note management available in Markdown format. 
 
 - [Toggl Time Keeper](https://toggl.com/) 
@@ -31,6 +33,8 @@
 - [Sociology Library Guide](https://libguides.northwestern.edu/sociology) 
 
 - [Proquest Dissertation and Thesis Database](https://www.proquest.com/pqdtglobal/index?_ga=2.185414442.2078620383.1646766670-92380473.1646423938) 
+
+- [Northwestern IRB](https://irb.northwestern.edu/) 
 
 **Blogs or threads with useful information** 
 
