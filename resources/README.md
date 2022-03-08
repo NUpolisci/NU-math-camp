@@ -7,7 +7,7 @@
 
 - [Citation Management](https://www.library.northwestern.edu/research/scholarly/citation-management.html): There are a few different programs, here is a guide to help you decide. Reddit also has some useful threads on the trade-offs between each. 
 
-- [Dataquest]:(https://www.it.northwestern.edu/research/campus-events/data-camp.html) NU offers access to the coursework to a limited number of people on a quarterly basis, just make sure that you get registered in time! 
+- [Dataquest](https://www.it.northwestern.edu/research/campus-events/data-camp.html): NU offers access to the coursework to a limited number of people on a quarterly basis, just make sure that you get registered in time! 
 
 **Things you should do or have on your radar** 
 
