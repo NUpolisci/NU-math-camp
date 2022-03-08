@@ -24,11 +24,13 @@
 
 - [Research Computing Services Workshops](https://www.it.northwestern.edu/research/training.html)
 
-- [Social Science Data Resources](https://libguides.northwestern.edu/c.php?g=114894&p=749250) 
+- [Social Science Data Resources at NU](https://libguides.northwestern.edu/c.php?g=114894&p=749250) 
 
 - [Political Science Library Guide](http://libguides.northwestern.edu/politicalscience)
 
 - [Sociology Library Guide](https://libguides.northwestern.edu/sociology) 
+
+- [Proquest Dissertation and Thesis Database](https://www.proquest.com/pqdtglobal/index?_ga=2.185414442.2078620383.1646766670-92380473.1646423938) 
 
 **Blogs or threads with useful information** 
 
