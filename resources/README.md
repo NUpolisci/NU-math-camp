@@ -14,11 +14,21 @@
 
 - [Dataquest](https://www.it.northwestern.edu/research/campus-events/data-camp.html): NU offers access to the coursework to a limited number of people on a quarterly basis, just make sure that you get registered in time! 
 
+- [NVivo](https://libguides.northwestern.edu/c.php?g=114906&p=6872685) licenses are available with the department, as some of you will presumably do qualitative work as well. 
+
+- [Library Guides](https://libguides.northwestern.edu/c.php?g=114906&p=747533) regarding different software packages and how the university can support your learning of these tools. 
+
 **Things you should do or have on your radar** 
 
 - [Library Workshops](https://www.library.northwestern.edu/visit/events-exhibits/event-calendar.html)
 
 - [Research Computing Services Workshops](https://www.it.northwestern.edu/research/training.html)
+
+- [Social Science Data Resources](https://libguides.northwestern.edu/c.php?g=114894&p=749250) 
+
+- [Political Science Library Guide](http://libguides.northwestern.edu/politicalscience)
+
+- [Sociology Library Guide](https://libguides.northwestern.edu/sociology) 
 
 **Blogs or threads with useful information** 
 
