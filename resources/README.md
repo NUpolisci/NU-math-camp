@@ -4,7 +4,7 @@
 
 - [NU Counseling and Pyschological Services](https://www.northwestern.edu/counseling/) is a good place for getting referred out to local therapists and mental health providers. Otherwise, you can browse the [Aetna Provider Finder](https://www.aetna.com/individuals-families/find-a-doctor.html) for a provider that is in-network with your student health insurance. 
 
-- [Obsidian](https://obsidian.md/) for note management in md format. 
+- [Obsidian](https://obsidian.md/) for note management available in Markdown format. 
 
 - [Toggl Time Keeper](https://toggl.com/) 
 
