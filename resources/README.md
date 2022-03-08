@@ -23,4 +23,4 @@
 
 - ["How to Conference"](https://preprints.apsanet.org/engage/apsa/article-details/6201c6e2cbb4f49a2db95354) by Turner et al. for conference professionalization tips
 
-- [Jessica Calarco's](http://www.jessicacalarco.com/tips-tricks) tips and tricks for grad school and navigating academia. You can also check out her book [A Field Guide to Grad School (2020)](https://press.princeton.edu/books/paperback/9780691201092/a-field-guide-to-grad-school), also available as an Ebook for around $10. 
+- [Jessica Calarco's](http://www.jessicacalarco.com/tips-tricks) tips and tricks for grad school and navigating academia. You can also check out her book [*A Field Guide to Grad School* (2020)](https://press.princeton.edu/books/paperback/9780691201092/a-field-guide-to-grad-school), also available as an Ebook for around $10. 
