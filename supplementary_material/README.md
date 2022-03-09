@@ -11,3 +11,5 @@ Coding and Computational Skills:
 - [R Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) 
 
 - [LaTeX Documentation](https://www.latex-project.org/help/documentation/)
+
+- [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham and Garrett Grolemund 
