@@ -48,7 +48,7 @@ Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022.
 
 - [Northwestern IRB](https://irb.northwestern.edu/) 
 
-- Transcription Sites: There are too many to list out here. None of them are perfect, but some of them are better than others. I have discussed some of the trade-offs among some programs [here](resources/Transcription_Software_Notes.pdf). 
+- Transcription Sites: There are too many to list out here. None of them are perfect, but some of them are better than others. I have discussed some of the trade-offs among some programs [here](Transcription_Software_Notes.pdf). 
 
 **Blogs or threads with useful information** 
 
