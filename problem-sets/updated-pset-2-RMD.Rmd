@@ -36,8 +36,8 @@ Due start of class on Day 6.
             \item Solve $ln(e^5/e^{2.5})$
             \item Simplify $e^{ln 7.14}$
             \item What is $log_{7134\pi}(1)$?
-            \item Solve for x $log_x(16)=4$ %2
-            \item Combine into one term: $log(3x)+2log(y)$ %$log(3x*y^2)$
+            \item Solve for x $log_x(16)=4$ 
+            \item Combine into one term: $log(3x)+2log(y)$ 
         \end{enumerate}
 
     \item Inequalities and Absolute Values
@@ -61,9 +61,9 @@ Due start of class on Day 6.
     \item Functions
         \begin{enumerate}
             \item What is the difference between a function and relation (in words)?
-            \item Simplify $h(x)=g(f(x))$, where $f(x)=x^2+4$ and $g(x)=\sqrt{x-4}$ %f(g(x))=x
-            \item Find the inverse function of $f(x)=5x-3$ %3+x/5. 
-            \item What is a quadratic function? (define and provide example) % highest degree of 2
+            \item Simplify $h(x)=g(f(x))$, where $f(x)=x^2+4$ and $g(x)=\sqrt{x-4}$ 
+            \item Find the inverse function of $f(x)=5x-3$ 
+            \item What is a quadratic function? (define and provide example) 
             \item Why do we care if a function is monotonically doing anything?
         \end{enumerate}
 
