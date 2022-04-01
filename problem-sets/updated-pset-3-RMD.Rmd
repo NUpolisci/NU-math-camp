@@ -1,0 +1,96 @@
+---
+title: "Problem Set 3" 
+author: "NAME"
+date: "DATE"
+output: pdf_document
+header-includes: 
+- \usepackage{amsmath}
+- \usepackage{amsfonts}
+- \usepackage{amssymb}
+- \usepackage{amsthm}
+- \usepackage{graphicx}
+- \usepackage{setspace}
+- \usepackage{fullpage}
+- \usepackage{color}
+- \usepackage{comment}
+- \usepackage{bm}
+- \usepackage{url}
+- \usepackage{hyperref}
+- \usepackage{color,hyperref}
+- \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+- \hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+---
+\maketitle 
+
+Due at the beginning of class on Day 8.  
+
+\begin{enumerate}
+
+    \item Summation
+        \begin{enumerate}
+            \item $\sum_{n=1}^{7}3$
+            \item $\sum_{n=0}^{4} 2n+8$
+        \end{enumerate}
+
+    \item Limits and Continuity
+        \begin{enumerate}
+            \item Graph $x^2+2$ and plot the tangent line at $x=0$. 
+            \item What is a limit?
+            \item Why do we care about limits and tangents?
+            \item What is a continuous function?
+        \end{enumerate}
+
+\item Derivative Foundations
+\begin{enumerate}
+\item What is a derivative? Why might we find it useful? 
+\item Give an example of a derivative we might care about (think about the education and salary graphs from lecture) 
+\end{enumerate}
+
+\item Derivatives by hand : Compute manually, using the formula for a derivative (i.e. $ lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}$). 
+\begin{enumerate}
+\item  $f(x) =x^3$
+\item  $f(x) =2x^2+4$
+\item  $f(x) =x-9x^2$ 
+\end{enumerate}
+
+\item Derivatives using the formulas: Compute these using the rules from class. 
+\begin{enumerate}
+\item  $f(x) = 2x^2 + 7x + 9$ 
+\item  $f(x) = 3x^2$
+\item  $f(x) =x^3$
+\item  $f(x) =2x^2+4$
+\item  $f(x) =x-9x^2$
+\item  $f(x)=ln(x)$
+\item $f(x)=e^{3x}$
+\item $f(x)=2e^{-2x}-x^{0.5}$
+\item $f(x)=(3x^4-6x+2)(x^2-4)$
+\item $f(x)=ln(e^x)$
+\item $f(x)=(3x^4-6x+2)(x^2-4)^{-1}$
+\end{enumerate}
+
+\item Partial Derivatives: Calculate each derivative first with respect to x, then with respect to y. 
+\begin{enumerate}
+\item $f(x,y)=x^2+3xy-4$
+\item $f(x,y)=x^3y^2-x-y$
+\end{enumerate}
+
+\item Topics and Questions
+    \begin{enumerate}
+        \item List three things you struggled with on today's assignment. 
+        \item What is your plan for improving the items listed above?
+        \item What percent of the material was new to you today?
+        \item What is one new concept you learned today?
+        \item What question do you still have about the material?
+    \end{enumerate}
+
+
+\vspace{6mm}
+ FYI: you will be getting a survey about math camp that will ask you to consider how well math camp functioned, how well it helped you prepare for the fall quarter, and what we can do to improve the overall experience. It will be helpful if you are as specific as possible, so take some time to think things over. 
+
+\end{enumerate}
+
+
+
+

@@ -1,0 +1,78 @@
+---
+title: "Problem Set 1"
+author: "NAME"
+date: "DATE"
+output: pdf_document
+header-includes: 
+ - \usepackage{amsmath}
+ - \usepackage{amsfonts}
+ - \usepackage{amssymb}
+ - \usepackage{amsthm}
+ - \usepackage{graphicx}
+ - \usepackage{setspace}
+ - \usepackage{fullpage}
+ - \usepackage{color}
+ - \usepackage{comment}
+ - \usepackage{bm}
+ - \usepackage{url}
+ - \usepackage{hyperref}
+ - \usepackage{color,hyperref}
+ - \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+ - \hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+---
+
+\maketitle
+
+\begin{enumerate}
+\item Identification
+\begin{enumerate}
+\item Identify the following greek letters by name. Include the meaning and common usage if you are able. 
+\begin{enumerate}
+\item $\delta$
+\item $\beta$
+\item $\alpha$
+\item $\theta$
+\item $\lambda$
+\item $\mu$
+\item $\Delta$
+\end{enumerate}
+
+\item Identify the following mathematical symbols by name. Include the meaning/usage. 
+\begin{enumerate}
+\item $\in$
+\item $\cup$
+\item $\subset$
+\item $\wedge$
+\end{enumerate}
+\end{enumerate}
+
+\item Necessary and Sufficient
+\begin{enumerate}
+\item Provide an example of a necessary condition 
+\item What is the difference between necessary and sufficient?
+\end{enumerate}
+
+\item Set theory
+\begin{enumerate}
+\item In roster notation, write the set characterized in set-builder notation as $S = \{x \in \mathbb{Z}, 2 <x <5\}$.
+\item Is the following statement True or False? $\forall x \in S, x\geq 2$ for $S = \{3,2,5,9\}$.
+\item Is the following statement True or False? $\exists x \in S\; s.t. \; x \notin \mathbb{Z}$ for $S = \{3,2,5,9\}$.
+\item Is $\{1,2,3,4\}$ a subset of $\{4,3,1,2\}$? Is it a proper subset?
+\item Using logical symbols (including $\exists$ and $\forall$) write the definition of a proper subset.
+\item If $A = \{soup, 8\}$ and $B = \{x, soup\}$ find $A \cup B$.
+\item (Follow-up): Now find $A \cap B$.
+\item (Follow-up): Find the Cartesian Product $A \times B$.
+\end{enumerate}
+
+\item Topics and Questions
+    \begin{enumerate}
+        \item List three things you struggled with on today's assignment. 
+        \item What is your plan for improving the items listed above?
+        \item What percent of the material was new to you today?
+        \item What is one new concept you learned today?
+        \item What question do you still have about the material?
+    \end{enumerate}
+
+\end{enumerate}

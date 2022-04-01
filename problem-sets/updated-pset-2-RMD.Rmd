@@ -1,0 +1,126 @@
+---
+title: "Problem Set 2"
+author: "NAME"
+date: "DATE"
+output: pdf_document
+header-includes: 
+ - \usepackage{amsmath}
+ - \usepackage{amsfonts}
+ - \usepackage{amssymb}
+ - \usepackage{amsthm}
+ - \usepackage{graphicx}
+ - \usepackage{setspace}
+ - \usepackage{fullpage}
+ - \usepackage{color}
+ - \usepackage{comment}
+ - \usepackage{bm}
+ - \usepackage{url}
+ - \usepackage{hyperref}
+ - \usepackage{color,hyperref}
+ - \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+ - \hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+---
+
+\maketitle
+
+Due start of class on Day 6. 
+
+\begin{enumerate}
+    \item Exponents and Logarithms
+        \begin{enumerate}
+            \item Multiply $x^4 y^3 z^2 (1 + x^2 y^2)$
+            \item Simplify $((xy)^{-6})^{0.5} y^3z^{3}$
+            \item Simplify $((xy)^2)^{1.5} x^{-3}y^{-3}$
+            \item Solve $ln(e^5/e^{2.5})$
+            \item Simplify $e^{ln 7.14}$
+            \item What is $log_{7134\pi}(1)$?
+            \item Solve for x $log_x(16)=4$ %2
+            \item Combine into one term: $log(3x)+2log(y)$ %$log(3x*y^2)$
+        \end{enumerate}
+
+    \item Inequalities and Absolute Values
+        \begin{enumerate}
+            \item ``Solve'' for $x$: $x + y +2 < 4$
+            \item ``Solve'' for $x$: $(-4)(x + 7) \geq -24$
+            \item What is the absolute value of $-24$?
+            \item Graph $y = |x +2|$
+            \item On number line, graph $|x + 2| \geq 3$
+            \item On number line, graph $|x - 7| < 1$
+            \item On number line, graph $|2x - 2| = 4$
+        \end{enumerate}
+
+    \item Factor
+        \begin{enumerate}
+            \item $x^2+ 5x+4$
+            \item $6m^2+8m-8$ 
+            \item $5y^2-12yz+7z^2$ 
+        \end{enumerate}
+
+    \item Functions
+        \begin{enumerate}
+            \item What is the difference between a function and relation (in words)?
+            \item Simplify $h(x)=g(f(x))$, where $f(x)=x^2+4$ and $g(x)=\sqrt{x-4}$ %f(g(x))=x
+            \item Find the inverse function of $f(x)=5x-3$ %3+x/5. 
+            \item What is a quadratic function? (define and provide example) % highest degree of 2
+            \item Why do we care if a function is monotonically doing anything?
+        \end{enumerate}
+
+    \item Exponent(ials)
+        Explain the difference between, and provide an example of, the following. Be sure to use an example different from the slides: 
+            \begin{enumerate}
+                \item Exponent:
+                \item Exponential:
+                \item Exponential Function: 
+            \end{enumerate}
+
+    \item Matrices:
+            \begin{enumerate}
+                \item Write out `6 choose 3' mathematically and solve.
+                \item Add these two matrices: $
+                    \begin{bmatrix}
+                        2 & 4 & 2 \\
+                        1 & 4 & 0 \\
+                        2 & 6 & 0
+                    \end{bmatrix}
+                        +
+                     \begin{bmatrix}
+                     5 & 1 & 1 \\
+                     2 & 2 & 2\\
+                     4 & 1 & 3
+                     \end{bmatrix}$
+
+
+        \item Multiply these two matrices: $
+                    \begin{bmatrix}
+                        2 & 4 & 2 \\
+                        1 & 4 & 0 \\
+                        2 & 6 & 0
+                    \end{bmatrix}
+                    *
+                    \begin{bmatrix}
+                        5 & 1 & 1 \\
+                        2 & 2 & 2 \\
+                        4 & 1 & 3
+                    \end{bmatrix}
+                    $
+            \item Provide an example matrix, showing what happens when you multiply by the identity matrix. 
+        \end{enumerate}
+
+
+\item Topics and Questions
+    \begin{enumerate}
+        \item List three things you struggled with on today's assignment. 
+        \item What is your plan for improving the items listed above?
+        \item What percent of the material was new to you today?
+        \item What is one new concept you learned today?
+        \item What question do you still have about the material?
+    \end{enumerate}
+
+
+\end{enumerate}
+
+
+
+
