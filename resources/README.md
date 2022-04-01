@@ -12,7 +12,7 @@ Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022.
 
 - [Obsidian](https://obsidian.md/) for note management available in Markdown format. Alternatively, others recommend something like [Evernote](https://evernote.com/) if you aren't particularly interested in Markdown formatting. 
 
-- [Toggl Time Keeper](https://toggl.com/) is good for keeping tabs on where your time is going. [Centered](https://www.centered.app/download) is an app that is mindful of flow states while working, allowing you to plan your activity, center your work in a flow, and track your activity. The [Pomodoro Timer](https://pomofocus.io/) sets 25 minute time increments, found to be helpful for ensuring bouts of productivity nested bracketed by short breaks. 
+- [Toggl Time Keeper](https://toggl.com/) is good for keeping tabs on where your time is going. [Centered](https://www.centered.app/download) is an app that is mindful of flow states while working, allowing you to plan your activity, center your work in a flow, and track your activity. The [Pomodoro Timer](https://pomofocus.io/) sets 25 minute time increments, found to be helpful for ensuring bouts of productivity bracketed by short breaks. 
 
 - The [Freedom](https://freedom.to/) allows you to block websites that might be distracting or give in to procrastination. 
 
