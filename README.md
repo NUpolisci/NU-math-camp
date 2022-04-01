@@ -25,7 +25,7 @@ Each succesive days' materials will be housed in the following links:
 
 [Day 9](day9/README.md)
 
-[Day 10](day10/README.md)
+[Day 10](day_10/README.md)
 
 [Supplementary Material](supplementary_material/README.md)
 
