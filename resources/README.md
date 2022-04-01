@@ -24,7 +24,7 @@ Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022.
 
 - [Library Guides](https://libguides.northwestern.edu/c.php?g=114906&p=747533) regarding different software packages and how the university can support your learning of these tools. 
 
--[OneDrive](https://www.it.northwestern.edu/file-sharing/onedrive.html) is the cloud storage of choice for Northwestern. There are degrees of integration you can have with your desktop. If this isn't your favorite interface for remote storage (it's not great), then try Dropbox. 
+- [OneDrive](https://www.it.northwestern.edu/file-sharing/onedrive.html) is the cloud storage of choice for Northwestern. There are degrees of integration you can have with your desktop. If this isn't your favorite interface for remote storage (it's not great), then try Dropbox. 
 
 - [Overleaf](www.overleaf.com), [TeXstudio](https://www.texstudio.org/), [RStudio](https://www.rstudio.com/) or any other TeX editor for sophisticated document formatting. 
 
