@@ -14,7 +14,7 @@ Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022.
 
 - [Toggl Time Keeper](https://toggl.com/) is good for keeping tabs on where your time is going. [Centered](https://www.centered.app/download) is an app that is mindful of flow states while working, allowing you to plan your activity, center your work in a flow, and track your activity. The [Pomodoro Timer](https://pomofocus.io/) sets 25 minute time increments, found to be helpful for ensuring bouts of productivity bracketed by short breaks. 
 
-- The [Freedom](https://freedom.to/) allows you to block websites that might be distracting or give in to procrastination. 
+- The [Freedom](https://freedom.to/) allows you to block websites that might be distracting or allow you to give in to procrastination. 
 
 - [Trello Project Management](https://trello.com/) helps to plan projects in the long- and short-term, good visualization tool. [Todoist](https://todoist.com/) is great for checklists. Both allow you to set deadlines for yourself. 
 
