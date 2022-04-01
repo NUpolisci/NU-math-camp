@@ -1,7 +1,7 @@
 # Northwestern University Political Science Math Camp
 This is the repository for the Political Science math camp at Northwestern University. It contains all the relevant tools and links to the content and get through the allotted two weeks.
 
-In this repository there is a page for each day of work, a checklist related to the tasks for each day, and supplementary material that we feel will either provide more background for those newer to quantitative material *or* more challenging material for those that have already had prior exposure to quantitative methods. To get started, you will need to clone this repository to your own Git. We will go over this in person to make sure that you don't have any issues. 
+In this repository there is a page for each day of work, resources both related to and unrelated to this course, and supplementary material that we feel will either provide more background for those newer to quantitative material *or* more challenging material for those that have already had prior exposure to quantitative methods. To get started, you will need to clone this repository to your own Git. We will go over this in person to make sure that you don't have any issues. 
 
 Each day has an accompanying checklist for those participating in the Math Camp activities. Please ensure that at the end of each working day that you are checking to make sure that you have completed all required tasks.
 
