@@ -30,7 +30,7 @@ Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022.
 
 - [Overleaf](www.overleaf.com), [TeXstudio](https://www.texstudio.org/), [RStudio](https://www.rstudio.com/) or any other TeX editor for sophisticated document formatting. 
 
--[Grammarly](https://www.grammarly.com/) is good for gauging where your writing is at regarding readability, tone, and other important markers of "good" writing. 
+- [Grammarly](https://www.grammarly.com/) is good to gauge where your writing is at regarding readability, tone, and other important markers of "good" writing. 
 
 **Things you should do or acquaint yourself with** 
 
