@@ -7,25 +7,19 @@ Each succesive days' materials will be housed in the following links:
 
 [Problem Sets](problem-sets/README.md)
 
-[Day 1](day1/README.md)
 
-[Day 2](day2/README.md)
-
-[Day 3](day3/README.md)
-
-[Day 4](day4/README.md)
-
-[Day 5](day5/README.md)
-
-[Day 6](day6/README.md)
-
-[Day 7](day7/README.md)
-
-[Day 8](day8/README.md)
-
-[Day 9](day9/README.md)
-
-[Day 10](day_10/README.md)
+| AM content            | PM Content        |  Problem Sets | Answer Keys
+| -------------         | -------------     | ------------- | ------------- |
+[Day 1](day1/README.md) | Github & Rstudio  | |
+[Day 2](day2/README.md) | LaTeX & Overleaf  | |
+[Day 3](day3/README.md) | R: syntax         | |
+[Day 4](day4/README.md) | R: functions      | | 
+[Day 5](day5/README.md) | R: tidyverse      | | 
+[Day 6](day6/README.md) | R: data cleaning  | | 
+[Day 7](day7/README.md) | R: data cleaning, p2 || 
+[Day 8](day8/README.md) | R: workflow       | | 
+[Day 9](day9/README.md) | R: troubleshooting | |
+[Day 10](day_10/README.md)|
 
 [Supplementary Material](supplementary_material/README.md)
 
