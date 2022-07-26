@@ -8,8 +8,8 @@ Each succesive days' materials will be housed in the following links:
 
 | | AM content            | PM Content        |  Problem Sets | Due date      | Answer Keys
 |---| -------------         | -------------     | ------------- | ------------- |------------- |
-Day 1 | [slides](day1/README.md), ch | Github & Rstudio  | | |
-Day 2 |[slides](day2/README.md), ch  | LaTeX & Overleaf  | Pset 1: [TeX](updated-pset-1.tex)/[.Rmd](updated-pset-1-RMD.Rmd)/[PDF](updated-pset-1.pdf)|Day 4|
+Day 1 | [slides](slides/day1-intro.pdf), ch | Github & Rstudio  | | |
+Day 2 |[slides](slides/day2-am.pdf), ch  | LaTeX & Overleaf  | Pset 1: [TeX](updated-pset-1.tex)/[.Rmd](updated-pset-1-RMD.Rmd)/[PDF](updated-pset-1.pdf)|Day 4|
 Day 3 |[slides](day3/README.md), ch  | R: syntax         | ||
 Day 4 |[slides](day4/README.md), ch  | R: functions      | Pset 2: [TeX](updated-pset-2.tex)/[.Rmd](updated-pset-2-RMD.Rmd)/[PDF](updated-pset-2.pdf)|Day 6| 
 Day 5 |[slides](day5/README.md), ch  | R: tidyverse      | | |
