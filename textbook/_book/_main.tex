@@ -41,46 +41,6 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -117,25 +77,8 @@
 
 \title{Math Camp Textbook}
 \author{Jean Clipperton and Sarah Moore}
-\date{2022-07-19}
+\date{2022-07-27}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -143,216 +86,480 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{intro}{%
-\chapter{Intro}\label{intro}}
+\hypertarget{introduction-welcome}{%
+\chapter{Introduction: Welcome!}\label{introduction-welcome}}
 
-This text is a living document that will continue to change and evolve over time. The goals are for this book to provide supplement support and context for the material covered in our course.
+This text is a living document that will continue to change and evolve over time. The goals are for this book to provide supplement support and context for the material covered in our course, Math Camp.
+
+The goal is to provide supplemental materials and explanations to accompany the course slides.
 
 \hypertarget{how-to-read-use-this-text}{%
 \section{How to read / use this text}\label{how-to-read-use-this-text}}
 
-\hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
+Depending on how you prefer to learn, you can read this on its own before or after class sessions (or both!). Please always feel free to check in with any questions you may have, and/or any typos you may find. This helps your learning and improves the text resources!
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
+\hypertarget{background-getting-started}{%
+\section{Background / getting started:}\label{background-getting-started}}
 
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
+Over the academic year, you'll encounter empirical questions that authors are working to answer. Our course prepares you to be able to understand how others have answered those questions and to consider how you might go about answering your own questions.
 
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+\hypertarget{goals-and-backgrounds}{%
+\subsection{Goals and backgrounds}\label{goals-and-backgrounds}}
 
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
+Many of you may not be sure about whether you'll use quantitative methods and / or of the value they may bring to our research. We want to fully acknowledge that people are coming in with different goals. Our hope is that we can end Math Camp with people prepared to excel in quantitative coursework regardless of whether their goal is to conduct that research themselves, to be conversant in the literature of their research area, or to explore it as a possible avenue for their future work.
 
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
+\hypertarget{additional-resources}{%
+\section{Additional resources}\label{additional-resources}}
 
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
+The materials for this text are based off the book by \href{https://press.princeton.edu/books/paperback/9780691159171/a-mathematics-course-for-political-and-social-research}{Moore and Siegel} and have been adapted over time with incorporation of additional materials from \href{https://jeffgill.org/2021/04/12/essential-mathematics-for-political-and-social-research/}{Jeff Gill}. We also try to incorporate and recognize other outside sources as we use them.
 
-Cross-references make it easier for your readers to find and link to elements in your book.
+\hypertarget{a-broad-introduction-to-social-science}{%
+\chapter{A broad introduction to social science}\label{a-broad-introduction-to-social-science}}
 
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
+The goal behind Math Camp is getting you into position to explore topics interesting to you, and to conduct your own research. We recognize that people come from very different backgrounds and have quite different levels of experience, background, and coursework. The goal of this chapter is to provide a basic orientation to why and how we care and think about the pieces that will appear in the rest of this text.
 
-There are two steps to cross-reference any heading:
+\hypertarget{the-scientific-method-forever-in-our-hearts}{%
+\section{The scientific method: forever in our hearts}\label{the-scientific-method-forever-in-our-hearts}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+The scientific method is going to underpin a lot of our conversations and will help us formulate our research questions. It is a building block for empirical social science research. There are different ways you can structure / organize it, but here's my preference:
++ \textbf{Puzzle} This is your research question: why / how are we seeing this thing that a) research wouldn't lead us to expect and / or b) how might we understand how two competing pieces / theories can help explain \emph{this} particular phenonmena?
+
+\begin{itemize}
 \tightlist
 \item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
+  \textbf{Theory} This is our explanation for why / how the pieces come together. It connects the different key concepts (see more on this below) and provides some type of explanatory mechanism (over the term, we'll also get into causal vs associational connections). You will want your theory to be \emph{falsifiable}.
 
   \begin{itemize}
   \tightlist
   \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
+    \emph{Hypotheses} these are the \emph{testable implications} of your theory.
   \end{itemize}
 \item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
+  \textbf{Method / Test} This is how you will go about answering or addressing the research question. Through this method, (e.g.~ethnography, regression, etc.), you'll work to discover the answer to your puzzle.
 
   \begin{itemize}
   \tightlist
   \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
+    Note: there are many, many ways you can choose to answer your research method and while we won't cover this in math camp, this will be part of the discussions in your first year of quantitative methods training.
   \end{itemize}
-\end{enumerate}
+\item
+  \textbf{Conclusions} These are the conclusions from evaulating your \emph{theory} with your \emph{method / test} to answer your \emph{puzzle}. You may be able to answer the questions and / or have soem kind of preliminary evidence.
+\end{itemize}
 
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
+\hypertarget{puzzles-research-questions}{%
+\section{Puzzles / Research questions}\label{puzzles-research-questions}}
 
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
+The research question guides your project. This is typically a question that has arisen that has some significance / value in the general realm of your research. NOT ALL QUESTIONS ARE PUZZLES / INTERESTING. Finding and framing your research question can take a frustratingly long amount of time to get `right.' Some questions are unanswered because the answers are uninteresting while others are unanswered for reasons relating to methods, or because people think they already know the answer. Ideally your research question has some kind of broader interest beyond your particular research area.
 
-See Figure \ref{fig:nice-fig}.
+\hypertarget{theories}{%
+\section{Theories}\label{theories}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+Theories are how we explain or answer our research question -- they provide the why or how. In developing your theory, you may develop, define, or incorporate key ideas or \emph{concepts} (see below for more) that link together in some way.
 
-\begin{figure}
+Typically, your theory is explaining \emph{how} the concepts connect to one another (e.g.~do they have a positive relationship? is there some conditional element / connection?). One way to think of your theory as the story or explanation for what is happening, {[}add example XXX{]}
 
-{\centering \includegraphics[width=0.8\linewidth]{_main_files/figure-latex/nice-fig-1} 
+\hypertarget{concepts}{%
+\subsection{Concepts}\label{concepts}}
 
-}
+Concepts are key terms that are meaningfully connected in your theory. These can be specific terms to your research question (e.g.~how you're defining `approval'), or can be more general terms that are coming from the literature on your research topic (e.g.~what constitutes an institution).
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+In any case, these are going to be key ideas that will feature prominently in your research. They are likely part of the research question you're trying to answer.
 
-Don't miss Table \ref{tab:nice-tab}.
+\hypertarget{operationalization-measurement-variables}{%
+\subsection{Operationalization \& Measurement: Variables}\label{operationalization-measurement-variables}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+The concepts you specify will likely be quite large and vague in some way. To turn these concepts into something you can work with in a research project, you will need to \emph{operationalize} them. This means that you'll take a broad or vague concept, such as `eligible voters' and turn it into something you can measure and work with.
 
-\begin{table}
+Even in the case of `eligible voters,' you might mean all people who are over 18 since they should be capable of voting. However, what about registration (especially in states with restrictions around same day registration), criminal records (especially in states with restrictions around incarceration or felony conviction), and past voting history (have they ever voted?). You'll want to be very specific around how you're defining (operationalizing) your key concepts. This process can turn the concept into a variable that you analzye / use in your emipirical research.
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
+\hypertarget{hypotheses}{%
+\subsection{Hypotheses}\label{hypotheses}}
+
+Hypotheses are the testable implications of your theory. Another way to consider this is to ask, `If my theory were true, what would we expect to see?' These are often more narrow and specific than your theory.
+
+For example, you will likely specify a direction or connection between your concepts (e.g.~example XXX).
+
+\hypertarget{doing-research-getting-data}{%
+\section{Doing research / getting data}\label{doing-research-getting-data}}
+
+Perhaps frustratingly, we're just building up tools and skills here so that in the upcoming year, you'll be ready to apply the concepts you learn to your own chosen topics. Over the course of the academic year, you'll have the opportunity to read academic work and to find and analyze datasets that are interesting to you. Keep these structural elements in mind when you're doing the work to help you decide on a topic and framing for your research question.
+
+\hypertarget{sets-notation-and-logic}{%
+\chapter{Sets, Notation, and Logic}\label{sets-notation-and-logic}}
+
+In this chapter, we'll talk about how to get acclimated to reading quantitatively-focused texts. A lot of the content here won't be directly tested or assessed but is often assumed and `supporting' material for the content you'll be learning.
+
+Working though this chapter in particular can help orient you to a different way of approaching similar content.
+
+\hypertarget{sets-preview-and-natural-numbers}{%
+\section{Sets (preview) and natural numbers}\label{sets-preview-and-natural-numbers}}
+
+We'll continue to work more with sets (particularly when it comes to probability), but I find it's also incredibly helpful for thinking about things like measurement and operationalization. It may be helpful to picture Venn Diagrams when thinking about sets: you can consider how the different elements come together and connect to one another. Sometimes it's concentric circles (also known as subsets), where each set is completely composed of another.
+
+\hypertarget{measurement-and-sets}{%
+\subsection{Measurement and sets}\label{measurement-and-sets}}
+
+Often, when dealing with a variable, you'll need to determine the level of measurement to use when operationalizing it (see previous chapter for more information on operationalization and variables).
+
+For example, you may be interested in something like ncome, which can be measured yearly, monthly, weekly, or hourly. You can choose to get these amounts in dollar amounts that can be discrete values or to have respondents select bands for their income (e.g.~\$20,000-\$40,000).
+
+\hypertarget{set-notation}{%
+\section{Set Notation}\label{set-notation}}
+
+How we discuss and work with sets requires its own notation. Sets are simply collections of elements. There can be conditions that specify how an element comes into a set (see below for solution sets). We can talk about sets in relation to one another, if they have overlapping elements, or no overlap at all. Some people find that the most challenging part of working with sets is the notation.
+
+\hypertarget{symbols-requirements-for-being-in-a-set}{%
+\subsection{Symbols: Requirements for being in a set}\label{symbols-requirements-for-being-in-a-set}}
+
+These symbols talk about what can be in a set, and / or specify the relevant elements.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0870}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5652}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3478}}@{}}
 \toprule
-temperature & pressure\\
+\begin{minipage}[b]{\linewidth}\raggedright
+Notation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meaning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Use
+\end{minipage} \\
 \midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
+\endhead
+\{ & bracket & Specify a set (e.g.~\{2, 3\}) \\
+\(\exists\) & ``there exists'': true for at least one thing & Specify a condition to be satisfied \\
+\(\forall\) & ``for all''; true for all elements & Specify which elements belong in a set (all that satisfy a criteron) \\
+\(\exists\) & ``exists''; there is something true & Specify a rule or proposition that is true \\
+\(\in\) & ``in'' or ``element of'' & States what something / an element is a member of \\
+\textbar{} ~Such that & used in set theoretic definitions re: which values satisfy a particular (set of) condition(s) & \\
+\(\notin\) & excluding (element) & States that something is not a member of a set \\
+\(\equiv\) & equivalent & set theory equal \\
 \bottomrule
-\end{tabular}
-\end{table}
+\end{longtable}
 
-\hypertarget{parts}{%
-\chapter{Parts}\label{parts}}
+For example, \(A = \forall x \in\) the set of natural numbers that are divisible by 4. This is telling us that A is a set of numbers that is comprised of natural numbers that are divisible by 4. We could list out the elements of this set. Note that curly brackets are always used for sets, never parentheses. E.g. \{4, 8, 12, \ldots\} and not (4, 8, 12, \ldots).
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+\hypertarget{symbols-set-operations}{%
+\subsection{Symbols: Set operations}\label{symbols-set-operations}}
 
-Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+Once you have sets, you may want to do certain operations with them, like determine how they relate to other sets. This may sound high-level and abstract initially, but you can also think of it as wondering how many respondents within a survey satisfy certain criteria and how they relate to members who satisfy other criteria.
 
-Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4500}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Notation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meaning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Use
+\end{minipage} \\
+\midrule
+\endhead
+\(\subset\) & Subset & Think of it like the set theory version of less than \\
+\(\subseteq\) & Subset & Think of it like the set theory version of less than equal too \\
+\(\varnothing\) & Empty set & Set theory version of zero \\
+\(\cap\) & Intersection & Set theory version of `aNd' \\
+\(\cup\) & Union & Set theory version of or \\
+\(\setminus\) & Difference & Set theory version of minus to remove elements from sets \\
+\bottomrule
+\end{longtable}
 
-Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
+\hypertarget{symbols-sets-of-numbers}{%
+\subsection{Symbols: Sets of numbers}\label{symbols-sets-of-numbers}}
 
-\hypertarget{footnotes-and-citations}{%
-\chapter{Footnotes and citations}\label{footnotes-and-citations}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4500}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Notation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meaning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Use
+\end{minipage} \\
+\midrule
+\endhead
+N & Natural numbers & \{(0), 1, 2, 3, 4, 5, \ldots\} \\
+Z & Integers (pos and neg) & \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\} \\
+Q & Rational numbers (quotient) & (all fractions--produced by numbers divided by an integer) \\
+R & Real numbers (pos, neg, fractions) & (any point on a number line) \\
+I & Imaginary number ( i = \(\sqrt(-1)\)) & \\
+C & Complex numbers (a + bi) & \\
+\bottomrule
+\end{longtable}
 
-\hypertarget{footnotes}{%
-\section{Footnotes}\label{footnotes}}
+\hypertarget{solution-sets}{%
+\subsection{Solution Sets}\label{solution-sets}}
 
-Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
+When considering the collection of possible responses you might collect on a response, you can think of this as a solution set. This might be dollar amounts, other numeric values, or a collection of roles or responses.
 
-\hypertarget{citations}{%
-\section{Citations}\label{citations}}
+More formally, a solution set is a collection of items that satisfies a certain condition. For example, all odd numbers between 2 and 10 would be represented as \{3, 5, 7, 9\}.
 
-Reference items in your bibliography file(s) using \texttt{@key}.
+\hypertarget{measurement}{%
+\subsubsection{Measurement}\label{measurement}}
 
-For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
-Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
+How we turn our responses into possible solution sets with different levels of \emph{variable measurement}: this can be at very fine levels, or at larger chunks. For example, one canonical example is age, which can be a bit tricky. Consider how we might want to measure age:
++ \textbf{Interval-ratio} or \textbf{continuous} measurement is measured such that any possible value on the number line is possible.
++ ex: age could be measured as a fraction, e.g.~246/12, to report a continuous measure
++ \textbf{Discrete}: measurement is whole integers
++ ex: age could be reported as an integer
++ \textbf{Ordinal}: categorical variable where the the categories have a relationship to one another. Here, it's important that each category be separate from one another and that there is a way to \emph{order} the categories.
++ ex: age: could be reported as a categorical variable, such as 0-17, 18-34, 35-49, etc. Note that there's a clear way to order the categories and we wouldn't have the options as 18-34, 0-17, and 35-49. That would be the `wrong' order.
++ \textbf{Nominal}: in this measurement, the variables are categorical, but have no inherent sense of order. For example, eye color options could be arranged any number of ways.
++ ex: age: here, it's tough to have age as a nominal varible, but we could have it as a binary variable, such as retirement age or not, and that could potentially have any order for the two categories.
 
-The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
+\hypertarget{greek-letters}{%
+\section{Greek Letters}\label{greek-letters}}
 
-\hypertarget{blocks}{%
-\chapter{Blocks}\label{blocks}}
+Greek letters are commonly used in notation in algebra, calculus, and regression. Below, we have a list (via \url{https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols}) that provides the Greek letter and it's counterpart in the Modern English alphabet.
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\endhead
+\(\alpha\) A & \nu N \\
+\(\beta\) B & \(\xi\) \(\Xi\) \\
+\(\gamma\) \(\Gamma\) & o O \\
+\(\delta\) \(\Delta\) & \(\pi\) \(\Pi\) \\
+\(\epsilon\) \(\varepsilon\) & \(\rho\) \(\varrho\) P \\
+\(\zeta\) Z & \(\sigma\) \(\Sigma\) \\
+\(\eta\) H & \(\tau\) T \\
+\(\theta\) \(\vartheta\) \(\Theta\) & \(\upsilon\) \(\Upsilon\) \\
+\(\iota\) I & \(\phi\) \(\varphi\) \(\Phi\) \\
+\(\kappa\) K & \(\chi\) X \\
+\(\lambda\) \(\Lambda\) & \(\psi\) \(\Psi\) \\
+\(\mu\) M & \(\omega\) \(\Omega\) \\
+\bottomrule
+\end{longtable}
 
-Here is an equation.
+\hypertarget{commonly-used-letters}{%
+\subsection{Commonly used letters}\label{commonly-used-letters}}
 
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
+You'll frequently see the following Greek letters in your coursework, so it can be helpful to familiarize yourself with them now:
+
+\begin{itemize}
+\tightlist
+\item
+  \(\delta\) ``delta'' (used for integrals and discount factors in game theory)
+\item
+  \(\Delta\) ``delta'' (used for difference/change)
+\item
+  \(\beta\) ``beta'' (used for coefficients in regression)
+\item
+  \(\mu\) ``mu'' (used for means)
+\item
+  \(\sigma\) ``sigma'' (used for standard deviation)
+\item
+  \(\lambda\) ``lambda'' (used for eigenvalues in linear algebra)
+\item
+  \(\epsilon\) ``epsilon'' (used for the error term in regressions)
+\end{itemize}
+
+\hypertarget{working-with-variables-and-letters}{%
+\section{Working with variables and letters}\label{working-with-variables-and-letters}}
+
+Often, we'll have letters to substitute in for our variables, such as x. Typically, `later' elements in the alphabet (e.g.~x, y, z) are used for variables and `earlier' elements are used for constants (e.g.~a, b, c). This is not necessarily a `rule' per se, but it is a common convention. You'll also see \(i\) and \(n\) used in sequences and series.
+
+\hypertarget{logic-and-proofs}{%
+\section{Logic and Proofs}\label{logic-and-proofs}}
+
+Here, we review a few relevant terms and symbols.
+
+\hypertarget{proof-terms}{%
+\section{Proof terms}\label{proof-terms}}
+
+You may encounter proofs in texts or materials you read. Here are a few terms that can be helpful to sort out.
+
+\begin{itemize}
+\item
+  \textbf{Assumptions}: statements taken to be true
+\item
+  \textbf{Proposition}: statement thought to be true given the assumptions
+\item
+  \textbf{Theorem}: proven proposition
+\item
+  \textbf{Lemma}: theorem, something of little interest
+\item
+  \textbf{Corollary}: a type of proposition that follows directly from the proof of another proposition and does not require further proof
+\end{itemize}
+
+\hypertarget{necessary-and-sufficient}{%
+\section{Necessary and Sufficient}\label{necessary-and-sufficient}}
+
+When exploring outcomes and the connection between conditions, you may wonder how they occur together. One way to explore this is necessary and sufficient conditions. Consider an outcome D and three conditions, A, B, and C.
+
+\hypertarget{sufficient}{%
+\subsection{Sufficient}\label{sufficient}}
+
+A sufficient outcome is something that occurs \emph{also} when our outcome variable occurs. So, if both A and B occur and D also occurs, they are \emph{sufficient} for D to occur. Note, this means that D could happen without A or B but we don't see A or B without D.
+
+\hypertarget{necessary}{%
+\subsection{Necessary}\label{necessary}}
+
+For necessary conditions, we never see the outcome variable without the other effects. So, any time we observe D, C has always also occurred. Note: this means that C could happen without D but never D without C.
+
+\hypertarget{necessary-and-sufficient-1}{%
+\subsection{Necessary and Sufficient}\label{necessary-and-sufficient-1}}
+
+Necessary and sufficient conditions occur when we never observe the outcome variable without the input variables AND we never observe the input variables without the output. One way to consider things is something is \emph{sufficient} if we sometimes observe our outcome when it happens, but not always. Something is \emph{necessary} if we only see our outcome when it happens, but not always. \textbf{Necessary and sufficient} is when we only ever see the outcome when we see the event/condition.
+
+\hypertarget{logical-operations}{%
+\section{Logical Operations}\label{logical-operations}}
+
+We'll also use logical operators to do operations on sets. These can be helpful for data analysis as well, for example, when we talk about filtering observations and tidying our data.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Notation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meaning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Use
+\end{minipage} \\
+\midrule
+\endhead
+\(\wedge\) & And & Discussing elements in both sets \\
+\(\vee\) & Or & Discussing elements that are in multiple sets \\
+\(\sim\) & Not & Negates the equation \\
+! & Not & Negates the equation (used for R most often) \\
+\textless{} & Less than & Inequality(good for specifying conditions when filtering) \\
+\textless= & Less than equal to & Inequality (good for specifying conditions when filtering; include the value) \\
+\textgreater{} & Greater than & Inequality (good for specifying conditions when filtering) \\
+\textgreater= & Greater than equal to & Inequality (good for specifying conditions when filtering; include the value) \\
+!= & Not equal to & Exclude values when filtering (anything other than the exact value) \\
+== & Exactly equals & Helpful in R for when a value is exactly satisfied \\
+\%in\% & In & Useful when searching for terms \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{proofs}{%
+\section{Proofs}\label{proofs}}
+
+In the texts you read this year, you may encounter proofs of work: direct and indirect. We won't do proofs in Math Camp, but we'll reference them implicitly throughout the course and in your fall coursework.
+
+\hypertarget{direct-proofs}{%
+\subsection{Direct proofs}\label{direct-proofs}}
+
+Direct proofs work through proof and typically use one of the following methods:
++ \textbf{General (deductive) proof}: typically done using definitions, etc. Showing how the outcome logically follows building on rules and assumptions.
++ \textbf{Proof by exhaustion}: Break up the outcome into sub cases and show for each case (done often in game theory for possible values)
++ \textbf{Proof by construction}: These proofs demonstrate existence (is there a square that is the sum of two squares?).
++ \textbf{Proof by induction}: Start small and show it is true for any number (e.g.~start with a small n, n=1, then expand to n+1)
+
+\hypertarget{indirect-proofs}{%
+\subsection{Indirect proofs}\label{indirect-proofs}}
+
+These show that the outcome must be true because there is no possible alternative.These are typically demonstrated using the following methods:
+
+\begin{itemize}
+\tightlist
+\item
+  Proof by counterexample: using a counterexample (x implies y, yet we observe y without x\ldots x cannot imply y (aka x not necessary for y)).
+\item
+  Proof by contradiction: assume that the statement is false and try to prove it wrong, eventually demonstrating that a contradiction emerges. Thus, the statement cannot be false.
+\end{itemize}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+This chapter covered a variety of topics around sets, notation, and proofs. We worked through key symbols and terminology that will be useful as you navigate through Math Camp and into the first year of quantitative methods coursework. It may be helpful to come back and revisit these concepts over time -- we've tried to be clear about when and where you'll use them and how they will come to play into future concepts.
+
+\hypertarget{sequences-and-sets}{%
+\chapter{Sequences and Sets}\label{sequences-and-sets}}
+
+Sets allow us to talk more formally about collections of items. We can construct sets formally, as we'll see in this chapter.
+
+\hypertarget{sequences}{%
+\section{Sequences}\label{sequences}}
+
+A sequence is an ordered list of numbers. They can be infinite or finite but all are \emph{countable}. When discussing items in the sequence, we can refer to them by their position, for example whether they are the first or third element (e.g., for the sequence \{1, 3, 5, 7, 9\}, \(x_2\) is 3). One thing to note is that we typically number the elements starting from 1 (e.g.~\(x_1\), \(x_2\), \ldots, etc.), but in some programming languages, like Python, the first element is referred to as 0. This is just something to keep in mind in the future.
+
+You can generate sequences using an equation or formula, for example, if you have an integer that ranges from 1 to 5 and your sequence follows the pattern of 2x+3, you could write it as \(\{2x+3\}_{x=1}^{5}=\{5, 7, 9, 11, 13 \}\). The fourth element of this would be when \(x=4\), or \(x_4\), and is 11. (note that you can use any variable for the sequence. I've used x here, but you could use a different letter).
+
+\hypertarget{series-summation}{%
+\section{Series \& Summation}\label{series-summation}}
+
+A series is the \emph{sum} of a sequence. Working with summation symbols can offer a way to avoid tedious by-hand calculations.
+
+For example, if we wanted to add up the numbers from 1 to 8, we could write out, \(1+2+3+4+5+6+7+8\). When writing this out and adding them together, we'd find that it equals 36. Alternatively, we could write this out as a sum and use a simple equation to find the solution. While this may not be much of an effort saver for our example, imagine you were adding up 50 or 100 numbers and the value becomes clearer.
+
+Summation takes the form of having our summation operator, \(\Sigma\), for some value or function. For example, when adding from 1 to 8, we would represent this as \(\sum_{n=1}^{8} n\). It can be represented inline like you see here, or with the limits, above/below, like this example:
+
+\begin{equation}
+\sum_{n=1}^{8} n
 \end{equation}
 
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+In either case, the general format is to have the starting value below the summation symbol \(\Sigma\), the ending value above the symbol, and the equation for generating the series to the right of the symbol.
 
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
+\hypertarget{sets}{%
+\section{Sets}\label{sets}}
 
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+As we've discussed, sets provide an opportunity to have a collection of values / objects. We can then perform operations on these sets. We can refer them through \textbf{roster notation} where we simply list the elements or through \textbf{set builder notation} where we provide a kind of `recipe' for how to generate the elements. For example, the \textbf{set builder} notation for a set could be something like, \(\{x| 0<x\leq10, x \neq 5\}\), or we could provide it in roster notation, \(\{1, 2, 3, 4, 6, 7, 8, 9, 10 \}\).
 
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
+\hypertarget{details-sets}{%
+\subsection{Details, sets}\label{details-sets}}
 
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+There are two types of sets: \textbf{finite} (have a finite number of elements) and \textbf{infinite} (no limit on the number of elements). They can be \textbf{countable} (elements can be counted) or \textbf{uncountable} (elements cannot be counted). Not only do we care about sets and how elements are contained within them, we care about the boundary of the sets. \textbf{Open sets} are sort of like the set theory version of open brackets (). In contrast, \textbf{closed sets} have a clear boundary, like with square brackets, {[}{]}.
 
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
+We care about the number of elements (cardinality) of a set (a \textbf{singleton} set means there is only one element), while an \textbf{empty set} has no elements and is represented like this \(\emptyset\).
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+Sets can be \textbf{ordered} (like a preference ranking) or \textbf{unordered} (meaning that the oardering of elements has no external or substantive meaning). When talking about all possibilities, or a set that contains everything, we talk about a \textbf{universal set}.
 
-\hypertarget{sharing-your-book}{%
-\chapter{Sharing your book}\label{sharing-your-book}}
+\hypertarget{relating-sets-to-each-other}{%
+\subsection{Relating sets to each other}\label{relating-sets-to-each-other}}
 
-\hypertarget{publishing}{%
-\section{Publishing}\label{publishing}}
+We can start thinking about how sets relate to one another, specifically how the composition of elements within a set compare to one another. To help work through our definitions, we're going to start with five example sets:
 
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+\begin{itemize}
+\tightlist
+\item
+  Set A: \(\{ 1, 2, 3, 4 \}\)
+\item
+  Set B: \(\{1, 2, 3, 4 \}\)
+\item
+  Set C: \(\{1, 2, 3, 4, 5, 6 \}\)
+\item
+  Set D: \(\{6, 7, 8\}\)
+\item
+  Set E: \(\{10, 20, 30, 40 \}\)
+\end{itemize}
 
-\hypertarget{pages}{%
-\section{404 pages}\label{pages}}
+\hypertarget{union-disjoint-complements-partitions}{%
+\subsubsection{Union, Disjoint, Complements, Partitions}\label{union-disjoint-complements-partitions}}
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+We can think about bringing sets together, what they share in common, and what they don't. The first way to think about comparing sets is the \textbf{union} of two sets, \(\cup\). One way to think about this is that it's like `or' in that anything that is in EITHER of your sets will be in the union of the two sets. You can have the union of multiple sets. For example, \(A \cup E= \{ 1, 2, 3, 4, 10, 20, 30, 40\}\) and \(A \cup C \cup E = \{1, 2, 3, 4, 5, 6, 10, 20, 30, 40\}\). Note that we don't duplicate elements when they're in both sets.
 
-\hypertarget{metadata-for-sharing}{%
-\section{Metadata for sharing}\label{metadata-for-sharing}}
+We might also be curious what is in BOTH sets, meaning the shared elements. This is the \textbf{intersection} of sets and can also be considered across multiple sets. For example, \(A \cap B =\{1, 2, 3, 4 \}\) but \(A \cap E = \emptyset\) (note that because the intersection between A and E is empty, we don't have \(\{\emptyset \}\) but instead \(\emptyset\) because the \(\emptyset\) is like the set theory version of zero). In the circumstance where the intersection is empty, we say that those sets are \textbf{disjoint}. In our example, sets A and E are disjoint sets. We can also say that these sets are \textbf{mutually exclusive}.
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+We can consider the \textbf{difference} of sets where we have what is effectively the \emph{remainder} from one set when looking at the intersections of sets. One way to think about this is that it's going to be . \(x \in A \wedge x \notin B\) For \textbf{disjoint} or \textbf{mutually exclusive sets}, the difference will be the original set. So, \(A \setminus E = A\) but \(C \setminus A = \{5, 6\}\). Approaching this on a larger scale, if we're interested in everything not in any one set or combination of sets, that is called the \textbf{complement}. This is a set that contains all possible values that are not in the original set / item.
 
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+We talked about the universal set. For our set examples above, we haven't discussed all possible values that could be an element of a set. If, for example, our universal set is all numbers from 1 to 40, then the complement of A would be \(\{5, 6, 7, ...., 40 \}\).
 
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+In considering sets, we could want to split up or divide the elements. This is called \textbf{partitioning a set}. When we do this, we divide a set into smaller disjoint sets. This can be valuable if you're applying treatment to groups in an experiment or thinking about how groups may differ from one another and the individuals can be in only one group.
 
-Read more about the features of this output format here:
+\hypertarget{subsets}{%
+\subsubsection{Subsets}\label{subsets}}
 
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+Starting from these examples, we can now begin with the idea of subsets. A \textbf{proper subset} is when one set is contained within another (think: set theory version of less than (\textless)). It is represented like this \(\subset\). In our above example, set A and set B are each a proper subset of set C (\(A \subset C\) and \(B \subset C\)). However, A and B are not proper subsets of each other because the share the exact same elements. In contrast, A and B \textbf{are} \emph{subsets} of one another (just not proper subsets). Note that C, D, and E are not subsets of one another.
 
-Or use:
+\hypertarget{cartesian-products}{%
+\subsubsection{Cartesian Products}\label{cartesian-products}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
+At times, you may want to combine elements of two sets, possibly for pairs or for thinking about treatment groups. This is a \textbf{Cartesian product} whereby we take every element from set A and match it in a pair with every element from set B.
 
+\hypertarget{conclusion-1}{%
+\section{Conclusion}\label{conclusion-1}}
+
+In this chapter, we've talked about series, sequences, summation, and sets. We've covered how to think about generating sets, how to relate sets to one another, and possible options for understanding how sets come together.
 
   \bibliography{book.bib,packages.bib}
 
