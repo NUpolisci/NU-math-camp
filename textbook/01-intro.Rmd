@@ -1,0 +1,43 @@
+# A broad introduction to social science
+The goal behind Math Camp is getting you into position to explore topics interesting to you, and to conduct your own research. We recognize that people come from very different backgrounds and have quite different levels of experience, background, and coursework. The goal of this chapter is to provide a basic orientation to why and how we care and think about the pieces that will appear in the rest of this text. 
+
+## The scientific method: forever in our hearts
+The scientific method is going to underpin a lot of our conversations and will help us formulate our research questions. It is a building block for empirical social science research. There are different ways you can structure / organize it, but here's my preference:
++ **Puzzle** This is your research question: why / how are we seeing this thing that a) research wouldn't lead us to expect and / or b) how might we understand how two competing pieces / theories can help explain *this* particular phenonmena? 
+
++ **Theory** This is our explanation for why / how the pieces come together. It connects the different key concepts (see more on this below) and provides some type of explanatory mechanism (over the term, we'll also get into causal vs associational connections). You will want your theory to be *falsifiable*. 
+  + *Hypotheses* these are the *testable implications* of your theory. 
+
++ **Method / Test** This is how you will go about answering or addressing the research question. Through this method, (e.g. ethnography, regression, etc.), you'll work to discover the answer to your puzzle. 
+  + Note: there are many, many ways you can choose to answer your research method and while we won't cover this in math camp, this will be part of the discussions in your first year of quantitative methods training. 
+
++ **Conclusions** These are the conclusions from evaulating your *theory* with your *method / test* to answer your *puzzle*. You may be able to answer the questions and / or have soem kind of preliminary evidence. 
+
+## Puzzles / Research questions
+The research question guides your project. This is typically a question that has arisen that has some significance / value in the general realm of your research. NOT ALL QUESTIONS ARE PUZZLES / INTERESTING. Finding and framing your research question can take a frustratingly long amount of time to get 'right.' Some questions are unanswered because the answers are uninteresting while others are unanswered for reasons relating to methods, or because people think they already know the answer. Ideally your research question has some kind of broader interest beyond your particular research area. 
+
+## Theories
+Theories are how we explain or answer our research question -- they provide the why or how. In developing your theory, you may develop, define, or incorporate key ideas or *concepts* (see below for more) that link together in some way. 
+
+Typically, your theory is explaining *how* the concepts connect to one another (e.g. do they have a positive relationship? is there some conditional element / connection?). One way to think of your theory as the story or explanation for what is happening, [add example XXX]
+
+
+### Concepts
+Concepts are key terms that are meaningfully connected in your theory. These can be specific terms to your research question (e.g. how you're defining 'approval'), or can be more general terms that are coming from the literature on your research topic (e.g. what constitutes an institution). 
+
+In any case, these are going to be key ideas that will feature prominently in your research. They are likely part of the research question you're trying to answer. 
+
+
+### Operationalization & Measurement: Variables
+The concepts you specify will likely be quite large and vague in some way. To turn these concepts into something you can work with in a research project, you will need to *operationalize* them. This means that you'll take a broad or vague concept, such as 'eligible voters' and turn it into something you can measure and work with. 
+
+Even in the case of 'eligible voters,' you might mean all people who are over 18 since they should be capable of voting. However, what about registration (especially in states with restrictions around same day registration),  criminal records (especially in states with restrictions around incarceration or felony conviction), and past voting history (have they ever voted?). You'll want to be very specific around how you're defining (operationalizing) your key concepts. This process can turn the concept into a variable that you analzye / use in your emipirical research. 
+
+### Hypotheses  
+Hypotheses are the testable implications of your theory. Another way to consider this is to ask, 'If my theory were true, what would we expect to see?' These are often more narrow and specific than your theory. 
+
+For example, you will likely specify a direction or connection between your concepts (e.g. example XXX). 
+
+## Doing research / getting data 
+Perhaps frustratingly, we're just building up tools and skills here so that in the upcoming year, you'll be ready to apply the concepts you learn to your own chosen topics. Over the course of the academic year, you'll have the opportunity to read academic work and to find and analyze datasets that are interesting to you. Keep these structural elements in mind when you're doing the work to help you decide on a topic and framing for your research question. 
+

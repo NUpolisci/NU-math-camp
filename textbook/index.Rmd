@@ -1,0 +1,30 @@
+--- 
+title: "Math Camp Textbook"
+author: "Jean Clipperton and Sarah Moore"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+description: |
+  This textbook covers the morning sessions of mathcamp, available here: https://github.com/NUpolisci/NU-math-camp
+link-citations: yes
+
+---
+
+# Introduction: Welcome! 
+This text is a living document that will continue to change and evolve over time. The goals are for this book to provide supplement support and context for the material covered in our course, Math Camp. 
+
+The goal is to provide supplemental materials and explanations to accompany the course slides. 
+
+## How to read / use this text
+Depending on how you prefer to learn, you can read this on its own before or after class sessions (or both!). Please always feel free to check in with any questions you may have, and/or any typos you may find. This helps your learning and improves the text resources!
+
+
+## Background / getting started:
+Over the academic year, you'll encounter empirical questions that authors are working to answer. Our course prepares you to be able to understand how others have answered those questions and to consider how you might go about answering your own questions. 
+
+### Goals and backgrounds 
+Many of you may not be sure about whether you'll use quantitative methods and / or of the value they may bring to our research. We want to fully acknowledge that people are coming in with different goals. Our hope is that we can end Math Camp with people prepared to excel in quantitative coursework regardless of whether their goal is to conduct that research themselves, to be conversant in the literature of their research area, or to explore it as a possible avenue for their future work. 
+
+## Additional resources
+The materials for this text are based off the book by [Moore and Siegel](https://press.princeton.edu/books/paperback/9780691159171/a-mathematics-course-for-political-and-social-research) and have been adapted over time with incorporation of additional materials from [Jeff Gill](https://jeffgill.org/2021/04/12/essential-mathematics-for-political-and-social-research/). We also try to incorporate and recognize other outside sources as we use them. 

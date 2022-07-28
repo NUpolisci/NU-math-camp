@@ -1,0 +1,62 @@
+# Sequences and Sets
+Sets allow us to talk more formally about collections of items. We can construct sets formally, as we'll see in this chapter. 
+
+## Sequences
+A sequence is an ordered list of numbers. They can be infinite or finite but all are *countable*. When discussing items in the sequence, we can refer to them by their position, for example whether they are the first or third element (e.g., for the sequence {1, 3, 5, 7, 9}, $x_2$ is 3). One thing to note is that we typically number the elements starting from 1 (e.g. $x_1$, $x_2$, ..., etc.), but in some programming languages, like Python, the first element is referred to as 0. This is just something to keep in mind in the future. 
+
+You can generate sequences using an equation or formula, for example, if you have an integer that ranges from 1 to 5 and your sequence follows the pattern of 2x+3, you could write it as $\{2x+3\}_{x=1}^{5}=\{5, 7, 9, 11, 13 \}$. The fourth element of this would be when $x=4$, or $x_4$, and is 11. (note that you can use any variable for the sequence. I've used x here, but you could use a different letter).
+
+## Series & Summation
+A series is the *sum* of a sequence. Working with summation symbols can offer a way to avoid tedious by-hand calculations. 
+
+For example, if we wanted to add up the numbers from 1 to 8, we could write out, $1+2+3+4+5+6+7+8$. When writing this out and adding them together, we'd find that it equals 36. Alternatively, we could write this out as a sum and use a simple equation to find the solution. While this may not be much of an effort saver for our example, imagine you were adding up 50 or 100 numbers and the value becomes clearer. 
+
+Summation takes the form of having our summation operator, $\Sigma$, for some value or function. For example, when adding from 1 to 8, we would represent this as $\sum_{n=1}^{8} n$. It can be represented inline like you see here, or with the limits, above/below, like this example:
+
+\begin{equation}
+\sum_{n=1}^{8} n
+\end{equation}
+
+In either case, the general format is to have the starting value below the summation symbol $\Sigma$, the ending value above the symbol, and the equation for generating the series to the right of the symbol. 
+
+## Sets
+As we've discussed, sets provide an opportunity to have a collection of values / objects. We can then perform operations on these sets. We can refer them through **roster notation** where we simply list the elements or through **set builder notation** where we provide a kind of 'recipe' for how to generate the elements. For example, the **set builder** notation for a set could be something like, $\{x| 0<x\leq10, x \neq 5\}$, or we could provide it in roster notation, $\{1, 2, 3, 4, 6, 7, 8, 9, 10 \}$.
+
+
+### Details, sets
+There are two types of sets: **finite** (have a finite number of elements) and **infinite** (no limit on the number of elements). They can be **countable** (elements can be counted) or **uncountable** (elements cannot be counted). Not only do we care about sets and how elements are contained within them, we care about the boundary of the sets. **Open sets** are sort of like the set theory version of open brackets (). In contrast, **closed sets** have a clear boundary, like with square brackets, []. 
+
+We care about the number of elements (cardinality) of a set (a **singleton** set means there is only one element), while an **empty set** has no elements and is represented like this $\emptyset$. 
+
+Sets can be **ordered** (like a preference ranking) or **unordered** (meaning that the oardering of elements has no external or substantive meaning). When talking about all possibilities, or a set that contains everything, we talk about a **universal set**. 
+
+### Relating sets to each other
+We can start thinking about how sets relate to one another, specifically how the composition of elements within a set compare to one another. To help work through our definitions, we're going to start with five example sets:
+
++ Set A: $\{ 1, 2, 3, 4 \}$
++ Set B: $\{1, 2, 3, 4 \}$
++ Set C: $\{1, 2, 3, 4, 5, 6 \}$
++ Set D: $\{6, 7, 8\}$
++ Set E: $\{10, 20, 30, 40 \}$
+
+
+#### Union, Disjoint, Complements, Partitions
+We can think about bringing sets together, what they share in common, and what they don't. The first way to think about comparing sets is the **union** of two sets, $\cup$. One way to think about this is that it's like 'or' in that anything that is in EITHER of your sets will be in the union of the two sets. You can have the union of multiple sets. For example, $A \cup E= \{ 1, 2, 3, 4, 10, 20, 30, 40\}$ and $A \cup C \cup E = \{1, 2, 3, 4, 5, 6, 10, 20, 30, 40\}$. Note that we don't duplicate elements when they're in both sets. 
+
+We might also be curious what is in BOTH sets, meaning the shared elements. This is the **intersection** of sets and can also be considered across multiple sets. For example, $A \cap B =\{1, 2, 3, 4 \}$ but $A \cap E = \emptyset$ (note that because the intersection between A and E is empty, we don't have $\{\emptyset \}$ but instead $\emptyset$ because the $\emptyset$ is like the set theory version of zero). In the circumstance where the intersection is empty, we say that those sets are **disjoint**. In our example, sets A and E are disjoint sets. We can also say that these sets are **mutually exclusive**. 
+
+We can consider the **difference** of sets where we have what is effectively the *remainder* from one set when looking at the intersections of sets. One way to think about this is that it's going to be . $x \in A \wedge x \notin B$ For **disjoint** or **mutually exclusive sets**, the difference will be the original set. So, $A \setminus E = A$ but  $C \setminus A = \{5, 6\}$. Approaching this on a larger scale, if we're interested in everything not in any one set or combination of sets, that is called the **complement**. This is a set that contains all possible values that are not in the original set / item. 
+
+We talked about the universal set. For our set examples above, we haven't discussed all possible values that could be an element of a set. If, for example, our universal set is all numbers from 1 to 40, then the complement of A would be $\{5, 6, 7, ...., 40 \}$.
+
+In considering sets, we could want to split up or divide the elements. This is called **partitioning a set**. When we do this, we divide a set into smaller disjoint sets. This can be valuable if you're applying treatment to groups in an experiment or thinking about how groups may differ from one another and the individuals can be in only one group.
+
+#### Subsets
+Starting from these examples, we can now begin with the idea of subsets. A **proper subset** is when one set is contained within another (think: set theory version of less than (<)). It is represented like this $\subset$. In our above example, set A and set B are each a proper subset of set C ($A \subset C$ and $B \subset C$). However, A and B are not proper subsets of each other because the share the exact same elements. In contrast, A and B **are** *subsets* of one another (just not proper subsets). Note that C, D, and E are not subsets of one another. 
+
+
+#### Cartesian Products 
+At times, you may want to combine elements of two sets, possibly for pairs or for thinking about treatment groups. This is a **Cartesian product** whereby we take every element from set A and match it in a pair with every element from set B. 
+
+## Conclusion
+In this chapter, we've talked about series, sequences, summation, and sets. We've covered how to think about generating sets, how to relate sets to one another, and possible options for understanding how sets come together. 

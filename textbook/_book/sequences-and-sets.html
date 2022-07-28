@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Sequences and Sets | Math Camp Textbook</title>
+  <meta name="description" content="This textbook covers the morning sessions of mathcamp, available here: https://github.com/NUpolisci/NU-math-camp" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Sequences and Sets | Math Camp Textbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This textbook covers the morning sessions of mathcamp, available here: https://github.com/NUpolisci/NU-math-camp" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Sequences and Sets | Math Camp Textbook" />
+  
+  <meta name="twitter:description" content="This textbook covers the morning sessions of mathcamp, available here: https://github.com/NUpolisci/NU-math-camp" />
+  
+
+<meta name="author" content="Jean Clipperton and Sarah Moore" />
+
+
+<meta name="date" content="2022-07-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sets-notation-and-logic.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Math Camp Textbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction: Welcome!</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#how-to-read-use-this-text"><i class="fa fa-check"></i><b>1.1</b> How to read / use this text</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#background-getting-started"><i class="fa fa-check"></i><b>1.2</b> Background / getting started:</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#goals-and-backgrounds"><i class="fa fa-check"></i><b>1.2.1</b> Goals and backgrounds</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#additional-resources"><i class="fa fa-check"></i><b>1.3</b> Additional resources</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="a-broad-introduction-to-social-science.html"><a href="a-broad-introduction-to-social-science.html"><i class="fa fa-check"></i><b>2</b> A broad introduction to social science</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="a-broad-introduction-to-social-science.html"><a href="a-broad-introduction-to-social-science.html#the-scientific-method-forever-in-our-hearts"><i class="fa fa-check"></i><b>2.1</b> The scientific method: forever in our hearts</a></li>
+<li class="chapter" data-level="2.2" data-path="a-broad-introduction-to-social-science.html"><a href="a-broad-introduction-to-social-science.html#puzzles-research-questions"><i class="fa fa-check"></i><b>2.2</b> Puzzles / Research questions</a></li>
+<li class="chapter" data-level="2.3" data-path="a-broad-introduction-to-social-science.html"><a href="a-broad-introduction-to-social-science.html#theories"><i class="fa fa-check"></i><b>2.3</b> Theories</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="a-broad-introduction-to-social-science.html"><a href="a-broad-introduction-to-social-science.html#concepts"><i class="fa fa-check"></i><b>2.3.1</b> Concepts</a></li>
+<li class="chapter" data-level="2.3.2" data-path="a-broad-introduction-to-social-science.html"><a href="a-broad-introduction-to-social-science.html#operationalization-measurement-variables"><i class="fa fa-check"></i><b>2.3.2</b> Operationalization &amp; Measurement: Variables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="a-broad-introduction-to-social-science.html"><a href="a-broad-introduction-to-social-science.html#hypotheses"><i class="fa fa-check"></i><b>2.3.3</b> Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="a-broad-introduction-to-social-science.html"><a href="a-broad-introduction-to-social-science.html#doing-research-getting-data"><i class="fa fa-check"></i><b>2.4</b> Doing research / getting data</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html"><i class="fa fa-check"></i><b>3</b> Sets, Notation, and Logic</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#sets-preview-and-natural-numbers"><i class="fa fa-check"></i><b>3.1</b> Sets (preview) and natural numbers</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#measurement-and-sets"><i class="fa fa-check"></i><b>3.1.1</b> Measurement and sets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#set-notation"><i class="fa fa-check"></i><b>3.2</b> Set Notation</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#symbols-requirements-for-being-in-a-set"><i class="fa fa-check"></i><b>3.2.1</b> Symbols: Requirements for being in a set</a></li>
+<li class="chapter" data-level="3.2.2" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#symbols-set-operations"><i class="fa fa-check"></i><b>3.2.2</b> Symbols: Set operations</a></li>
+<li class="chapter" data-level="3.2.3" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#symbols-sets-of-numbers"><i class="fa fa-check"></i><b>3.2.3</b> Symbols: Sets of numbers</a></li>
+<li class="chapter" data-level="3.2.4" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#solution-sets"><i class="fa fa-check"></i><b>3.2.4</b> Solution Sets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#greek-letters"><i class="fa fa-check"></i><b>3.3</b> Greek Letters</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#commonly-used-letters"><i class="fa fa-check"></i><b>3.3.1</b> Commonly used letters</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#working-with-variables-and-letters"><i class="fa fa-check"></i><b>3.4</b> Working with variables and letters</a></li>
+<li class="chapter" data-level="3.5" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#logic-and-proofs"><i class="fa fa-check"></i><b>3.5</b> Logic and Proofs</a></li>
+<li class="chapter" data-level="3.6" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#proof-terms"><i class="fa fa-check"></i><b>3.6</b> Proof terms</a></li>
+<li class="chapter" data-level="3.7" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#necessary-and-sufficient"><i class="fa fa-check"></i><b>3.7</b> Necessary and Sufficient</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#sufficient"><i class="fa fa-check"></i><b>3.7.1</b> Sufficient</a></li>
+<li class="chapter" data-level="3.7.2" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#necessary"><i class="fa fa-check"></i><b>3.7.2</b> Necessary</a></li>
+<li class="chapter" data-level="3.7.3" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#necessary-and-sufficient-1"><i class="fa fa-check"></i><b>3.7.3</b> Necessary and Sufficient</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#logical-operations"><i class="fa fa-check"></i><b>3.8</b> Logical Operations</a></li>
+<li class="chapter" data-level="3.9" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#proofs"><i class="fa fa-check"></i><b>3.9</b> Proofs</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#direct-proofs"><i class="fa fa-check"></i><b>3.9.1</b> Direct proofs</a></li>
+<li class="chapter" data-level="3.9.2" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#indirect-proofs"><i class="fa fa-check"></i><b>3.9.2</b> Indirect proofs</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sets-notation-and-logic.html"><a href="sets-notation-and-logic.html#conclusion"><i class="fa fa-check"></i><b>3.10</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sequences-and-sets.html"><a href="sequences-and-sets.html"><i class="fa fa-check"></i><b>4</b> Sequences and Sets</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="sequences-and-sets.html"><a href="sequences-and-sets.html#sequences"><i class="fa fa-check"></i><b>4.1</b> Sequences</a></li>
+<li class="chapter" data-level="4.2" data-path="sequences-and-sets.html"><a href="sequences-and-sets.html#series-summation"><i class="fa fa-check"></i><b>4.2</b> Series &amp; Summation</a></li>
+<li class="chapter" data-level="4.3" data-path="sequences-and-sets.html"><a href="sequences-and-sets.html#sets"><i class="fa fa-check"></i><b>4.3</b> Sets</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="sequences-and-sets.html"><a href="sequences-and-sets.html#details-sets"><i class="fa fa-check"></i><b>4.3.1</b> Details, sets</a></li>
+<li class="chapter" data-level="4.3.2" data-path="sequences-and-sets.html"><a href="sequences-and-sets.html#relating-sets-to-each-other"><i class="fa fa-check"></i><b>4.3.2</b> Relating sets to each other</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="sequences-and-sets.html"><a href="sequences-and-sets.html#conclusion-1"><i class="fa fa-check"></i><b>4.4</b> Conclusion</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Math Camp Textbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sequences-and-sets" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Sequences and Sets<a href="sequences-and-sets.html#sequences-and-sets" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Sets allow us to talk more formally about collections of items. We can construct sets formally, as we’ll see in this chapter.</p>
+<div id="sequences" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Sequences<a href="sequences-and-sets.html#sequences" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A sequence is an ordered list of numbers. They can be infinite or finite but all are <em>countable</em>. When discussing items in the sequence, we can refer to them by their position, for example whether they are the first or third element (e.g., for the sequence {1, 3, 5, 7, 9}, <span class="math inline">\(x_2\)</span> is 3). One thing to note is that we typically number the elements starting from 1 (e.g. <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span>, …, etc.), but in some programming languages, like Python, the first element is referred to as 0. This is just something to keep in mind in the future.</p>
+<p>You can generate sequences using an equation or formula, for example, if you have an integer that ranges from 1 to 5 and your sequence follows the pattern of 2x+3, you could write it as <span class="math inline">\(\{2x+3\}_{x=1}^{5}=\{5, 7, 9, 11, 13 \}\)</span>. The fourth element of this would be when <span class="math inline">\(x=4\)</span>, or <span class="math inline">\(x_4\)</span>, and is 11. (note that you can use any variable for the sequence. I’ve used x here, but you could use a different letter).</p>
+</div>
+<div id="series-summation" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Series &amp; Summation<a href="sequences-and-sets.html#series-summation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A series is the <em>sum</em> of a sequence. Working with summation symbols can offer a way to avoid tedious by-hand calculations.</p>
+<p>For example, if we wanted to add up the numbers from 1 to 8, we could write out, <span class="math inline">\(1+2+3+4+5+6+7+8\)</span>. When writing this out and adding them together, we’d find that it equals 36. Alternatively, we could write this out as a sum and use a simple equation to find the solution. While this may not be much of an effort saver for our example, imagine you were adding up 50 or 100 numbers and the value becomes clearer.</p>
+<p>Summation takes the form of having our summation operator, <span class="math inline">\(\Sigma\)</span>, for some value or function. For example, when adding from 1 to 8, we would represent this as <span class="math inline">\(\sum_{n=1}^{8} n\)</span>. It can be represented inline like you see here, or with the limits, above/below, like this example:</p>
+<p><span class="math display">\[\begin{equation}
+\sum_{n=1}^{8} n
+\end{equation}\]</span></p>
+<p>In either case, the general format is to have the starting value below the summation symbol <span class="math inline">\(\Sigma\)</span>, the ending value above the symbol, and the equation for generating the series to the right of the symbol.</p>
+</div>
+<div id="sets" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Sets<a href="sequences-and-sets.html#sets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As we’ve discussed, sets provide an opportunity to have a collection of values / objects. We can then perform operations on these sets. We can refer them through <strong>roster notation</strong> where we simply list the elements or through <strong>set builder notation</strong> where we provide a kind of ‘recipe’ for how to generate the elements. For example, the <strong>set builder</strong> notation for a set could be something like, <span class="math inline">\(\{x| 0&lt;x\leq10, x \neq 5\}\)</span>, or we could provide it in roster notation, <span class="math inline">\(\{1, 2, 3, 4, 6, 7, 8, 9, 10 \}\)</span>.</p>
+<div id="details-sets" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Details, sets<a href="sequences-and-sets.html#details-sets" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are two types of sets: <strong>finite</strong> (have a finite number of elements) and <strong>infinite</strong> (no limit on the number of elements). They can be <strong>countable</strong> (elements can be counted) or <strong>uncountable</strong> (elements cannot be counted). Not only do we care about sets and how elements are contained within them, we care about the boundary of the sets. <strong>Open sets</strong> are sort of like the set theory version of open brackets (). In contrast, <strong>closed sets</strong> have a clear boundary, like with square brackets, [].</p>
+<p>We care about the number of elements (cardinality) of a set (a <strong>singleton</strong> set means there is only one element), while an <strong>empty set</strong> has no elements and is represented like this <span class="math inline">\(\emptyset\)</span>.</p>
+<p>Sets can be <strong>ordered</strong> (like a preference ranking) or <strong>unordered</strong> (meaning that the oardering of elements has no external or substantive meaning). When talking about all possibilities, or a set that contains everything, we talk about a <strong>universal set</strong>.</p>
+</div>
+<div id="relating-sets-to-each-other" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Relating sets to each other<a href="sequences-and-sets.html#relating-sets-to-each-other" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We can start thinking about how sets relate to one another, specifically how the composition of elements within a set compare to one another. To help work through our definitions, we’re going to start with five example sets:</p>
+<ul>
+<li>Set A: <span class="math inline">\(\{ 1, 2, 3, 4 \}\)</span></li>
+<li>Set B: <span class="math inline">\(\{1, 2, 3, 4 \}\)</span></li>
+<li>Set C: <span class="math inline">\(\{1, 2, 3, 4, 5, 6 \}\)</span></li>
+<li>Set D: <span class="math inline">\(\{6, 7, 8\}\)</span></li>
+<li>Set E: <span class="math inline">\(\{10, 20, 30, 40 \}\)</span></li>
+</ul>
+<div id="union-disjoint-complements-partitions" class="section level4 hasAnchor" number="4.3.2.1">
+<h4><span class="header-section-number">4.3.2.1</span> Union, Disjoint, Complements, Partitions<a href="sequences-and-sets.html#union-disjoint-complements-partitions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We can think about bringing sets together, what they share in common, and what they don’t. The first way to think about comparing sets is the <strong>union</strong> of two sets, <span class="math inline">\(\cup\)</span>. One way to think about this is that it’s like ‘or’ in that anything that is in EITHER of your sets will be in the union of the two sets. You can have the union of multiple sets. For example, <span class="math inline">\(A \cup E= \{ 1, 2, 3, 4, 10, 20, 30, 40\}\)</span> and <span class="math inline">\(A \cup C \cup E = \{1, 2, 3, 4, 5, 6, 10, 20, 30, 40\}\)</span>. Note that we don’t duplicate elements when they’re in both sets.</p>
+<p>We might also be curious what is in BOTH sets, meaning the shared elements. This is the <strong>intersection</strong> of sets and can also be considered across multiple sets. For example, <span class="math inline">\(A \cap B =\{1, 2, 3, 4 \}\)</span> but <span class="math inline">\(A \cap E = \emptyset\)</span> (note that because the intersection between A and E is empty, we don’t have <span class="math inline">\(\{\emptyset \}\)</span> but instead <span class="math inline">\(\emptyset\)</span> because the <span class="math inline">\(\emptyset\)</span> is like the set theory version of zero). In the circumstance where the intersection is empty, we say that those sets are <strong>disjoint</strong>. In our example, sets A and E are disjoint sets. We can also say that these sets are <strong>mutually exclusive</strong>.</p>
+<p>We can consider the <strong>difference</strong> of sets where we have what is effectively the <em>remainder</em> from one set when looking at the intersections of sets. One way to think about this is that it’s going to be . <span class="math inline">\(x \in A \wedge x \notin B\)</span> For <strong>disjoint</strong> or <strong>mutually exclusive sets</strong>, the difference will be the original set. So, <span class="math inline">\(A \setminus E = A\)</span> but <span class="math inline">\(C \setminus A = \{5, 6\}\)</span>. Approaching this on a larger scale, if we’re interested in everything not in any one set or combination of sets, that is called the <strong>complement</strong>. This is a set that contains all possible values that are not in the original set / item.</p>
+<p>We talked about the universal set. For our set examples above, we haven’t discussed all possible values that could be an element of a set. If, for example, our universal set is all numbers from 1 to 40, then the complement of A would be <span class="math inline">\(\{5, 6, 7, ...., 40 \}\)</span>.</p>
+<p>In considering sets, we could want to split up or divide the elements. This is called <strong>partitioning a set</strong>. When we do this, we divide a set into smaller disjoint sets. This can be valuable if you’re applying treatment to groups in an experiment or thinking about how groups may differ from one another and the individuals can be in only one group.</p>
+</div>
+<div id="subsets" class="section level4 hasAnchor" number="4.3.2.2">
+<h4><span class="header-section-number">4.3.2.2</span> Subsets<a href="sequences-and-sets.html#subsets" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Starting from these examples, we can now begin with the idea of subsets. A <strong>proper subset</strong> is when one set is contained within another (think: set theory version of less than (&lt;)). It is represented like this <span class="math inline">\(\subset\)</span>. In our above example, set A and set B are each a proper subset of set C (<span class="math inline">\(A \subset C\)</span> and <span class="math inline">\(B \subset C\)</span>). However, A and B are not proper subsets of each other because the share the exact same elements. In contrast, A and B <strong>are</strong> <em>subsets</em> of one another (just not proper subsets). Note that C, D, and E are not subsets of one another.</p>
+</div>
+<div id="cartesian-products" class="section level4 hasAnchor" number="4.3.2.3">
+<h4><span class="header-section-number">4.3.2.3</span> Cartesian Products<a href="sequences-and-sets.html#cartesian-products" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>At times, you may want to combine elements of two sets, possibly for pairs or for thinking about treatment groups. This is a <strong>Cartesian product</strong> whereby we take every element from set A and match it in a pair with every element from set B.</p>
+</div>
+</div>
+</div>
+<div id="conclusion-1" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Conclusion<a href="sequences-and-sets.html#conclusion-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this chapter, we’ve talked about series, sequences, summation, and sets. We’ve covered how to think about generating sets, how to relate sets to one another, and possible options for understanding how sets come together.</p>
+
+
+
+
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sets-notation-and-logic.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-sequences-sets.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

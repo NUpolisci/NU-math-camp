@@ -1,0 +1,170 @@
+# Sets, Notation, and Logic
+In this chapter, we'll talk about how to get acclimated to reading quantitatively-focused texts. A lot of the content here won't be directly tested or assessed but is often assumed and 'supporting' material for the content you'll be learning. 
+
+Working though this chapter in particular can help orient you to a different way of approaching similar content. 
+
+## Sets (preview) and natural numbers
+We'll continue to work more with sets (particularly when it comes to probability), but I find it's also incredibly helpful for thinking about things like measurement and operationalization. It may be helpful to picture Venn Diagrams when thinking about sets: you can consider how the different elements come together and connect to one another. Sometimes it's concentric circles (also known as subsets), where each set is completely composed of another. 
+
+### Measurement and sets
+Often, when dealing with a variable, you'll need to determine the level of measurement to use when operationalizing it (see previous chapter for more information on operationalization and variables).
+
+For example, you may be interested in something like ncome, which can be measured yearly, monthly, weekly, or hourly. You can choose to get these amounts in dollar amounts that can be discrete values or to have respondents select bands for their income (e.g. $20,000-$40,000). 
+
+
+
+## Set Notation
+How we discuss and work with sets requires its own notation. Sets are simply collections of elements. There can be conditions that specify how an element comes into a set (see below for solution sets). We can talk about sets in relation to one another, if they have overlapping elements, or no overlap at all. Some people find that the most challenging part of working with sets is the notation. 
+
+### Symbols: Requirements for being in a set
+These symbols talk about what can be in a set, and / or specify the relevant elements. 
+
+| Notation | Meaning                   | Use 
+|:---|:-------------------------|----------------|
+{                  | bracket                   | Specify a set (e.g. {2, 3})
+$\exists$ | "there exists": true for at least one thing | Specify a condition to be satisfied
+$\forall$ |  "for all"; true for all elements  | Specify which elements belong in a set (all that satisfy a criteron)
+$\exists$ |  "exists"; there is something true | Specify a rule or proposition that is true
+$\in$ |  "in" or "element of"                  | States what something / an element is a member of
+\| \ Such that | used in set theoretic definitions re: which values satisfy a particular (set of) condition(s)
+$\notin$ | excluding (element) | States that something is not a member of a set
+$\equiv$ | equivalent | set theory equal
+
+For example, $A = \forall x \in$ the set of natural numbers that are divisible by 4. This is telling us that A is a set of numbers that is comprised of natural numbers that are divisible by 4. We could list out the elements of this set. Note that curly brackets are always used for sets, never parentheses. E.g. {4, 8, 12, ...} and not (4, 8, 12, ...). 
+
+### Symbols: Set operations
+Once you have sets, you may want to do certain operations with them, like determine how they relate to other sets. This may sound high-level and abstract initially, but you can also think of it as wondering how many respondents within a survey satisfy certain criteria and how they relate to members who satisfy other criteria. 
+
+| Notation | Meaning | Use
+|---|--------|---------|
+$\subset$ |  Subset | Think of it like the set theory version of less than
+$\subseteq$ |  Subset | Think of it like the set theory version of less than equal too
+$\varnothing$ |  Empty set | Set theory version of zero
+$\cap$ |  Intersection | Set theory version of 'aNd'
+$\cup$ |  Union | Set theory version of or
+$\setminus$ |  Difference | Set theory version of minus to remove elements from sets
+
+### Symbols: Sets of numbers
+| Notation | Meaning | Use
+|---|--------|---------|
+N | Natural numbers | {(0), 1, 2, 3, 4, 5, ...}
+Z | Integers (pos and neg) | {..., -3, -2, -1, 0, 1, 2, 3, ...}
+Q | Rational numbers (quotient) | (all fractions--produced by numbers divided by an integer)
+R | Real numbers (pos, neg, fractions) | (any point on a number line) 
+I | Imaginary number ( i = $\sqrt(-1)$) | 
+C | Complex numbers (a + bi) |
+
+### Solution Sets
+When considering the collection of possible responses you might collect on a response, you can think of this as a solution set. This might be dollar amounts, other numeric values, or a collection of roles or responses. 
+
+More formally, a solution set is a collection of items that satisfies a certain condition. For example, all odd numbers between 2 and 10 would be represented as {3, 5, 7, 9}.
+
+#### Measurement
+How we turn our responses into possible solution sets with different levels of *variable measurement*: this can be at very fine levels, or at larger chunks. For example, one canonical example is age, which can be a bit tricky. Consider how we might want to measure age:
++ **Interval-ratio** or **continuous** measurement is measured such that any possible value on the number line is possible. 
+  + ex: age could be measured as a fraction, e.g. 246/12, to report a continuous measure
++ **Discrete**: measurement is whole integers
+  + ex: age could be reported as an integer 
++ **Ordinal**: categorical variable where the the categories have a relationship to one another. Here, it's important that each category be separate from one another and that there is a way to *order* the categories. 
+  + ex: age: could be reported as a categorical variable, such as 0-17, 18-34, 35-49, etc. Note that there's a clear way to order the categories and we wouldn't have the options as 18-34, 0-17, and 35-49. That would be the 'wrong' order. 
++ **Nominal**: in this measurement, the variables are categorical, but have no inherent sense of order. For example, eye color options could be arranged any number of ways. 
+  + ex: age: here, it's tough to have age as a nominal varible, but we could have it as a binary variable, such as retirement age or not, and that could potentially have any order for the two categories. 
+
+## Greek Letters
+Greek letters are commonly used in notation in algebra, calculus, and regression. Below, we have a list (via https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols) that provides the Greek letter and it's counterpart in the Modern English alphabet. 
+
+
+|                               |         |
+|-------------------------------|---------|
+| $\alpha$ A	                    |	\nu N |
+|	$\beta$ B	                    |	$\xi$ $\Xi$ |
+|	$\gamma$ $\Gamma$	            |	o O |
+|	$\delta$ $\Delta$	            |	$\pi$ $\Pi$ |
+|	$\epsilon$ $\varepsilon$	    |	$\rho$ $\varrho$ P |
+|	$\zeta$	Z                     |	$\sigma$ $\Sigma$ |
+|	$\eta$	H                     |	$\tau$ T |
+	$\theta$ $\vartheta$ $\Theta$	|	$\upsilon$ $\Upsilon$ |
+	$\iota$ I	                    |	$\phi$ $\varphi$ $\Phi$ |
+	$\kappa$ K	                  |	$\chi$ X |
+	$\lambda$ $\Lambda$	          |	$\psi$ $\Psi$ |
+	$\mu$ M	                      |	$\omega$ $\Omega$ |
+
+
+### Commonly used letters
+You'll frequently see the following Greek letters in your coursework, so it can be helpful to familiarize yourself with them now:
+
+- $\delta$ "delta" (used for integrals and discount factors in game theory)
+- $\Delta$ "delta" (used for difference/change)
+- $\beta$ "beta" (used for coefficients in regression)
+- $\mu$ "mu" (used for means)
+- $\sigma$ "sigma" (used for standard deviation)
+- $\lambda$ "lambda" (used for eigenvalues in linear algebra)
+- $\epsilon$ "epsilon" (used for the error term in regressions)
+
+## Working with variables and letters
+Often, we'll have letters to substitute in for our variables, such as x. Typically, 'later' elements in the alphabet (e.g. x, y, z) are used for variables and 'earlier' elements are used for constants (e.g. a, b, c). This is not necessarily a 'rule' per se, but it is a common convention. You'll also see $i$ and $n$ used in sequences and series. 
+
+## Logic and Proofs
+Here, we review a few relevant terms and symbols. 
+
+## Proof terms
+You may encounter proofs in texts or materials you read. Here are a few terms that can be helpful to sort out. 
+
++ **Assumptions**: statements taken to be true
+
++ **Proposition**: statement thought to be true given the assumptions
+
++ **Theorem**: proven proposition 
+
++ **Lemma**: theorem, something of little interest 
+
++ **Corollary**: a type of proposition that follows directly from the proof of another proposition and does not require further proof
+
+## Necessary and Sufficient
+When exploring outcomes and the connection between conditions, you may wonder how they occur together. One way to explore this is necessary and sufficient conditions. Consider an outcome D and  three conditions, A, B, and C. 
+
+### Sufficient
+A sufficient outcome is something that occurs *also* when our outcome variable occurs. So, if both A and B occur and D also occurs, they are *sufficient* for D to occur. Note, this means that D could happen without A or B but we don't see A or B without D. 
+
+### Necessary
+For necessary conditions, we never see the outcome variable without the other effects. So, any time we observe D, C has always also occurred. Note: this means that C could happen without D but never D without C. 
+
+### Necessary and Sufficient 
+Necessary and sufficient conditions occur when we never observe the outcome variable without the input variables AND we never observe the input variables without the output. One way to consider things is something is *sufficient* if we sometimes observe our outcome when it happens, but not always. Something is *necessary*  if we only see our outcome when it happens, but not always. **Necessary and sufficient** is when we only ever see the outcome when we see the event/condition. 
+
+## Logical Operations
+We'll also use logical operators to do operations on sets. These can be helpful for data analysis as well, for example, when we talk about filtering observations and tidying our data. 
+
+
+| Notation | Meaning | Use
+|---|------------------|---------|
+$\wedge$ |  And | Discussing elements in both sets
+$\vee$ |  Or | Discussing elements that are in multiple sets
+$\sim$ | Not | Negates the equation
+! | Not | Negates the equation (used for R most often)
+\< | Less than | Inequality(good for specifying conditions when filtering)
+\<= | Less than equal to | Inequality (good for specifying conditions when filtering; include the value)
+\> | Greater than | Inequality (good for specifying conditions when filtering)
+\>= | Greater than equal to| Inequality (good for specifying conditions when filtering; include the value)
+!= | Not equal to | Exclude values when filtering (anything other than the exact value)
+== | Exactly equals | Helpful in R for when a value is exactly satisfied
+%in% |  In | Useful when searching for terms
+
+## Proofs
+In the texts you read this year, you may encounter proofs of work: direct and indirect. We won't do proofs in Math Camp, but we'll reference them implicitly throughout the course and in your fall coursework. 
+
+### Direct proofs
+Direct proofs work through proof and typically use one of the following methods:
++ **General (deductive) proof**: typically done using definitions, etc. Showing how the outcome logically follows building on rules and assumptions.
++ **Proof by exhaustion**: Break up the outcome into sub cases and show for each case (done often in game theory for possible values)
++ **Proof by construction**: These proofs demonstrate existence (is there a square that is the sum of two squares?).
++ **Proof by induction**: Start small and show it is true for any number (e.g. start with a small n, n=1, then expand to n+1)
+
+### Indirect proofs 
+These show that the outcome must be true because there is no possible alternative.These are typically demonstrated using the following methods:
+
++ Proof by counterexample: using a counterexample (x implies y, yet we observe y without x...x cannot imply y (aka x not necessary for y)).
++ Proof by contradiction: assume that the statement is false and try to prove it wrong, eventually demonstrating that a contradiction emerges. Thus, the statement cannot be false.
+
+## Conclusion
+This chapter covered a variety of topics around sets, notation, and proofs. We worked through key symbols and terminology that will be useful as you navigate through Math Camp and into the first year of quantitative methods coursework. It may be helpful to come back and revisit these concepts over time -- we've tried to be clear about when and where you'll use them and how they will come to play into future concepts.  
