@@ -19,6 +19,8 @@ Day 8 | **Integrals:** [slides](slides/day8-am.pdf), ch  | R: workflow       | P
 Day 9 | **Probability:** [slides](slides/day9-am.pdf), ch  | R: troubleshooting | |
 Day 10| **Review & Calculus recap:** [slides](slides/day10-am.pdf), ch | Review/wrap up |||
 
-[Supplementary Material](supplementary_material/README.md)
+[Supplementary Material](supplementary_material/README.md) 
+
 [Full substantive text](https://jmclip.github.io/mc_textbook/)
+
 [Grad School Resources](resources/README.md)
