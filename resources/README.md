@@ -65,3 +65,9 @@ Originally compiled by Sarah Moore in March 2022. Last updated August 16, 2022.
 **Other tips and tricks** 
 
 - Minimize time spent on daily tasks in and out of grad school that bring you no joy. Find ways to automate things! Meal prep if you hate cooking! Pick out outfits for the week if you hate getting ready for the day! 
+
+
+
+
+
+<sub> Thanks to all the countless individuals that helped me to compile this list. I have attempted to document most of the suggestions gathered from [this tweet](https://twitter.com/sarahmoreorless/status/1501231626243960833) here.</sub> 
