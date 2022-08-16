@@ -54,7 +54,7 @@ Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022.
 
 - [Raul Pacheco-Vega, PhD](http://www.raulpacheco.org/resources/) this blog has a lot of templates for structuring seemingly nebulous project components.
 
-- [Andrew Gelman](https://statmodeling.stat.columbia.edu/) is a widely read methods and current events blog, now including contributors other than Gelman. Some of the entries are commentary on public events, however there are also a lot on methods, causal inference, and computational social science. 
+- [Andrew Gelman's Statistical Modeling, Causal Inference, and Social Science](https://statmodeling.stat.columbia.edu/) is a widely read methods and current events blog, now including contributors other than Gelman. Some of the entries are commentary on public events, however there are also a lot on methods, causal inference, and computational social science. 
 
 - ["How to Conference"](https://preprints.apsanet.org/engage/apsa/article-details/6201c6e2cbb4f49a2db95354) by Turner et al. for conference professionalization tips
 
