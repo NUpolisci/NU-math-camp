@@ -14,7 +14,7 @@ Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022.
 
 - [Toggl Time Keeper](https://toggl.com/) is good for keeping tabs on where your time is going. [Centered](https://www.centered.app/download) is an app that is mindful of flow states while working, allowing you to plan your activity, center your work in a flow, and track your activity. The [Pomodoro Timer](https://pomofocus.io/) sets 25 minute time increments, found to be helpful for ensuring bouts of productivity bracketed by short breaks. 
 
-- The [Freedom](https://freedom.to/) allows you to block websites that might be distracting or allow you to give in to procrastination. 
+- [Freedom](https://freedom.to/) allows you to block websites that might be distracting or allow you to give in to procrastination. 
 
 - [Trello Project Management](https://trello.com/) helps to plan projects in the long- and short-term, good visualization tool. [Todoist](https://todoist.com/) is great for checklists. Both allow you to set deadlines for yourself. 
 
@@ -24,7 +24,9 @@ Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022.
 
 - [NVivo](https://libguides.northwestern.edu/c.php?g=114906&p=6872685) licenses are available with the department, as some of you will presumably do qualitative work as well. 
 
-- [Library Guides](https://libguides.northwestern.edu/c.php?g=114906&p=747533) regarding different software packages and how the university can support your learning of these tools. 
+- [NU Software Catalog](https://www.it.northwestern.edu/service-catalog/device-management/software/available-software.html) includes all the software that the university provides to students. If there is something you need that is not on this list or only offered at a discounted price, you can also always talk to Department Admin about further options. 
+
+- [NU Library Guides](https://libguides.northwestern.edu/data2) regarding different software packages and how the university can support your learning of these tools. 
 
 - [OneDrive](https://www.it.northwestern.edu/file-sharing/onedrive.html) is the cloud storage of choice for Northwestern. There are degrees of integration you can have with your desktop. If this isn't your favorite interface for remote storage (it's not great), then try Dropbox. 
 
