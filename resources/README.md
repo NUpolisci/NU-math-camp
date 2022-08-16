@@ -1,6 +1,6 @@
 # Grad School Resources 
 
-Originally compiled by Sarah Moore in March 2022. Last updated March 8, 2022. 
+Originally compiled by Sarah Moore in March 2022. Last updated August 16, 2022. 
 
 **Tools to make life easier** 
 
