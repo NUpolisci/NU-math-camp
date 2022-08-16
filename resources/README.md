@@ -30,7 +30,7 @@ Originally compiled by Sarah Moore in March 2022. Last updated August 16, 2022.
 
 - [OneDrive](https://www.it.northwestern.edu/file-sharing/onedrive.html) is the cloud storage of choice for Northwestern. There are degrees of integration you can have with your desktop. If this isn't your favorite interface for remote storage (it's not great), then try Dropbox. 
 
-- [Overleaf](www.overleaf.com), [TeXstudio](https://www.texstudio.org/), [RStudio](https://www.rstudio.com/) or any other TeX editor for sophisticated document formatting. 
+- [Overleaf](https://www.overleaf.com/), [TeXstudio](https://www.texstudio.org/), [RStudio](https://www.rstudio.com/) or any other TeX editor for sophisticated document formatting. 
 
 - [Grammarly](https://www.grammarly.com/) is good to gauge where your writing is at regarding readability, tone, and other important markers of "good" writing. 
 
