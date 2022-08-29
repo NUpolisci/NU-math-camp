@@ -9,7 +9,7 @@ Each succesive days' materials will be housed in the following links:
 | | AM content            | PM Content        |  Materials | Problem Sets | Due date      |
 |---| -------------         | -------------     | ------------- | ------------- | ------------- |
 Day 1 | **Intro** | Intro to Software | [slides](slides/day1-intro.pdf), [ch 1 & 2]()| | 
-Day 2 | **Scientific Method, Notation, Logic, Sets** | LaTeX & Overleaf  | [slides](slides/day2-am.pdf), [ch 3 & 4]()| Pset 1: [TeX](updated-pset-1.tex)/[.Rmd](updated-pset-1-RMD.Rmd)/[PDF](updated-pset-1.pdf)|Day 4| 
+Day 2 | **Foundations of Quantitative Social Science** | LaTeX & Overleaf  | [slides](slides/day2-am.pdf), [ch 3 & 4]()| Pset 1: [TeX](updated-pset-1.tex)/[.Rmd](updated-pset-1-RMD.Rmd)/[PDF](updated-pset-1.pdf)|Day 4| 
 Day 3 | **Algebra review** | R: Data Structures, Syntax, & Functions | [slides](slides/day4-am.pdf), ch       ||
 Day 4 | **Matrices and Pre-Calculus** | R: `tidyverse` 1     | [slides](slides/day5-am.pdf), ch  | Pset 2: [TeX](updated-pset-2.tex)/[.Rmd](updated-pset-2-RMD.Rmd)/[PDF](updated-pset-2.pdf)| Day 6|
 Day 5 | **Calculus I: Derivatives**  | R: `tidyverse` 2  | [slides](slides/day6-am.pdf), ch  || 
