@@ -15,7 +15,7 @@ Day 4 | **Matrices and Pre-Calculus** | R: `tidyverse` 1     | [slides](slides/d
 Day 5 | **Calculus I: Derivatives**  | R: `tidyverse` 2  | [slides](slides/day6-am.pdf), ch  || 
 Day 6 | **Calculus II: Integrals** | R: Workflow       | [slides](slides/day8-am.pdf), ch | Pset 3: [TeX](updated-pset-3.tex)/[.Rmd](updated-pset-3-RMD.Rmd)/[PDF](updated-pset-3.pdf)| Day 8 |
 Day 7 | **Probability**  | R: Troubleshooting & Alternatives | [slides](slides/day9-am.pdf), ch ||
-Day 8| **Review** | Review/wrap up | [slides](slides/day10-am.pdf), ch | Pset 4: [TeX](updated-pset-4.tex)/[.Rmd](updated-pset-4-RMD.Rmd)/[PDF](updated-pset-4.pdf)| Class Start Thursday|
+Day 8| **Review** | | [slides](slides/day10-am.pdf), ch | Pset 4: [TeX](updated-pset-4.tex)/[.Rmd](updated-pset-4-RMD.Rmd)/[PDF](updated-pset-4.pdf)| Class Start Thursday|
 
 [Supplementary Material](supplementary_material/README.md) 
 
