@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 7 Working with Existing Data + Making Homebases for R | Computational Programming for the Social Sciences</title>
+<meta name="author" content="Sarah Moore and Jean Clipperton">
+<meta name="description" content="In this chapter: Setting a working directory Importing data and understanding different file types Developing a document workflow and conventions for (re)saving data It is very likely that you...">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
+<meta property="og:title" content="Chapter 7 Working with Existing Data + Making Homebases for R | Computational Programming for the Social Sciences">
+<meta property="og:type" content="book">
+<meta property="og:description" content="In this chapter: Setting a working directory Importing data and understanding different file types Developing a document workflow and conventions for (re)saving data It is very likely that you...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 7 Working with Existing Data + Making Homebases for R | Computational Programming for the Social Sciences">
+<meta name="twitter:description" content="In this chapter: Setting a working directory Importing data and understanding different file types Developing a document workflow and conventions for (re)saving data It is very likely that you...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Computational Programming for the Social Sciences</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Welcome!</a></li>
+<li><a class="" href="ch2.html"><span class="header-section-number">2</span> Getting Started</a></li>
+<li><a class="" href="ch3.html"><span class="header-section-number">3</span> Documentation with LATEX</a></li>
+<li><a class="" href="ch4.html"><span class="header-section-number">4</span> Integrating R with Github</a></li>
+<li><a class="" href="ch5.html"><span class="header-section-number">5</span> Basic R Syntax, Data Types, and Structures</a></li>
+<li><a class="" href="ch6.html"><span class="header-section-number">6</span> Functions, Packages, and Doing Stuff with Data</a></li>
+<li><a class="active" href="ch7.html"><span class="header-section-number">7</span> Working with Existing Data + Making Homebases for R</a></li>
+<li><a class="" href="ch8.html"><span class="header-section-number">8</span> Beyond Base R: Exploring the tidyverse</a></li>
+<li><a class="" href="ch9.html"><span class="header-section-number">9</span> Data Visualization and ggplot2</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch7" class="section level1" number="7">
+<h1>
+<span class="header-section-number">7</span> Working with Existing Data + Making Homebases for R<a class="anchor" aria-label="anchor" href="#ch7"><i class="fas fa-link"></i></a>
+</h1>
+<p>In this chapter:</p>
+<ul>
+<li><p>Setting a working directory</p></li>
+<li><p>Importing data and understanding different file types</p></li>
+<li><p>Developing a document workflow and conventions for (re)saving data</p></li>
+</ul>
+<p>It is very likely that you will not create every dataset that you work with in R from scratch. In almost all cases, you will want to interact with your home computer or Cloud environments to import data into R. Doing so requires that you tell R what directory you want to pull from and that you have at least a basic understanding of what type of data file you are working with to be able to properly import the file. Furthermore, once you have manipulated data, run your analyses, or created data visualizations, you will want to save these created objects in recognizable and safe places and according to naming conventions that make sense. This chapter will show you how to do these things, as well as discuss some of the key issues to consider around file management.</p>
+<div id="the-working-directory-and-basic-directory-commands" class="section level2" number="7.1">
+<h2>
+<span class="header-section-number">7.1</span> The Working Directory and Basic Directory Commands<a class="anchor" aria-label="anchor" href="#the-working-directory-and-basic-directory-commands"><i class="fas fa-link"></i></a>
+</h2>
+<p>When working in R, your computer has the ability to pull and save files based on file pathways that you have indicated in your coding environment. The call <code><a href="https://rdrr.io/r/base/getwd.html">getwd()</a></code> will tell you where exactly this is, however you can also check this (and change it) by going to the RStudio toolbar and selecting <em>Preferences</em>. As you can see in the evaluation of the below code, the current working directory is in a file pathway related to this project. What is your base working directory when you try to run this code?</p>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># print your current working directory </span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/getwd.html">getwd</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<pre><code>## [1] "/Users/sarahmoore/OneDrive - Northwestern University/Teaching/2022_MathCamp/NU-math-camp/403-R_Text"</code></pre>
+<p>While you could change your working directory in the Preferences menu, the call <code><a href="https://rdrr.io/r/base/getwd.html">setwd()</a></code> offers you more flexibility to change the working directory as needed. The set-up for <code><a href="https://rdrr.io/r/base/getwd.html">setwd()</a></code> will differ on the basis of your operating system, as MacOS and Windows write file paths a little differently. However, the general call is the same in both cases and very straightforward. You merely write out the file path corresponding to the directory that you would like to work in and run the call as you would any other R function. The command <code><a href="https://rdrr.io/r/base/getwd.html">setwd()</a></code> will maintain that working directory until you close that R session or specify otherwise. Unless you have created an R project, which we cover in more detail below, it is best practice to begin every R script with defining your working directory with the <code><a href="https://rdrr.io/r/base/getwd.html">setwd()</a></code> call and then double checking that the pathway is correct with <code><a href="https://rdrr.io/r/base/getwd.html">getwd()</a></code>. It’s also best practice to double check your file path anytime you try to change the directory in the middle of a script.</p>
+<div id="special-case-r-projects" class="section level3" number="7.1.1">
+<h3>
+<span class="header-section-number">7.1.1</span> Special Case: R Projects<a class="anchor" aria-label="anchor" href="#special-case-r-projects"><i class="fas fa-link"></i></a>
+</h3>
+<p>RStudio has additional features which allow for some more sophisticated project management and directory tools. Specifically, you may have seen the option to <em>Create a project</em> or simply <em>File <span class="math inline">\(\rightarrow\)</span> New Project…</em> in the File drop-down menu. An R project is a means to create a project directory within an existing local directory on your computer that automatically sets the working directory to the chosen project home folder. For example, when authoring this textbook, we created an R project within an existing folder for Math Camp and Political Science 403 so that all of our classroom documents and corresponding data would be readily available for compilation into the project. Another example might be if you already have an existing dataset on your computer and you would like to run some analysis on data in that dataset. You can choose to create an R project in the same folder as the existing dataset so that you both import data, save code, and export any data or results into the same folder more seamlessly than otherwise.</p>
+<p>An R project is a pretty attractive option, but what are some cases that it might not be a great idea? R projects probably don’t make sense if your data files are all coming from various sources outside of a single path (this sounds messy…) or if you are working in a shared folder where you don’t yet want to make your code accessible to others. That being said, R projects are really flexible and allow for multiple source files (such as scripts or .Rmd files) all in one easy to locate place, so long as you remember where your original R project is stored. So all that to say, if you know that you will be working with some data and a script more than once, it might be advantageous to just make an R project out of it.</p>
+</div>
+</div>
+<div id="importing-data-of-all-kinds" class="section level2" number="7.2">
+<h2>
+<span class="header-section-number">7.2</span> Importing Data of All Kinds<a class="anchor" aria-label="anchor" href="#importing-data-of-all-kinds"><i class="fas fa-link"></i></a>
+</h2>
+<p>You are most likely used to dealing with data in the form of tables, particularly in Excel with the file extension .xlsx or .csv. However, in the world of data analysis these are only two of the many types of files that you might encounter. Others may include files from other statistical programs, such as .sas, .sav, or .dta from SAS, SPSS, and STATA respectively. Each of these proprietary data file types cannot be merely opened on your computer unless you find some way to read them in through a program like R. There are various ways to do this, each of them having their own advantages and we’ll go over some of your options here.</p>
+<div id="read-as-.txt" class="section level3" number="7.2.1">
+<h3>
+<span class="header-section-number">7.2.1</span> Read as <code>.txt</code><a class="anchor" aria-label="anchor" href="#read-as-.txt"><i class="fas fa-link"></i></a>
+</h3>
+<p>Information in this section was derived from <a href="https://bookdown.org/ndphillips/YaRrr/excel-spss-and-other-data-files.html">YarRrr! The Pirate’s Guide to R</a></p>
+<p>File types from other statistical analysis programs often contain variable and value labels or other meta-data that help the data to make sense. While this information is great, it might also make the data clunky or not load across platforms properly. Therefore, the most straightforward way to load in data from alternative programs is to treat the file like a <code>.txt</code> file.</p>
+</div>
+<div id="using-other-packages-to-load-in-data" class="section level3" number="7.2.2">
+<h3>
+<span class="header-section-number">7.2.2</span> Using other packages to load in data<a class="anchor" aria-label="anchor" href="#using-other-packages-to-load-in-data"><i class="fas fa-link"></i></a>
+</h3>
+<p>If you would like to retain some of the meta-data that files from programs like STATA contain, there are other options beyond the <code><a href="https://rdrr.io/r/utils/read.table.html">read.table()</a></code> function. The packages <code>haven</code>, <code>readr</code>, <code>rio</code>, or <code>readxl</code> are some examples of some of the packages that might help with loading in data. Visit <a href="https://www.computerworld.com/article/2921176/great-r-packages-for-data-import-wrangling-visualization.html">this article</a> from <strong>ComputerWorld</strong> for a great rundown of some other packages that might be helpful toward this end.</p>
+</div>
+</div>
+<div id="workflow-and-data-management-conventions" class="section level2" number="7.3">
+<h2>
+<span class="header-section-number">7.3</span> Workflow and Data Management Conventions<a class="anchor" aria-label="anchor" href="#workflow-and-data-management-conventions"><i class="fas fa-link"></i></a>
+</h2>
+<p>Reliably saving data and R scripts necessitates that you come up with a transparent management system to save and update your files. Just like when we advised that you should comment on your R script so that your future self remembers what you are doing, you should name and manage your files such that your future self can distinguish certain file iterations. As you continue to add certain skills to your toolbox and amass more files, naming different subsets from totally different source datasets <code>dat</code> or <code>data1</code> is not helpful so that you or other people can meaningfully access your files at a later time. Instead, as you start to update and save files that you have tinkered with, here are some considerations that you should have in naming files for data storage:</p>
+<ol style="list-style-type: decimal">
+<li><p>Date: Beginning your file name with a date is not necessary, but it does make things easier as naming with dates solves two related problems. First, files with later dates can already be identified as the latest versions on the basis of the date. Second, when you are actually searching for files, you can order your files on the basis of their name. Doing so, you can identify which files are the most recently updated. Sometimes this is more advantageous than naming version numbered because little changes don’t necessitate version numbering updates or the numbering process can become convoluted.</p></li>
+<li><p>Clear, concise names that identify the project and data type: Names like <code>data_2020.dta</code> are not helpful if you had multiple projects that happened in 2020. Instead, name your files along the lines of the type of data you’re storing (e.g. survey, election), pertinent location or entity (e.g. Colombia, Mississippi, UN), and the relevant time horizon of the data (e.g. 2016 election, panel, post-2001).</p></li>
+<li><p>Skip the strange characters and spaces in file names: Characters aside from the underscore, hyphen or dash, and plus sign are not widely savable by different data management systems and cloud services. So just don’t use them! Instead of spaces between words, opt for _ or -.</p></li>
+<li><p>Version control: Often the first, second, or third time that you update something will certainly not always be the last. And you will find that not all potential co-authors or colleagues are managing version control with Github. Therefore, creating naming conventions that identify the version of your data is necessary. Ideally, your naming conventions will also be accompanied by a .txt file or Word document that detail the updates made to each version if you are not also working in Github, along with comments in the R code that detail certain changes. Version control can also be further managed by the date features in your naming covered in (1).</p></li>
+</ol>
+<p>These points cover the basic of some considerations you will make when naming files. Whatever the case, pick a system and stick to it. Then, remember to implement it EVERY TIME that you save a new file or updated an existing one.</p>
+<p>Given these pointers, can you identify which of the following file names are suitable for proper data management and those that need some work?</p>
+<ul>
+<li><p>2018 Survey from Afrobarometer.csv(download)</p></li>
+<li><p>2021_july21_media_survey_PANEL.csv</p></li>
+<li><p>22-08-31_ColombiaStateCapacity_Project2020v2.dta</p></li>
+<li><p>ANES_2018_v3.dta</p></li>
+<li><p>2022-subset: anes.csv</p></li>
+</ul>
+<div id="codebooks" class="section level3" number="7.3.1">
+<h3>
+<span class="header-section-number">7.3.1</span> Codebooks!!!<a class="anchor" aria-label="anchor" href="#codebooks"><i class="fas fa-link"></i></a>
+</h3>
+<p>One of the most important features of data are not even the data themselves. It’s the codebooks! Codebooks are additional documents that <em>should always</em> be authored alongside a dataset. Good codebooks tell the reader about each variable: the variable’s name, its labels, how the variable is measured, the variable type , and what the values of the variable mean. Without this information, data are really meaningless and not interpretable. Some codebooks will even provide frequency tables of variable values or summary statistics for each variable.</p>
+<p>When you are downloading data that are not your own, it is always best practice to download the codebook alongside the data and then store it in the same location. Even more importantly, if you find yourself in the position that you are authoring a dataset of your own, always ensure that you write a codebook alongside it too– even if you are the only person that will ever use the data! Making your data accessible and interpretable is important for data management and transparency in scientific decision-making, two related principles of modern scientific discovery that will be important both in and out of academia.</p>
+<p>If you are more interested in this discussion, especially with regard to workflow we encourage you to check out <a href="https://aeturrell.github.io/coding-for-economists/wrkflow-rap.html#introduction">Coding for Economists by Arthur Turrell</a>. The linked section talks about workflows and tools for transparent and reproducible analyses.</p>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="ch6.html"><span class="header-section-number">6</span> Functions, Packages, and Doing Stuff with Data</a></div>
+<div class="next"><a href="ch8.html"><span class="header-section-number">8</span> Beyond Base R: Exploring the tidyverse</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#ch7"><span class="header-section-number">7</span> Working with Existing Data + Making Homebases for R</a></li>
+<li>
+<a class="nav-link" href="#the-working-directory-and-basic-directory-commands"><span class="header-section-number">7.1</span> The Working Directory and Basic Directory Commands</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#special-case-r-projects"><span class="header-section-number">7.1.1</span> Special Case: R Projects</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#importing-data-of-all-kinds"><span class="header-section-number">7.2</span> Importing Data of All Kinds</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#read-as-.txt"><span class="header-section-number">7.2.1</span> Read as .txt</a></li>
+<li><a class="nav-link" href="#using-other-packages-to-load-in-data"><span class="header-section-number">7.2.2</span> Using other packages to load in data</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#workflow-and-data-management-conventions"><span class="header-section-number">7.3</span> Workflow and Data Management Conventions</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#codebooks"><span class="header-section-number">7.3.1</span> Codebooks!!!</a></li></ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Computational Programming for the Social Sciences</strong>" was written by Sarah Moore and Jean Clipperton. It was last built on 2022-08-29.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

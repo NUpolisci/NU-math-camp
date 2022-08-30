@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 3 Documentation with LATEX | Computational Programming for the Social Sciences</title>
+<meta name="author" content="Sarah Moore and Jean Clipperton">
+<meta name="description" content="In this chapter: What is LATEX and why use it? Let’s make this simple: Using Overleaf to create TEX-style documents Working with templates Conventions in LATEX Portions of this chapter were...">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
+<meta property="og:title" content="Chapter 3 Documentation with LATEX | Computational Programming for the Social Sciences">
+<meta property="og:type" content="book">
+<meta property="og:description" content="In this chapter: What is LATEX and why use it? Let’s make this simple: Using Overleaf to create TEX-style documents Working with templates Conventions in LATEX Portions of this chapter were...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 3 Documentation with LATEX | Computational Programming for the Social Sciences">
+<meta name="twitter:description" content="In this chapter: What is LATEX and why use it? Let’s make this simple: Using Overleaf to create TEX-style documents Working with templates Conventions in LATEX Portions of this chapter were...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Computational Programming for the Social Sciences</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Welcome!</a></li>
+<li><a class="" href="ch2.html"><span class="header-section-number">2</span> Getting Started</a></li>
+<li><a class="active" href="ch3.html"><span class="header-section-number">3</span> Documentation with LATEX</a></li>
+<li><a class="" href="ch4.html"><span class="header-section-number">4</span> Integrating R with Github</a></li>
+<li><a class="" href="ch5.html"><span class="header-section-number">5</span> Basic R Syntax, Data Types, and Structures</a></li>
+<li><a class="" href="ch6.html"><span class="header-section-number">6</span> Functions, Packages, and Doing Stuff with Data</a></li>
+<li><a class="" href="ch7.html"><span class="header-section-number">7</span> Working with Existing Data + Making Homebases for R</a></li>
+<li><a class="" href="ch8.html"><span class="header-section-number">8</span> Beyond Base R: Exploring the tidyverse</a></li>
+<li><a class="" href="ch9.html"><span class="header-section-number">9</span> Data Visualization and ggplot2</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch3" class="section level1" number="3">
+<h1>
+<span class="header-section-number">3</span> Documentation with <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span><a class="anchor" aria-label="anchor" href="#ch3"><i class="fas fa-link"></i></a>
+</h1>
+<p>In this chapter:</p>
+<ul>
+<li><p>What is <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> and why use it?</p></li>
+<li><p>Let’s make this simple: Using Overleaf to create <span class="latex">T<sub>E</sub>X</span>-style documents</p></li>
+<li><p>Working with templates</p></li>
+<li><p>Conventions in <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span></p></li>
+</ul>
+<p>Portions of this chapter were derived from <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Writing_your_first_piece_of_LaTeX">Learn LaTeX in 30 minutes</a> available on Overleaf–please check out this resource!</p>
+<div id="latex-its-pronounced-lah-tekh-or-lay-tekh" class="section level2" number="3.1">
+<h2>
+<span class="header-section-number">3.1</span> <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span>: It’s pronounced LAH-tekh or LAY-tekh<a class="anchor" aria-label="anchor" href="#latex-its-pronounced-lah-tekh-or-lay-tekh"><i class="fas fa-link"></i></a>
+</h2>
+<p><span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> is a document preparation program that allows you to easily develop documents in plain text that are later compiled into PDF form. Most word processors follow a “What You See Is What You Get” preparation– the page you see typed is the final product. <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> instead uses an underlying computational software to turn the typed plain text into a user-specified style output that can easily be changed to conform to your desired specifications, or those of academic journals. With <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span>, formatting tables, writing equations, and auto-formatting section and figure labels becomes a breeze. What this all means will become more clear as we explore further.</p>
+<p>There are many distributions that will help you navigate the creation of <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> documents, including even some features in R. However, online programs are becoming more useful and transportable means to navigate the <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> environment. So, instead of asking you to download any software, we’ll instead direct you to go to <a href="https://www.overleaf.com/">Overleaf</a>, an online TeX editor that is also a collaborative environment. Overleaf makes it easy to see document history, discover templates for specific document types (e.g. CVs or posters) or journal submission requirements, and access your projects from many different machines without having to download <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> on each of them.</p>
+<p>Throughout this course, and likely others, you will use <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> to format and compile your homework assignments. In many cases, your homework problems are already typeset into a <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> document, all that you will be required to do is format the answers in the same document and compile the document (i.e. convert the document into a PDF) to turn in via email or on Canvas.</p>
+<p>In the case that you would instead like to explore a software option for <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> on your home computer, you can check out <a href="https://yihui.org/tinytex/">TinyTeX</a>.</p>
+<div id="getting-set-up-on-overleaf" class="section level3" number="3.1.1">
+<h3>
+<span class="header-section-number">3.1.1</span> Getting Set Up on Overleaf<a class="anchor" aria-label="anchor" href="#getting-set-up-on-overleaf"><i class="fas fa-link"></i></a>
+</h3>
+<p>To get started, you will need to create an <a href="https://www.overleaf.com/register">Overleaf account</a>. This is straightforward. A premium plan is likely not necessary right now, though you might consider looking into the more advanced plans later. The premium student plan is available for only $8/month.</p>
+<p>Once you have created your account and logged in, you will encounter your main page. One day it will be filled with all of your works in progress, but for today it should look something like this:</p>
+<div class="figure">
+<img src="overleaf-demo.png" style="width:90.0%" alt=""><p class="caption">Overleaf Demo</p>
+</div>
+<p>As you can see, this site is pretty easy to navigate and we’ll leave it up to you to explore a little bit.</p>
+</div>
+</div>
+<div id="your-first-latex-overleaf-project" class="section level2" number="3.2">
+<h2>
+<span class="header-section-number">3.2</span> Your First <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> Overleaf Project<a class="anchor" aria-label="anchor" href="#your-first-latex-overleaf-project"><i class="fas fa-link"></i></a>
+</h2>
+<p>To get started, choose the <strong>New Project</strong> button in green on the left-hand side of the page. In the drop-down menu, choose “Example Project” and name the project something like “2022_Tutorial_LASTNAME”.</p>
+<p>Once you select <strong>Create</strong>, the new project will open. On this project page, the far left-hand side is a file tree of all the images, .tex files, or other necessary components needed to compile the final document (this will make sense, we promise!!).</p>
+<p>The middle pane is your plain text file. At start-up, this file will be named “main.tex”– all plain text files that you want to render in a pdf end in “.tex”. The “main.tex” file is where you will want to input all of the text that you wish to publish for this particular document.</p>
+<div class="figure">
+<img src="overleaf-main.png" style="width:100.0%" alt=""><p class="caption">Overleaf Main .tex File</p>
+</div>
+<p>The right-hand pane is a preview of your rendered document given the formatting specifications given in “main.tex”.</p>
+<div class="figure">
+<img src="overleaf-final.png" style="width:100.0%" alt=""><p class="caption">Overleaf Compiled File</p>
+</div>
+<p>This example document provided by Overleaf will go a long way in showing you the intricacies of preparing a TeX-style document. Here, we’ll go over some of the main points to ensure you can at least turn in the first few homework assignments without an issue.</p>
+</div>
+<div id="the-anatomy-of-a-tex-style-document" class="section level2" number="3.3">
+<h2>
+<span class="header-section-number">3.3</span> The Anatomy of a TeX-style document<a class="anchor" aria-label="anchor" href="#the-anatomy-of-a-tex-style-document"><i class="fas fa-link"></i></a>
+</h2>
+<p>This section will assume that you are still viewing the same tutorial document accessed in the previous section. Here we will discuss a bit about the composite elements of a TeX document required to successfully compile. A compiled TeX file is one that made the journey from plain file to PDF rendered document.</p>
+<p>The beginning of every .tex file will start with a <strong>preamble</strong>. The preamble is the section where you specify the document class, details you would like to implement throughout the document, and define the parameters of elements that might appear in the text. The preamble is also important for indicating which packages that you would like LaTeX to use to create certain features of your text. Packages are simply additional code components developed to make certain features more feasible without requiring that users code all the specifications themselves. Different packages are useful for modifying the design and layout of things like tables or sections with multiple column.</p>
+<p>In the tutorial .tex document on Overleaf, the following text composes the preamble, which is not published text. After the preamble, the code <code>\begin{document}</code> begins the section of published text.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="ch3.html#cb2-1" aria-hidden="true" tabindex="-1"></a>\documentclass{article}</span>
+<span id="cb2-2"><a href="ch3.html#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="ch3.html#cb2-3" aria-hidden="true" tabindex="-1"></a>% Language setting</span>
+<span id="cb2-4"><a href="ch3.html#cb2-4" aria-hidden="true" tabindex="-1"></a>% Replace <span class="st">`</span><span class="at">english' with e.g. </span><span class="st">`</span>spanish<span class="st">' to change the document language</span></span>
+<span id="cb2-5"><a href="ch3.html#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="st">\usepackage[english]{babel}</span></span>
+<span id="cb2-6"><a href="ch3.html#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="ch3.html#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="st">% Set page size and margins</span></span>
+<span id="cb2-8"><a href="ch3.html#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="st">% Replace `letterpaper'</span> with <span class="st">`</span><span class="at">a4paper' for UK/EU standard size</span></span>
+<span id="cb2-9"><a href="ch3.html#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}</span></span>
+<span id="cb2-10"><a href="ch3.html#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="ch3.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">% Useful packages</span></span>
+<span id="cb2-12"><a href="ch3.html#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="at">\usepackage{amsmath}</span></span>
+<span id="cb2-13"><a href="ch3.html#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="at">\usepackage{graphicx}</span></span>
+<span id="cb2-14"><a href="ch3.html#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="at">\usepackage[colorlinks=true, allcolors=blue]{hyperref}</span></span>
+<span id="cb2-15"><a href="ch3.html#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="ch3.html#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="sc">\t</span><span class="at">itle{Your Paper}</span></span>
+<span id="cb2-17"><a href="ch3.html#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="sc">\a</span><span class="at">uthor{You}</span></span>
+<span id="cb2-18"><a href="ch3.html#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="ch3.html#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="sc">\b</span><span class="at">egin{document}</span></span></code></pre></div>
+<p>Two elements of this preamble are absolutely necessary in all cases. The codes <code>\documentclass{}</code> and <code>\begin{document}</code> are required of all documents. Additionally, <code>\end{document}</code> is always required at the end of the text to ensure that the document compiles. The remaining packages are loaded in via the command <code>\usepackage{}</code>. We won’t cover anything else related to class=“latex”&gt;L<sup>A</sup>T<sub>E</sub>X packages here, as there are a multitude of them and each has their own documentation</p>
+<p>The text between the commands <code>\begin{document}</code> and <code>\end{document}</code> is the <strong>body</strong>. The body of the text is exactly as you specify it to be! While this is where you will type all of the relevant text you want to typeset, you will also see the body littered with <em>commands</em> and <em>comments.</em> Throughout a .tex file a command will always begin with a back slash <code>\</code> followed by the chosen command. To ensure that the command runs properly, you will have to ensure that the accompanying package is included in the preamble. For example, if I wanted to typeset a table with a caption I would specify the command <code>\begin{table}</code> before the table and formatting text and specify the <code>\end{table}</code> at the end, the <code>\caption{}</code> command falling somewhere between.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="ch3.html#cb3-1" aria-hidden="true" tabindex="-1"></a>\begin{table} </span>
+<span id="cb3-2"><a href="ch3.html#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="ch3.html#cb3-3" aria-hidden="true" tabindex="-1"></a>\caption{Here is a table about interesting activities <span class="cf">in</span> Chicago}</span>
+<span id="cb3-4"><a href="ch3.html#cb3-4" aria-hidden="true" tabindex="-1"></a>\begin{tabularx}{<span class="sc">|</span>c<span class="sc">|</span>c<span class="sc">|</span>}</span>
+<span id="cb3-5"><a href="ch3.html#cb3-5" aria-hidden="true" tabindex="-1"></a>\hline </span>
+<span id="cb3-6"><a href="ch3.html#cb3-6" aria-hidden="true" tabindex="-1"></a>Actvity <span class="sc">&amp;</span> Neighborhood \\ </span>
+<span id="cb3-7"><a href="ch3.html#cb3-7" aria-hidden="true" tabindex="-1"></a>\hline </span>
+<span id="cb3-8"><a href="ch3.html#cb3-8" aria-hidden="true" tabindex="-1"></a>WhirlyBall <span class="sc">&amp;</span> Logan Square \\</span>
+<span id="cb3-9"><a href="ch3.html#cb3-9" aria-hidden="true" tabindex="-1"></a>\hline </span>
+<span id="cb3-10"><a href="ch3.html#cb3-10" aria-hidden="true" tabindex="-1"></a>Nature Conservatory <span class="sc">&amp;</span> Lincoln Park or Garfield Park \\</span>
+<span id="cb3-11"><a href="ch3.html#cb3-11" aria-hidden="true" tabindex="-1"></a>\hline </span>
+<span id="cb3-12"><a href="ch3.html#cb3-12" aria-hidden="true" tabindex="-1"></a>\end{tabularx}</span>
+<span id="cb3-13"><a href="ch3.html#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="ch3.html#cb3-14" aria-hidden="true" tabindex="-1"></a>\end{table}</span></code></pre></div>
+<p>You might also want to comment on your code, or put notes as to what certain packages do as in the preamble above. To do so, you simply begin the comment text with a percentage symbol <code>%</code>. The comment can begin anywhere in the text that you want and is stopped when a new line of text is started (i.e. you must hit <em>Return</em> to end the comment line).</p>
+<div id="exercise" class="section level3" number="3.3.1">
+<h3>
+<span class="header-section-number">3.3.1</span> Exercise<a class="anchor" aria-label="anchor" href="#exercise"><i class="fas fa-link"></i></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li><p>Change the preamble text in the tutorial document to reflect your authorship and a chosen title. See the commands for <code>\title{}</code> and <code>\author{}</code>.</p></li>
+<li><p>Edit the abstract text to describe a few goals you have for this class or your first year of grad school.</p></li>
+<li><p>Recompile the document and take a look at the right-hand pane of Overleaf. Does the newly compiled document reflect your changes? Or do you get an error?</p></li>
+</ol>
+</div>
+</div>
+<div id="adding-dimension-to-a-base-document" class="section level2" number="3.4">
+<h2>
+<span class="header-section-number">3.4</span> Adding dimension to a base document<a class="anchor" aria-label="anchor" href="#adding-dimension-to-a-base-document"><i class="fas fa-link"></i></a>
+</h2>
+<p>Given the above section, you should be able to make sense of the basic elements necessary to compile a TeX document into a PDF. Beyond these necessities, there are a lot of ways to play around with the text to make it more readable and interesting, or to input relevant figures to the text. The tutorial document walks you through many of these issues, such as creating sections, adding figures and tables, lists, and equations. You should walk through each of these sections to ensure that you have an even better grasp of &lt;class=“latex”&gt;L<sup>A</sup>T<sub>E</sub>X. For now, skip the section on citations and references (2.9), but you will <em>definitely</em> want to come back to this later given Overleaf’s integration with Zotero and Mendeley.</p>
+<p>There are a couple of things that the Overleaf Tutorial did leave out about altering text that are worth mentioning here.</p>
+<ol style="list-style-type: decimal">
+<li><p>Bold or italic text is included via the commands <code>\textbf{*text here*}</code> and <code>\textit{*text here*}</code>, respectively. Further examples are available regarding text features like that in <a href="https://www.overleaf.com/learn/latex/Bold%2C_italics_and_underlining">this Overleaf documentation</a>.</p></li>
+<li><p>Moving from typical text processing software to TeX document preparation can be difficult because you can’t always coerce the spacing that you want. Skipping lines does not equate to creating spacing in the resulting PDF. Instead we have to coerce spacing via different commands. To coerce vertical space, you can use the command <code>\vspace{}</code> with the desired amount of spacing and a unit of measurement. The same can be done to tab spacing, or create horizontal space, via the command <code>\hspace{}</code>. You can also coerce a line break with <code>\\</code> at the point where you desire the line break.</p></li>
+<li><p>Related to (2), paragraph indenting is not as simple as tabbing as in Word or another word processor. Instead, you can specify this via a command in the document related to indentation for the entire document <code>\setlength{\parindent}{}</code>. The argument for this command should specify the length of the desired indent in the points or <code>pt</code>. More <a href="https://www.overleaf.com/learn/latex/Paragraphs_and_new_lines#Paragraph_indentation">here</a>.</p></li>
+</ol>
+<ol start="4" style="list-style-type: decimal">
+<li>In an equation environment, you cannot use regular text without breaking the equation. If you want to use text in an equation environment without closing off the equation first, you can use the command <code>\text{}</code> with the desired regular text.</li>
+</ol>
+<div id="exercise-1" class="section level3" number="3.4.1">
+<h3>
+<span class="header-section-number">3.4.1</span> Exercise<a class="anchor" aria-label="anchor" href="#exercise-1"><i class="fas fa-link"></i></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li><p>Start a new section at the end of the tutorial document that you name <strong>Tutorial Workspace</strong>.</p></li>
+<li><p>In your new Tutorial Workspace, create a numbered list of skills that you would like to learn by the end of Math Camp. List them in the order of your priority.</p></li>
+<li><p>Using an unnumbered list environment, create a list of supplies that you think might make grad school better. They can be real or imaginary supplies.</p></li>
+<li><p>Create a paragraph where you describe the things that you have learned in Math Camp so far in <strong>bold</strong> characters. Write a couple sentences about what you are excited about in <em>italics</em>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="ch2.html"><span class="header-section-number">2</span> Getting Started</a></div>
+<div class="next"><a href="ch4.html"><span class="header-section-number">4</span> Integrating R with Github</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#ch3"><span class="header-section-number">3</span> Documentation with LATEX</a></li>
+<li>
+<a class="nav-link" href="#latex-its-pronounced-lah-tekh-or-lay-tekh"><span class="header-section-number">3.1</span> LATEX: It’s pronounced LAH-tekh or LAY-tekh</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#getting-set-up-on-overleaf"><span class="header-section-number">3.1.1</span> Getting Set Up on Overleaf</a></li></ul>
+</li>
+<li><a class="nav-link" href="#your-first-latex-overleaf-project"><span class="header-section-number">3.2</span> Your First LATEX Overleaf Project</a></li>
+<li>
+<a class="nav-link" href="#the-anatomy-of-a-tex-style-document"><span class="header-section-number">3.3</span> The Anatomy of a TeX-style document</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#exercise"><span class="header-section-number">3.3.1</span> Exercise</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#adding-dimension-to-a-base-document"><span class="header-section-number">3.4</span> Adding dimension to a base document</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#exercise-1"><span class="header-section-number">3.4.1</span> Exercise</a></li></ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Computational Programming for the Social Sciences</strong>" was written by Sarah Moore and Jean Clipperton. It was last built on 2022-08-29.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
