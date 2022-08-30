@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 2 Getting Started | Computational Programming for the Social Sciences</title>
+<meta name="author" content="Sarah Moore and Jean Clipperton">
+<meta name="description" content="In this chapter: Installing R and RStudio IDE Starting a script in RStudio Installing Python and Pycharm IDE Starting a new project and Python script in PyCharm  2.1 Installing and Familiarizing...">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
+<meta property="og:title" content="Chapter 2 Getting Started | Computational Programming for the Social Sciences">
+<meta property="og:type" content="book">
+<meta property="og:description" content="In this chapter: Installing R and RStudio IDE Starting a script in RStudio Installing Python and Pycharm IDE Starting a new project and Python script in PyCharm  2.1 Installing and Familiarizing...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 2 Getting Started | Computational Programming for the Social Sciences">
+<meta name="twitter:description" content="In this chapter: Installing R and RStudio IDE Starting a script in RStudio Installing Python and Pycharm IDE Starting a new project and Python script in PyCharm  2.1 Installing and Familiarizing...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Computational Programming for the Social Sciences</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Welcome!</a></li>
+<li><a class="active" href="ch2.html"><span class="header-section-number">2</span> Getting Started</a></li>
+<li><a class="" href="ch3.html"><span class="header-section-number">3</span> Documentation with LATEX</a></li>
+<li><a class="" href="ch4.html"><span class="header-section-number">4</span> Integrating R with Github</a></li>
+<li><a class="" href="ch5.html"><span class="header-section-number">5</span> Basic R Syntax, Data Types, and Structures</a></li>
+<li><a class="" href="ch6.html"><span class="header-section-number">6</span> Functions, Packages, and Doing Stuff with Data</a></li>
+<li><a class="" href="ch7.html"><span class="header-section-number">7</span> Working with Existing Data + Making Homebases for R</a></li>
+<li><a class="" href="ch8.html"><span class="header-section-number">8</span> Beyond Base R: Exploring the tidyverse</a></li>
+<li><a class="" href="ch9.html"><span class="header-section-number">9</span> Data Visualization and ggplot2</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch2" class="section level1" number="2">
+<h1>
+<span class="header-section-number">2</span> Getting Started<a class="anchor" aria-label="anchor" href="#ch2"><i class="fas fa-link"></i></a>
+</h1>
+<p>In this chapter:</p>
+<ul>
+<li><p>Installing R and RStudio IDE</p></li>
+<li><p>Starting a script in RStudio</p></li>
+<li><p>Installing Python and Pycharm IDE</p></li>
+<li><p>Starting a new project and Python script in PyCharm</p></li>
+</ul>
+<div id="installing-and-familiarizing-yourself-with-r-and-rstudio" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> Installing and Familiarizing Yourself with R and RStudio<a class="anchor" aria-label="anchor" href="#installing-and-familiarizing-yourself-with-r-and-rstudio"><i class="fas fa-link"></i></a>
+</h2>
+<p>Before working through any of the remaining text you will need to complete a couple of crucial steps. You need to ensure that you have access to all of the computational programs that the text will cover. First, we will cover the installation of R and the RStudio integrated development environment.</p>
+<div id="r" class="section level3" number="2.1.1">
+<h3>
+<span class="header-section-number">2.1.1</span> R<a class="anchor" aria-label="anchor" href="#r"><i class="fas fa-link"></i></a>
+</h3>
+<p>R is downloadable via the <a href="http://ftp.ussg.iu.edu/CRAN/">CRAN (Comprehensive R Archive Network)</a>. Aside from housing the R base distribution, CRAN also houses additional help files on the myriad packages that are available for download once you have access to the base system– more on that later! You will need to choose the R distribution download suitable for your operating system (i.e. macOS, Windows, or Linux). Go ahead and follow the instructions at the download link, ensure that the program downloads properly, and stored in a familiar location on your computer.</p>
+</div>
+<div id="rstudio" class="section level3" number="2.1.2">
+<h3>
+<span class="header-section-number">2.1.2</span> RStudio<a class="anchor" aria-label="anchor" href="#rstudio"><i class="fas fa-link"></i></a>
+</h3>
+<p>Next, visit the <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> site. RStudio is an environment that makes working in R and other programs a little more manageable. As you might have seen if you opened R after download, the base R platform is very simple. RStudio instead has a structured setup that allows for file and visualization management, cataloging package help files, and integration with additional programs in a single screen, all while still maintaining the basic functionality of R.</p>
+<p>When downloading RStudio, it is up to you whether you use the Server or Desktop version. Once you make your choice among these options, follow the download guidelines given your operating system and ensure again that the program stores in a familiar location on your computer.</p>
+</div>
+<div id="navigating-rstudio" class="section level3" number="2.1.3">
+<h3>
+<span class="header-section-number">2.1.3</span> Navigating RStudio<a class="anchor" aria-label="anchor" href="#navigating-rstudio"><i class="fas fa-link"></i></a>
+</h3>
+<p>Upon completing download of both R and RStudio, you may open up RStudio and browse around. You will see that the RStudio interface has 4 primary panes.</p>
+<div class="figure">
+<img src="Rstudio_panes_edited.png" style="width:90.0%" alt=""><p class="caption">Basic RStudio Pane Layout</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>In the <strong>SOURCE</strong> pane, you will write editable and savable scripts of code. RStudio further lets you operate with different types of source codes depending on the specific script file that you open. We will visit this later when we talk about RMarkdown and other potential uses of RStudio outside of analyses. All R source code has the file format “.r”.</li>
+</ol>
+<ul>
+<li><p>To run a line of code, you can either click the <strong>Run</strong> button at the top of the script pane, or press <code>Cmd/Ctrl + Enter</code> on your keyboard, while your cursor is on the line of code. To run chunks of your script, you can highlight the relevant code and then perform this same operation while the code text is highlighted. To run the full script you can simply press <code>Cmd/Ctrl + Shift + Enter</code>.</p></li>
+<li><p>Commenting on your code is one of the most important practices to develop early on in programming. To do so in R, simply begin a line of code with <code>#</code>. This will prevent the program from running whatever is written at that line in the script. Note that for every line of comments you will need to input a new <code>#</code>.</p></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Imagine here is where I am going to put information about this variable. </span></span>
+<span><span class="va">wars_1920</span> </span>
+<span></span>
+<span><span class="co"># And here is where I will explain why I ran this test. </span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/t.test.html">t.test</a></span><span class="op">(</span><span class="va">wars_1920</span><span class="op">~</span><span class="va">industrial</span><span class="op">)</span></span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li><p>The <strong>CONSOLE</strong> is the default location to display code output as well as previously run code. You can also run code in the console itself, however this is not advisable as earlier codes cannot be edited, and you cannot save an editable script as is possible in the source pane. Running code sometimes also takes a long time or is prone to bugs, while you run code a <strong>STOP</strong> sign will appear in the upper right hand corner of the console. Should you need to force stop code, pressing this stop button should discontinue the operation.</p></li>
+<li><p>The R <strong>ENVIRONMENT</strong> contains the names and details of all objects that have been programmed into R’s local memory. For example, let’s say you created a variable named <code>potatoes</code> that contained the names of all different types of potatoes. The environment pane would contain this variable name and some meta-data about how many different values were observed in the variable (e.g. the variable length). Or, let’s say you imported a dataset called <code>potato_information</code>. In the case of the dataset, the environment tab would provide information on the dimensions of the dataset given the number of total variables and observations. The R environment panel also has a few other tabs for history, connections, Git, and object viewing. These tabs are not immediately relevant and we will address them later in the text, as necessary.</p></li>
+</ol>
+<div class="figure">
+<img src="potatoes_data.png" style="width:90.0%" alt=""><p class="caption"><a href="https://en.wikipedia.org/wiki/List_of_potato_cultivars">Data Source</a></p>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>The <strong>FILES, PLOTS, PACKAGES, HELP</strong> is another multi-use pane, with tabs that will likely all be relevant to you. The <em>Files</em> tab will allow to open and interact with files that are available in your directories accessible from your local, git, or cloud workspace. The <em>Plots</em> tab displays all the image or graph outputs from the source code. The <em>Packages</em> tab lists all the installed packages, with checkboxes that indicate whether or not the package has been loaded for use. Finally, the <em>Help</em> tab allows access to all R package help files avaible on the CRAN. You can query a specific package’s help file in the search bar on the Help tab, or you can call for a specific help file in the source code or console. More on these topics will be addressed in the chapters to come.</li>
+</ol>
+<p>You can customize the available tabs. For example, you might integrate your Git account with RStudio, as we cover later. This and other custom features are available to play around with in the RStudio Preferences.</p>
+<p>To begin writing and editing code in R, you will click the blank page icon in the top left hand corner. When a drop down menu gives you a number of options to choose from, choose <strong>R Script</strong>. There are other options of new sheets that you can open and edit in R, but for now we will focus on the most basic script. From now and through the rest of this course, you should assume that R usage and coding activities will be moderated via RStudio, as opposed to the base R program.</p>
+</div>
+<div id="why-r" class="section level3" number="2.1.4">
+<h3>
+<span class="header-section-number">2.1.4</span> Why R?<a class="anchor" aria-label="anchor" href="#why-r"><i class="fas fa-link"></i></a>
+</h3>
+<p>Oftentimes, students ask <em>why</em> they will learn R rather than other potential statistical analysis programs, such as STATA. The easy and clearest answer is that R and it’s cognate applications are all open source. This means that R and any additional packages in R are free to use. In addition to being free, open source coding also means that the back-end development codes are open and free to reproduce and modify.</p>
+<p>R’s package diversity, data visualization capabilities, and relative age to other programs are also reasons that we might argue for the emphasis on R. Other open source languages, such as Python, are quickly becoming relevant to social scientists in both academic and non-academic contexts. However, these languages are not yet as widely popular. Therefore, it may take some time before languages such as Python become as accessible and necessary for training in quantitative social science.</p>
+</div>
+</div>
+<div id="installing-and-familiarizing-yourself-with-python" class="section level2" number="2.2">
+<h2>
+<span class="header-section-number">2.2</span> Installing and Familiarizing Yourself with Python<a class="anchor" aria-label="anchor" href="#installing-and-familiarizing-yourself-with-python"><i class="fas fa-link"></i></a>
+</h2>
+<p>As graduate education modernizes itself toward training for both academic and non-academic jobs, teaching programming literacy beyond just R is essential. So, we will also cover some basics of the Python coding language as well. As mentioned, Python is newer on the scene generally and especially among social sciences. This means that resources available to make Python legible to social scientists in training is still being built up. We hope that some of the text here at least exposes you enough to Python and one available Python interface such that you might pursue further training later on, if desired.</p>
+<div id="python" class="section level3" number="2.2.1">
+<h3>
+<span class="header-section-number">2.2.1</span> Python<a class="anchor" aria-label="anchor" href="#python"><i class="fas fa-link"></i></a>
+</h3>
+<p>First, if you are a Windows user you will download the latest version of <a href="https://www.python.org/downloads/">Python</a>, or at least Python 3. Just like R and RStudio, be sure to download the correct version for your operating system. Mac and Linux users already have Python, but if you run into any problems just try and download Python. Once you have downloaded Python, make sure you downloaded it to a location on your computer that makes it easy to find again. Otherwise, there is no need to open any program after download.</p>
+</div>
+<div id="pycharm-ide" class="section level3" number="2.2.2">
+<h3>
+<span class="header-section-number">2.2.2</span> PyCharm IDE<a class="anchor" aria-label="anchor" href="#pycharm-ide"><i class="fas fa-link"></i></a>
+</h3>
+<p>Just like with R and RStudio, we will rely on an integrated development environment to help cushion the interaction with Python, which otherwise has a very minimalist interface. <a href="https://www.jetbrains.com/pycharm/">PyCharm</a> is a great IDE for beginners that don’t want to stick to RStudio for Python projects, but still want a well-built environment. We encourage you to check out Reddit and other message board threads on what IDEs might be better suited for your particular goals with Python as you become more familiar with it. Visit the PyCharm site, download the suitable version, and read through the documentation. There are a couple of different versions for download, we recommend that you opt for the open-source <em>Community</em> version. Though PyCharm is more developed than other potential interfaces for Python, the structure is still quite opaque for those new to coding– even for those of us that have been around R for a while. So read through what you can about getting started, and when we revisit Python in later chapters, we hope that things will come together smoothly.</p>
+<p>When you open PyCharm, you will be prompted to start a new project, open an existing project in a local working directory, or work with a project in version control. For now, start a new project without modifying any of the additional selections in the prompt. Once you hit “Create” you will encounter the following screen:</p>
+<div class="inline-figure"><img src="pycharm_open.png" style="width:90.0%"></div>
+<p>On the left hand side is a file tree, with all project related scripts and files. The right hand side is the source script or editable code. In the case that you want to start a new Python script instead of the welcome script shown here, simply choose File <span class="math inline">\(\rightarrow\)</span> New… <span class="math inline">\(\rightarrow\)</span> Python File. As you may notice, Python code files have the file format “.py”. Along the bottom edge, you will see a few options to toggle for additional panels related to version control, to dos, packages, etc. All in all, it is much like the pane system integrated into RStudio. PyCharm has additional add-ons that you can generate and customize yourself. Again, we recommend that you take a look at the documentation on the PyCharm site should you want to be more advanced in that environment.</p>
+</div>
+</div>
+<div id="moving-forward" class="section level2" number="2.3">
+<h2>
+<span class="header-section-number">2.3</span> Moving Forward<a class="anchor" aria-label="anchor" href="#moving-forward"><i class="fas fa-link"></i></a>
+</h2>
+<p>The remainder of this text will focus primarily on R and then later on some basics of Python. But first we are going to take a quick detour into Github and <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span>: two additional software distributions that will also be important to develop scientific research both in and out of academia.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="index.html"><span class="header-section-number">1</span> Welcome!</a></div>
+<div class="next"><a href="ch3.html"><span class="header-section-number">3</span> Documentation with LATEX</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#ch2"><span class="header-section-number">2</span> Getting Started</a></li>
+<li>
+<a class="nav-link" href="#installing-and-familiarizing-yourself-with-r-and-rstudio"><span class="header-section-number">2.1</span> Installing and Familiarizing Yourself with R and RStudio</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#r"><span class="header-section-number">2.1.1</span> R</a></li>
+<li><a class="nav-link" href="#rstudio"><span class="header-section-number">2.1.2</span> RStudio</a></li>
+<li><a class="nav-link" href="#navigating-rstudio"><span class="header-section-number">2.1.3</span> Navigating RStudio</a></li>
+<li><a class="nav-link" href="#why-r"><span class="header-section-number">2.1.4</span> Why R?</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#installing-and-familiarizing-yourself-with-python"><span class="header-section-number">2.2</span> Installing and Familiarizing Yourself with Python</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#python"><span class="header-section-number">2.2.1</span> Python</a></li>
+<li><a class="nav-link" href="#pycharm-ide"><span class="header-section-number">2.2.2</span> PyCharm IDE</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#moving-forward"><span class="header-section-number">2.3</span> Moving Forward</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Computational Programming for the Social Sciences</strong>" was written by Sarah Moore and Jean Clipperton. It was last built on 2022-08-29.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
