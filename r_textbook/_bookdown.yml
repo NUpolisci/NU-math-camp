@@ -1,6 +1,0 @@
-book_filename: "r_text_bookdown"
-chapter_name: "Chapter "
-repo:
-output_dir: "docs"
-clean: []
-new_session: yes
