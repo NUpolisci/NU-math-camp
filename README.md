@@ -10,12 +10,12 @@ Each succesive days' materials will be housed in the following links:
 |---| -------------         | -------------     | ------------- | ------------- | ------------- |
 Day 1 | **Introduction and Expectations** | Intro to Software | [slides](slides/day1-intro.pdf), [ch 1 & 2]()| | 
 Day 2 | **Foundations of Quantitative Social Science** | LaTeX & Overleaf  | [slides](slides/day2-am.pdf), [ch 3 & 4]()| Pset 1: [TeX](updated-pset-1.tex)/[.Rmd](updated-pset-1-RMD.Rmd)/[PDF](updated-pset-1.pdf)|Day 4| 
-Day 3 | **Algebra Review** | R: Data Structures, Syntax, & Functions | [slides](slides/day4-am.pdf), ch       ||
-Day 4 | **Matrices and Pre-Calculus** | R: `tidyverse` 1     | [slides](slides/day5-am.pdf), ch  | Pset 2: [TeX](updated-pset-2.tex)/[.Rmd](updated-pset-2-RMD.Rmd)/[PDF](updated-pset-2.pdf)| Day 6|
-Day 5 | **Calculus I: Derivatives**  | R: `tidyverse` 2  | [slides](slides/day6-am.pdf), ch  || 
-Day 6 | **Calculus II: Integrals** | R: Workflow & Github    | [slides](slides/day8-am.pdf), ch | Pset 3: [TeX](updated-pset-3.tex)/[.Rmd](updated-pset-3-RMD.Rmd)/[PDF](updated-pset-3.pdf)| Day 8 |
-Day 7 | **Probability**  | R: Troubleshooting & Alternatives | [slides](slides/day9-am.pdf), ch ||
-Day 8| **Review** | | [slides](slides/day10-am.pdf), ch | Pset 4: [TeX](updated-pset-4.tex)/[.Rmd](updated-pset-4-RMD.Rmd)/[PDF](updated-pset-4.pdf)| Class Start Thursday|
+Day 3 | **Algebra Review** | R: Data Structures, Syntax, & Functions | [slides](slides/day3-am.pdf), ch       ||
+Day 4 | **Matrices and Pre-Calculus** | R: `tidyverse` 1     | [slides](slides/day4-am.pdf), ch  | Pset 2: [TeX](updated-pset-2.tex)/[.Rmd](updated-pset-2-RMD.Rmd)/[PDF](updated-pset-2.pdf)| Day 6|
+Day 5 | **Calculus I: Derivatives**  | R: `tidyverse` 2  | [slides](slides/day5-am.pdf), ch  || 
+Day 6 | **Calculus II: Integrals** | R: Workflow & Github    | [slides](slides/day6-am.pdf), ch | Pset 3: [TeX](updated-pset-3.tex)/[.Rmd](updated-pset-3-RMD.Rmd)/[PDF](updated-pset-3.pdf)| Day 8 |
+Day 7 | **Probability**  | R: Troubleshooting & Alternatives | [slides](slides/day7-am.pdf), ch ||
+Day 8| **Review** | | [slides](slides/day8-am.pdf), ch | Pset 4: [TeX](updated-pset-4.tex)/[.Rmd](updated-pset-4-RMD.Rmd)/[PDF](updated-pset-4.pdf)| Class Start Thursday|
 
 [Supplementary Material](supplementary_material/README.md) 
 
