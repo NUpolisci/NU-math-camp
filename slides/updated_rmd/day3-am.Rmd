@@ -1,0 +1,440 @@
+---
+title: "Day 3: Algebra Review"
+author: "Sarah Moore and Jason Seawright"
+date: "Math Camp 2022"
+output: beamer_presentation
+
+header-includes: 
+- \usepackage{soul}
+- \usepackage[T1]{fontenc}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{graphicx}
+- \usepackage{tikz}
+- \usepackage{tkz-fct}
+- \usepackage{pgfplots}
+- \pgfplotsset{compat=newest}
+- \usepackage{comment}
+- \usepackage{filecontents}
+- \usepackage{xcolor,colortbl}
+- \setbeamertemplate{navigation symbols}{}
+- \usecolortheme{crane}
+---
+
+# Day 3 Agenda
+
+-   Algebraic Properties
+
+-   Inequalities and other relational operations
+
+-   Functions and Relations
+
+-   Exponents and Logarithms
+
+# Algebraic Properties of Numbers 
+
+1.  **Associative property** $(a+b)+c=a+(b+c)$ and $(a\times b)\times c=a\times (b \times c)$
+
+2.  **Commutative property** $a+b=b+a$ and $a\times b=b\times a$
+
+3.  **Distributive property** $a(b+c)=ab+ac$
+
+4.  **Identity property** $x+0=x$ and $x\times 1=x$
+
+5.   **Inverse property** $-x+x=0$.
+
+Multiplicative inverse exists, but not for all numbers $x^{-1}\times x=1$
+
+# Factoring
+
+We may need to break down different functions.
+
+\begin{enumerate}
+\item<1-> $x^2+3x-4=$\uncover<2->{\color{gray}$(x-1)(x-4)$}
+\item<1-> $m^2+3m+2=$\uncover<3->{\color{gray}$(m+1)(m+2)$}
+\item<1-> $x^2+5x+6=$\uncover<4->{\color{gray}$(x+3)(x+2)$}
+\end{enumerate}
+
+\uncover<5->{Try:}
+\begin{enumerate}
+\item<5-> ${-b}^2+9a^4$ \uncover<6->{\color{gray} $($-$b+3a^2)(b+3a^2)$}
+\item<5-> $2x^2+7x+3$ \uncover<7->{\color{gray} $(2x+1)(x+3)$}
+\end{enumerate}
+
+# Intervals and Inequalities 
+
+::: {.block}
+## Intervals and Inequalities
+Ranges of numbers can be expressed with either \[\] or \(\) brackets. 
+:::
+
+\begin{table}
+\begin{tabular}{l l p{65mm}}
+$[a,b]$ &  a $\leq x \leq b$ & Square brackets include end points (closed interval) \\
+(a,b) & $a < x < b$ & Parenthesis mean exclude end points (open interval) \\
+\{a,b\} &  & Typically used for sets -- not inequalities/intervals \\
+\end{tabular}
+\end{table}
+
+# Relational Expressions 
+
+You may remember how to graph relational expressions on a number line. Let's try to work through some of those here. 
+
+- $4 < x$ 
+
+- $y>12$
+
+- $3 <z <7$
+
+- $(3,9)$
+
+- $[$-$7,2)$
+
+
+# Solving Inequalities 
+
+We treat inequalities the same as any other equation when we wish to solve them, with the exception of when there are negative values. 
+
+When dividing or multiplying by a negative number in an inequality, flip the inequality sign. 
+
+Typically: 
+
+$8x + 2 < 3 \rightarrow 8x < 1 \rightarrow x < \frac{1}{8}$
+
+
+Considering a negative value: 
+
+$-8x + 2 < 3 \rightarrow -8x < 1 \rightarrow x > -\frac{1}{8}$
+
+# Absolute Value
+
+Magnitude of a numerical value indicated by $|x|$. Solved by typical arithmetic, but must solve for both the negative and positive equations.
+
+For example: 
+
+$$|x + 4| < 5 $$
+
+>- Must be solved as: $-x-4<5$ AND $x+4<5$
+
+Therefore:
+
+>- $-9<x<1$  *Notice how the inequality was flipped due to the negative equation* 
+
+>- Try this one out: $|\frac{x+2}{x}|<10$
+
+>- Answer: $-\frac{2}{11} > x > \frac{2}{9}$
+
+
+# Relations
+
+Relations generally allow comparison of variables and expressions between a \textit{range (y)} and \textit{domain (x)}. 
+
+You may be familiar with the term *functions*, which are a type of relation. These are the most common relation you will encounter in statistical social science; while *correspondences* are a type of relation more likely found in game theory. 
+
+# Functions
+
+Mathematical functions have certain constitutive parameters. 
+
+>- Specifically, functions assign *one* element of the *range (y)* to each element of the *domain (x).*
+
+# Relating Sets to Functions 
+
+>- Domain: "the set of elements over which the function is defined" 
+
+>- Co-Domain: "the set from which values of f(x) may be drawn" 
+
+>- Range: "the set of all values actually reached", a subset of the co-domain 
+
+>- Thinking back to day 2: In social sciences, these sets will all typically be composed of $\mathbb{R}$, i.e. the set of all real numbers. 
+
+# Mapping Functions 
+
+We might use some functional mapping to discern whether or not a relation constitutes a function:  
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+    % draw the sets
+    \filldraw[fill=blue!20, draw=blue!60] (-1.5,0) circle (1cm);
+    \filldraw[fill=red!20, draw=red!60] (1.5,0) circle (1cm);
+
+    \node at (-1.5,1.5) {$X$};
+    \node at (1.5,1.5) {$Y$};
+
+    \node (x1) at (-1.5,0.7) {$a$};
+    \node (x2) at (-1.5,0.3) {$b$};
+    \node (x3) at (-1.5,-0.2) {$c$};
+    \node (x4) at (-1.5,-0.7) {$d$};
+    \node (y1) at (1.5,0.7) {$1$};
+    \node (y2) at (1.5,0.3) {$2$};
+    \node (y3) at (1.5,-0.2) {$3$};
+    \node (y4) at (1.5,-0.7) {$4$};
+
+    \draw[->] (x1) -- (y4);
+    \draw[->] (x2) -- (y2);
+    \draw[->] (x3) -- (y1);
+    \draw[->] (x4) -- (y3);
+
+\end{tikzpicture}
+\caption{Mapping Relation $S$}
+\end{figure}
+
+\tiny[Source Code](https://tex.stackexchange.com/questions/19987/drawing-a-bijective-map-with-tikz)
+
+So if functions requiring that there is only one range element for each domain, does this mapping constitute a function? 
+
+# More Function Mapping 
+
+Let's try out a couple more maps to see whether or not they are functions: 
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+    % draw the sets
+    \filldraw[fill=blue!20, draw=blue!60] (-1.5,0) circle (1cm);
+    \filldraw[fill=red!20, draw=red!60] (1.5,0) circle (1cm);
+
+    \node at (-1.5,1.5) {$X$};
+    \node at (1.5,1.5) {$Y$};
+
+    \node (x1) at (-1.5,0.7) {$a$};
+    \node (x2) at (-1.5,0.3) {$b$};
+    \node (x3) at (-1.5,-0.2) {$c$};
+    \node (x4) at (-1.5,-0.7) {$d$};
+    \node (y1) at (1.5,0.7) {$1$};
+    \node (y2) at (1.5,0.3) {$2$};
+    \node (y3) at (1.5,-0.2) {$3$};
+    \node (y4) at (1.5,-0.7) {$4$};
+
+    \draw[->] (x1) -- (y1);
+    \draw[->] (x2) -- (y2);
+    \draw[->] (x2) -- (y3);
+    \draw[->] (x2) -- (y4);
+    \draw[->] (x3) -- (y2);
+    \draw[->] (x4) -- (y1);
+
+\end{tikzpicture}
+\caption{Mapping Relation $H$}
+\end{figure}
+
+\pause 
+Relation $H$ is not a function. 
+
+# Functions
+
+::: {.block}
+## Vertical Line Test 
+Functions can only assign one x to one y. But sometimes our domain and range are not clearly defined and we may only have a graph immediately available to us. If any vertical line will pass through more than 1 point on the graph, then the relation is not a function. 
+:::
+
+# Vertical Line Test
+
+For example, based on the vertical line test which of the following graphs is not of a function: 
+
+\centering 
+\begin{tikzpicture}[scale=0.50]
+    \begin{axis}[
+        axis lines = middle,
+        xmin=-3, xmax=3, ymin=-3, ymax=3,
+        axis equal,
+        xlabel = $x$,
+        ylabel = {$f(x)$},
+        yticklabels={,,}
+        ]
+        \draw (axis cs: 0,0) circle [radius=2];
+    \end{axis}
+\end{tikzpicture}
+\hspace{2cm}
+\begin{tikzpicture}[scale=0.50]
+\begin{axis} [axis lines = middle]
+\addplot{(x)^2};
+\end{axis}
+\end{tikzpicture}
+
+# Types of Functions
+
+>- Identity function-- Elements in domain are mapped to identical elements in codomain 
+ 
+>- Inverse function-- Function that when composed with original function returns identity function
+
+>- Surjective-- Every value in codomain produced by value in domain
+
+>- Injective (one-to-one)-- Each value in range comes from only one value in domain
+
+>- Bijective (invertible)-- Both surjective and injective; function has an inverse
+
+# Monotonic Function Terms 
+
+\footnotesize
+
+\begin{center}
+\begin{tabular}{ | l p{7.15 cm}| }  \hline
+ Term & Meaning \\ \hline 
+Increasing & Function increases on subset of domain \\
+Decreasing & Function decreases on subset of domain \\
+Strictly increasing & Function always increases on subset of domain \\
+Strictly decreasing & Function always decreases on subset of domain \\
+Weakly increasing & Function does not decrease on subset of domain \\
+Weakly decreasing & Function does not increase on subset of domain \\
+(Strict) monotonicity & Order preservation; function (strictly) increasing or decreasing over domain \\ \hline
+\end{tabular}
+\end{center}
+
+
+
+\tiny Table 3.2 from Moore and Siegel (pg 51) \footnotesize \vspace{3mm}
+
+# Why is understanding functional behavior important? 
+
+Obviously useful to understand a function's behavior mathematically-- i.e. to understand how the input relates to the output over the function. 
+
+*BUT* this is where we link some of the logic of math to theory construction. Ultimately you will choose what mathematical functions likely describe the relationship between x and y. 
+
+Therefore, we need to know how to model these things functionally. 
+
+
+# Linear Equation versus Linear Function 
+
+- Thus far, we have addressed functions that are also linear equations -- in that the highest power of the argument $x$ is 1. 
+
+- *Linear functions* are a broader category of functions, to potentially include linear equations, that follow the rules of additivity and scaling: 
+
+  - Additivity: $f(x_1+x_2)= f(x_1)+f(x_2)$
+
+  - Scaling: $f(ax)= af(x)$ for all $a$ 
+  
+- Ultimately this is mathematical definition rarely followed by social scientists. But, for the purposes of further reading for some of you all the distinction will be important. 
+
+# Nonlinear Functions 
+
+- More widely applicable is the differentiation between linear and non-linear functions. 
+
+- Generally a function is nonlinear when it is not linear and does not meet the properties of scalability or additivity. 
+
+Why does this matter?
+
+- Up until now, the functions we've addressed assume a *linear* relationship between our x and y. But what if we have theoretical inclination to believe that the relationship is *nonlinear*-- what if there is a ceiling effect to our x or diminishing returns? 
+
+- We need to be able to eventually account for these issues in our models, therefore, we must know how to model them mathematically. 
+
+# Exponents
+
+>- Multiplying a number by itself: $x*x*x*x=x^4$
+
+>- Add or subtract exponents when multiplying same variable: $x^4*x^{-3}=x$ 
+
+>- Simplify bases when same exponent: $x^4*y^4=(xy)^4$ and $m^{-2}n^2=(m^{-1}n)^2$
+
+>- Power of power: multiply, $(x^3)^3=x^{3*3}=x^9$  \pause 
+
+\textbf{Try}: $xz^2(x^3z^{-2})^3$ \pause  \textbf{=($xz^2(x^9z^{-6}))$}\pause \textbf{=$x^{10}z^{-4}$}
+
+# Exponents, Exponentials, Exponential functions
+
+::: {.block}
+## Exponents 
+
+Exponents are where you take a variable to some power -- e.g. $x^a$ where $x$ is a variable and $a$ is a constant. Typically, we focus on the numerical portion of the exponent--calling it `the exponent'. 
+:::
+
+::: {.block}
+## Exponential 
+
+An exponential is the reverse of the exponent -- here it is a number to the power of a variable, e.g. $a^x$. To get the $x$ `down', we need to use logarithms (aka logs). 
+:::
+
+::: {.block}
+## Exponential Function
+The exponential function has a particular base, $e$, (where $e$ is Euler's $e$ and is approx 2.72.)
+:::
+
+# Higher Order Functions 
+
+>- Higher order polynomials refer to functions whose degree is greater than 1, thus entail a greater degree than a linear polynomial. 
+
+>- Quadratic polynomial: in the form $f(x)=ax^2+bx+c$, wherein the highest power is 2 
+
+>- Higher order polynomials: entail a degree higher than 2-- can be 3 or greater (unlikely, but could be there!)
+
+# Logarithms 
+
+Logarithms, or logs, are the inverses of exponents: the power to which you raise the base, e.g. 10, to produce a given value, e.g.$z$ \pause
+
+Logarithms (typically base 10 ($log(x)$) or base $e$ ($ln(e)$), but any base is possible, e.g. $log_{8675309} x$ (Bases aside from $e$ and $10$ will be specified).
+
+- $y=log(z) \leftrightarrow 10^y=z$
+
+- $y=ln(z) \leftrightarrow e^y=z$
+
+- $log(1)=0$
+
+
+# Exponents and Logs 
+
+Exponents in log are different from what you might expect:
+
+-   $log(x^2)=2(log(x))$
+
+-   $log (x/y)=log(x)-log(y)$ provided ($x,y >0$)
+
+Logs help weigh smaller values more heavily; adding units not linear--less meaningful for larger values ($log(100)=2, log(1000)=3$).
+
+# Logs Practice Simplify the following
+
+\begin{itemize}
+\item<1-> $log(x^4)$ \only<2->{$=4log(x)$}
+\item<1-> $log(xy)$ \only<3->{$=log(x)+log(y)$}
+\item<1-> $ln(e^3)$ \only<4->{$=3$}
+\item<1-> $ln(1)$ \only<5->{$=0$}
+\item<1-> $log(3)+log(7)$ \only<6->{$=log(21)$}
+\end{itemize}
+
+# Graphical Behavior 
+
+\begin{figure}
+\caption{Graph of $x^3$}
+\begin{tikzpicture}[scale=0.75]
+\begin{axis} [ axis lines* = middle]
+\addplot [domain=-5:5]{(\x)^3};
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+# Graphical Behavior 
+
+\begin{figure}
+\caption{Graph of $\frac{ln(x)}{ln 2}$}
+\begin{tikzpicture}[scale=0.75]
+\begin{axis}[axis lines* = middle]
+\addplot [domain=-1:5]{ln(x)/ln(2)};
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+[Source Code]((https://tex.stackexchange.com/questions/19608/plot-a-function-of-a-binary-logarithm-with-tikz))
+
+
+# Graphical Behavior 
+
+\begin{figure}
+\caption{Graph of $\sqrt{x}$}
+
+\begin{tikzpicture}[scale=0.75]
+\begin{axis} [ axis lines* = middle]
+\addplot [domain=-1:4]{(\x)^.5};
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+# Functional Continuity
+
+As we will discuss in the coming days, and especially if you go further along in methods courses, functional continuity is also a source of concern. 
+
+- Some functions have certain points at which they *do not exist*. 
+
+- On one hand, there could be a certain reason that the function breaks at a certain $x$ value. 
+
+- In other cases, there are limiting properties of certain function such that the function cannot exist over a certain interval. 
+
+- We won't go into more detail here, just know **continuity** and the interval we expect a function to exist over is important to understand conceptually. 
+

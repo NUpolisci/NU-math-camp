@@ -1,0 +1,490 @@
+---
+title: "Day 5: Calculus I, Derivatives"
+author: "Sarah Moore and Jason Seawright"
+date: "Math Camp 2022"
+output: beamer_presentation
+urlcolor: red 
+
+header-includes: 
+- \usepackage{soul}
+- \usepackage[T1]{fontenc}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{graphicx}
+- \usepackage{tikz}
+- \usepackage{pgfplots}
+- \usepackage{tkz-fct}   
+- \usetikzlibrary{arrows.meta}
+- \usepackage{comment}
+- \usepackage{filecontents}
+- \usepackage{xcolor,colortbl}
+- \setbeamertemplate{navigation symbols}{}
+- \usecolortheme{crane}
+- \RequirePackage{etex}
+---
+# Day 5 Agenda 
+
+- Derivatives: Concept, notation, and how-to
+
+- Fundamental Derivative Rules 
+
+- Partial Derivatives 
+
+- Advanced Rules of Derivatives
+
+
+# Calculus 
+
+- This is often where we get a lot of nervous faces in the room. But, I can assure you that we are going to stick together in this and everyone will come out knowing some minimal calculus stuff to get you through these quant methods courses. 
+
+# What is calculus? 
+
+>- So basically, calculus is the study of *instantaneous change of a function*. 
+
+*Well, what does that mean?* 
+
+>- On the one hand, we could be interested in *discrete* change. Discrete change tells us the difference between two points on a graph, thus the difference between two observations modeled by a function. 
+
+>- Finding discrete change means finding the slope of two points, or the *secant.* You all are probably familiar with $rise \over run$ from algebra. 
+
+# What is calculus? 
+
+>- But, finding the secant has a limitation. Discrete change only tells about the functional behavior *over an interval*. Instead we might want to find the rate of change at a *very specific moment* in the function. 
+
+>- Consequently, we might also want to find extrema (min and max) of a function, any other critical points, or understand its shape. As you may remember from other courses, these are difficult tasks with merely a function $f(x)$. 
+
+>- Calculus gives us some tools to calculate instantaneous change and other downstream quantities.  
+
+# Limits, Secants, and Capturing Change 
+
+> - In our last session we went over limits of functions. As a reminder, the limit of a function $f(x)$ at a given point $x$ is the value of the function as it approaches the given $x$. 
+
+>- Therefore, to capture discrete change we calculate the secant between two points by taking the difference of the functional limits, i.e. $f(x_2)- f(x_1)\over x_2-x_1$. 
+
+# Limits, Secants, and Capturing Change 
+
+>- To capture the instantaneous or continuous rate of change of a function, we *could* take the difference of the limits over iterations, making the interval between each $x$ smaller and smaller. 
+
+\centering
+\begin{tikzpicture}[scale=0.75]
+\begin{axis} [ axis lines* = middle]
+\addplot [domain=-1:4]{(\x)^2};
+\addplot[color=red,mark=*] coordinates {
+		(2,4)};
+\draw[-to] (axis cs:1, 4) -- (axis cs:1.85, 4);
+\draw[to-] (axis cs:2.15, 4) -- (axis cs:3,4);
+\end{axis}
+\end{tikzpicture}
+
+>- However, the concept of **tangents**, and consequentially **derivatives**, makes this easier. 
+
+# Tangents and Derivatives 
+
+>- While a secant is a slope of a given line, a *tangent* is a line that touches the function at a given point. The tangent's slope tell us about the slope of the primary function, or the instantaneous rate of change, *at that particular point*. 
+
+>- Therefore, the problem becomes *how to find the tangent's slope*. 
+
+# Notation 
+
+>- There are a couple of ways to notate derivatives, all meaning the same thing. 
+
+$f'(x)$ \uncover<2->{Read: "f prime of x"}
+
+$dy \over dx$ \uncover<2->{Read: "dy-dx" or "dy over dx"}
+
+\pause 
+
+>- There also possibilities for **higher order derivatives**, i.e. derivatives of derivatives and so on...
+
+>- Higher order derivatives will use the same types of notation, with details to indicate the order of the derivative 
+
+  >- $f''(x)$ or $d^2y\over dx^2$ for a second derivative; $f'''(x)$ or $d^3y\over dx^3$ for a third derivative
+
+# Calculating a Derivative
+
+To calculate the derivative, begin with the secant formula. Use this formula to reduce the difference to some arbitrarily small value, \(h\). 
+
+As h goes to zero, we go from discrete to instantaneous change. 
+
+Secant Formula: \[ \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h} \] 
+
+
+# Example: Calculating the Derivative of $f(x)=3x$ 
+
+Secant Formula: \[ \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h} \] 
+
+Example: \(3x\) 
+
+\[
+\uncover<2->{  \lim_{h \to 0} \frac{3(x+h)-3x}{h} }
+\uncover<3->{ = \lim_{h \to 0} \frac{3x+3h-3x}{h}}  
+\uncover<4->{ = \lim_{h \to 0} \frac{3h}{h} } 
+\uncover<5->{ = \lim_{h \to 0} 3} 
+\uncover<6->{ = 3} 
+\]
+
+
+# Example: Calculating the Derivative of $f(x)=2x$ 
+
+
+
+Secant Formula: \[ \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h} \] 
+
+Example: \(2x\) 
+
+\[
+\uncover<2->{  \lim_{h \to 0} \frac{2(x+h)-2x}{h} }
+\uncover<3->{ = \lim_{h \to 0} \frac{2x+2h-2x}{h}}  
+\uncover<4->{ = \lim_{h \to 0} \frac{2h}{h} } 
+\uncover<5->{ = \lim_{h \to 0} 2} 
+\uncover<6->{ = 2} 
+\]
+
+# Example: Calculating the Derivative of $f(x)=x^2$ 
+
+Secant Formula: \[ \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h} \] 
+
+Example: \(x^2\) 
+
+\[
+\uncover<2->{  \lim_{h \to 0} \frac{(x+h)^2-x^2}{h} }
+\uncover<3->{ = \lim_{h \to 0} \frac{x^2+2xh+2h^2-x^2}{h}}  
+\uncover<4->{ = \lim_{h \to 0} \frac{2xh+2h^2}{h} } \]
+\[
+\uncover<5->{ = \lim_{h \to 0} 2x+2h} 
+\uncover<6->{=2x+0=2x}  
+\]
+
+# So... what does it all mean? 
+
+>- Derivatives give us information regarding the rate of change of given function at a value $x$, we can use this information to learn more about the base function at that particular point. 
+
+>- Think back to what the slope of a linear equation tells us from the formula $y=mx+b$. 
+
+>- If $m$ is positive, the slope is increasing; if $m$ is negative, the slope is decreasing. 
+
+>- The derivative gives us information that we interpret similarly. 
+
+
+# Derivative as information: Rate of change
+
+>- Positive Derivative \uncover<2->{\color{green}  Function is increasing}
+
+>- Negative Derivative \uncover<3->{ \color{green}  Function is decreasing}
+
+>- Zeroes? \uncover<4->{ \color{green} max or min}
+
+# Derivatives and Extrema
+
+**Extrema**: max or min of a function, i.e. where is the topmost or bottomost of the function? 
+
+\centering
+\begin{tikzpicture}[scale=0.75]
+\begin{axis}[ymin=-1, ymax=1, axis lines* = middle]
+\addplot [smooth, domain=-1.5:1]{(2*\x^3+2*\x^2}; 
+\addplot [color=blue, dashed,domain=-1.5:1]{0};
+\end{axis}
+\end{tikzpicture}
+
+# Derivatives and Extrema
+
+\centering
+\begin{tikzpicture}[scale=0.75]
+\begin{axis}[ymin=-1, ymax=1, axis lines* = middle]
+\addplot [smooth, domain=-1.5:1, color=blue]{(6*\x^2+4*\x}; 
+\addplot [smooth, domain=-1.5:1]{(2*\x^3+2*\x^2}; 
+\addplot [color=blue, dashed,domain=-1.5:1]{0};
+\addplot[color=black,mark=*] coordinates {(-2/3,0.296296296296)};
+\addplot[color=black,mark=*] coordinates {(0,0)};
+\addplot[color=blue,mark=*] coordinates {(-2/3,0)};
+\draw[color=blue, dashed] (axis cs: -2/3,0.2962) -- (axis cs: -2/3,0);
+\end{axis}
+\end{tikzpicture}
+
+# Worst Behavior
+
+As we saw before: the function must be \textit{continuous} on the \textit{interval} to be differentiable. 
+
+Some functions are not differentiable *at all* or are not differentiable at *a certain point*. Need to determine the continuity of the function. 
+
+# Continuity
+
+Continuous function: draw without picking up a pencil
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{tikzpicture}[scale=0.75]
+\begin{axis}[domain=-1.2:1.2, ymin=-1.05, ymax=1.05, title={\color{green}\textbf{YES}}, axis lines* = middle] 
+\addplot [smooth, domain=-1.1:1.1]{\x};
+\addplot [domain=-1.2:1.2, color=blue, dashed]{0};
+\end{axis}
+\end{tikzpicture}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{tikzpicture}[scale=0.75]
+\begin{axis}[domain=-1.2:1.2, ymin=-1.05, ymax=1.05, title={\color{red}\textbf{NO}}, axis lines* = middle] 
+\addplot[smooth, domain=-1.1:0.48]{\x^3};
+\addplot[smooth, domain=0.52:1.1]{\x^3};
+\addplot[color=black,mark=o] coordinates {(0.5, 0.125)};
+\end{axis}
+\end{tikzpicture}
+\end{column}
+
+\end{columns}
+
+
+# Derivative: Calculation
+
+While we can calculate the derivative using the formula from before, it's a bit tedious. Can't there be another way?
+
+\pause
+\vspace{2mm}
+Think through the work it would take to differentitate $4x^3+3x-2$ using $\frac{f(x_0+h)-f(x_0)}{h}$...
+
+# Derivative Rules
+
+Take the derivative $f(x)$ as $f'(x)$ below with constant $k$:
+
+\begin{enumerate}
+\item<1-> $f(k*x)=k*f(x), f'(k*x)=k*f'(x)$
+\begin{itemize}
+
+\item<2-> \color{blue} $f(x)=3x$, \uncover<3->{$f'(x)=3$}
+\end{itemize}
+
+\item<1-> $f(x)=k$ has derivative $f'(x)=0$
+\begin{itemize}
+\item<4-> \color{blue}  $f(x)=4$, \uncover<5->{$f'(x)=0$}
+\end{itemize}
+
+\item<1-> $f(x)=x^n, f'(x)=n*x^{n-1}$
+\begin{itemize}
+\item<6->  \color{blue} $f(x)=x^3$, \uncover<7->{$f'(x)= 3x^2$}
+\end{itemize}
+
+\item<1-> $[f(x)+g(x)]'=f'(x)+g'(x)$
+\begin{itemize}
+\item <8->\color{blue}  $f(x)=3x, g(x)=7$, \uncover<9->{$3+0=3$}
+\end{itemize}
+
+\item<1-> $[f(x)-g(x)]'=f'(x)-g'(x)$
+\begin{itemize}
+\item <10-> \color{blue}  $[3x-7]'$, \uncover<11->{$3-0=3$}
+\end{itemize}
+
+\end{enumerate}
+
+\uncover<12->{\textbf{NOTE: $[f(x)*g(x)]!=f'(x)*g'(x)$} Ex: $(3x*10x)'!=30$}
+ 
+# Derivatives Two Ways
+
+We can check these handy formulas work as they should. Let's try. Find the derivative of $f(x)=\frac{1}{x}$
+
+>- Formal Definition: $f'(x)=lim_{h \rightarrow 0} \frac{f(x_0+h)-f(x_0)}{h}$
+
+\uncover<2->{$f'(x)=lim_{h \rightarrow 0} \frac{\frac{1}{x+h}-\frac{1}{x}}{h}$}
+
+\uncover<3->{$f'(x)=lim_{h \rightarrow 0} \frac{\frac{x}{x(x+h)}-\frac{(x+h)}{x(x+h)}}{h}$}
+
+\uncover<4->{$f'(x)=lim_{h \rightarrow 0} \frac{\frac{-h}{x(x+h)}}{h}$}
+
+\uncover<5->{$f'(x)=lim_{h \rightarrow 0} \frac{-1}{x(x+h)}$}
+
+\uncover<6->{$f'(x)=\frac{-1}{x(x+0)}$} 
+
+\uncover<7->{$f'(x)=\frac{-1}{x^2}$}
+
+\uncover<8->{$f'(x)=-x^{-2}$}
+
+
+# Using the Simpler Rules  
+
+Relevant Rules: $f(x)=x^n, f'(x)=n*x^{n-1}$
+
+\uncover<2->{$f(x)=x^{-1}$}
+
+\uncover<3->{$f'(x)=-1*x^{-2}$}
+
+\uncover<4->{$f'(x)=-x^{-2}$}
+
+
+# Practice Problems
+
+Find where functions are continuous and find derivatives
+
+\begin{itemize}
+\item<1-> $f(x)=5$ \uncover<2->{,\color{blue}\(f'(x)=0 \)}
+
+\item<1-> $f(x)=3x-7$ \uncover<2->{,\color{blue}\(f'(x)= 3\)}
+
+\item<1-> $f(x)=3x^2$ \uncover<2->{,\color{blue}\( f'(x)=6x\)}
+
+\item<1-> $f(x)=\frac{x^2}{x}$ \uncover<2->{,\color{blue}\(f'(x)=1 \)}
+
+\item<1-> $f(s)=s^{-2}$ \uncover<2->{,\color{blue}\( f'(s)=-2s^{-3}\) (not continuous at \(s=0\))}
+
+\item<1-> $f(y)=y(y+7)(y-3)$ \uncover<2->{,\color{blue}\(f'(y)=3y^2+8y-21 \)}
+
+\item<1-> $f(z)=\frac{z^2-5z-6}{z+1}$ \uncover<2->{,\color{blue}\(f'(z)=1 \) (not continuous at \(z=-1\))}
+\end{itemize}
+
+# Higher Order Derivatives
+
+Second derivatives ($n^{th}$ derivatives): take a derivative a second ($n^{th}$) time
+
+Rate of change of rate of change (velocity vs acceleration)
+
+\begin{itemize}
+\item<1-> $f(x)=x^5+3x^3+2x+8$
+\item<2-> $f'(x)=5x^4+9x^2+2$
+\item<3-> $f''(x)=20x^3 + 18x$
+\end{itemize}
+
+# Partial Derivatives
+
+Similar to `regular' derivative; treat additional variable(s) as constants. Written as $\partial_x$ or $\frac{\partial f}{\partial x}(x, ...)$ 
+
+
+\vspace{3mm}
+\uncover<2->{Ex: $y=3xz$, $\partial_x=3z$}
+
+\vspace{2mm}
+\uncover<2->{Find $\partial_x$ 
+
+$f(x,z)=7xz+4x^2+z$} \uncover<4->{\color{blue}$ \partial_x=7z+8x$}
+
+\uncover<2->{\color{black} $f(x,y)=x+4y$} \uncover<4->{\color{blue} $\partial_x=1$}
+
+
+
+# (Additional) Rules for derivatives
+
+So far, we've just had simple functions but what if we are multiplying, dividing, or have an otherwise-more-advanced function? 
+
+- Product Rule: $f(x)*g(x)$
+
+- Quotient Rule: $\frac{f(x)}{g(x)}$
+
+- Chain Rule: $f(g(x))$ 
+
+- Other: eg, exponentials: $e^x$, $ln(x)$ 
+
+# (Additional) Rules for derivatives
+
+So far, we've just had simple functions but what if we are multiplying, dividing, or have an otherwise-more-advanced function?
+
+- Product Rule: $f(x)*g(x)$, $x^3*x^2$
+
+- Quotient Rule: $\frac{f(x)}{g(x)}$, $\frac{x^4+3x}{x^2}$
+ 
+- Chain Rule: $f(g(x))$, $(x^2+1)^3$ (composition!)
+
+- Other: eg, exponentials: $e^x$, $ln(x)$ 
+
+
+# Product Rule
+
+If we have two things multiplied together and need the derivative, we have two options: multiply everything and then take the derivative OR use the product rule.
+\vspace{2mm}
+
+>- \textbf{Example: (3x+4)(x+2)} 
+
+>- To take the derivative using the product rule, we do the following: $f'(x)*g(x)+g'(x)f(x)$. 
+
+>- For us, our two functions are $f(x)=3x+4$ and $g(x)=x+2$. The derivatives are $f'(x)=3$ and $g'(x)=1$.
+
+>- Then, we substitute these in: $f'(x)*g(x)+g'(x)f(x)=3(x+2)+1(3x+4)$
+
+>- Simplify to get: $3x+6+3x+4=6x+10$. 
+
+\vspace{1mm}
+
+
+>- To take the derivative using our previous approach, we first multiply: $3x^2+4x+6x+8=3x^2+10x+8$. Then, just take the derivative of each term: $f'(x)=6x+10$. 
+
+# Product Rule: A Motivating Example 
+
+Suppose that instead you had $(3x^2+3x+4)(x^3+2x^2+x+2)$. Now the product rule is looking a little nicer! 
+
+\vspace{2mm}
+$f(x)=(3x^2+3x+4)$ and $g(x)=(x^3+2x^2+x+2)$
+
+$f'(x)=6x+3$ and $g'(x)=3x^2+4x+1$.
+
+\vspace{2mm}
+We can substitute this into the formula: 
+
+\footnotesize  
+$$f'(x)*g(x)+g'(x)f(x)$$
+
+$$\rightarrow (6x+3)(x^3+2x^2+x+2)+(3x^2+4x+1)(3x^2+3x+4)$$.
+
+# Quotient Rule
+
+Example: $\frac{3x^2}{x+2}$.
+
+Formula is $\frac{f'(x)*g(x)-g'(x)f(x)}{(g(x))^2}$
+
+So, we identify the following: $f(x)=3x^2$ and $g(x)=x+2$, therefore $f'(x)=6x$ and $g'(x)=1$.
+
+Plug in to get: 
+
+$$\frac{6x(x+2)-1(3x^2)}{(x+2)^2}=\frac{6x^2+12x-3x^2}{(x+2)^2}=\frac{3x^2+12x}{(x+2)^2}$$
+
+\vspace{2mm}
+Practice:  $\frac{x-4}{x+5}$ $\frac{3x^3}{x+2}$
+
+\uncover<2->{\textbf{Ans:$\frac{9}{(x+5)^2}$  \hspace{2mm}  $\frac{6x^3+18x^2}{(x+2)^2}$}}
+
+# Chain Rule 
+
+Sometimes, you have a function to a power: $f(g(x))=(x+3)^3$. We can use the chain rule to evaluate this. 
+
+What we do is we take the derivative of the function and multiply it by the derivative of the inside: $f'(g(x))*g'(x)$. 
+
+So, for our example: $f(x)=x^3$ and $g(x)=(x+3)$. 
+\vspace{2mm}
+
+>- The derivative of each is $f'(x)=3x^2$ and $g'(x)=1$.
+
+>- We substitute in to get: $3(x+3)^2*1$. 
+
+# More Chaing Rule 
+
+>- \textbf{Try: } $f(x)=(2x^2+8x)^4$  $f(x)=(9x-x^2)^6$  
+
+>- \textbf{Ans} $4(4x+8)(2x^2+8x)^3$ \hspace{2mm} $6(9-2x)(9x-x^2)^5=(54-12x)(9x-2x^2)^5$
+
+# Exponentials: $e$ and $ln$
+
+You can take the derivative of continuous functions -- including those with a log and/or $e$ in them. The rules are a little hard, but once you learn them, it's not too bad: 
+
+$f(x)=e^x$ \hspace{2mm} $f'(x)=e^x$ (a favorite of mine) 
+
+$f(x)=e^{g(x)}$ \hspace{2mm} $f'(x)=e^{g(x)}*g'(x)$  
+
+$f(x)=a^x$ \hspace{2mm} $f'(x)=a^x(ln(a))$ (used rarely, if ever) 
+
+$f(x)=ln(x)$ \hspace{2mm} $f'(x)=\frac{1}{x}$ 
+
+$f(x)=ln(g(x))$ \hspace{2mm} $f'(x)=\frac{1}{x}*g'(x)$ 
+
+$f(x)=log_a(x)$ \hspace{2mm} $f'(x)=\frac{1}{xln(a)}$ (rarely used) 
+
+You can make these more complicated by including a function of x. How would we take the derivative in that case? \pause Chain rule!
+
+\textbf{EX: } $ln(3x)$ \pause $f'(x)=\frac{1}{3x}*3=\frac{1}{x}$.  
+\pause
+
+\textbf{TRY: $ln(x^2)$, $e^{2x}$} \pause \textbf{ANS: $\frac{2}{x}$ and $2e^{2x}$}
+
+
+# Derivatives in Review
+
+There are a few more handy rules and techniques that are important, perhaps even on your homework:
+
+![[Source on Stack Exchange](https://math.stackexchange.com/questions/4147380/what-could-be-the-easiest-way-to-remember-all-common-derivative-and-common-integ)](images/derivatives.png)
+
+
+And if you really want to explore more, check out all [these techniques.](https://tutorial.math.lamar.edu/pdf/calculus_cheat_sheet_all.pdf) 

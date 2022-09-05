@@ -1,0 +1,500 @@
+---
+title: "Day 4: Matrix Algebra and Precalculus Overview"
+author: "Sarah Moore and Jason Seawright"
+date: "Math Camp 2022"
+output: beamer_presentation
+
+header-includes: 
+- \usepackage{soul}
+- \usepackage[T1]{fontenc}
+- \usepackage{amsmath}
+- \usepackage{pgfplots}
+- \usepackage{listings}
+- \usepackage{graphicx}
+- \usepackage{tikz}
+- \usepackage{tkz-fct}   
+- \usepackage{comment}
+- \usepackage{filecontents}
+- \usepackage{xcolor,colortbl}
+- \setbeamertemplate{navigation symbols}{}
+- \usecolortheme{crane} 
+---
+
+# Day 4 Agenda
+
+- Matrices and Matrix Algebra 
+
+  - Elements of matrices and their organization
+
+  - Properties of matrices and different types
+
+  - Algebraic operations   
+
+- Pre-Calculus Review 
+
+  - Summation 
+  
+  - Limits and function continuity     
+
+# Introduction to Matrices
+
+A matrix is way of aggregating data by $n$ rows and $d$ columns. We can liken matrices to datasets in that rows data is organized into observations (rows) by columns (variables). 
+
+# Introduction to Matrices
+
+Matrices are described based on their $n \times d$ dimensions, that is the number of rows $\times$ columns in the matrix.
+
+Matrices may be characterized by their specific shape. For example, a matrix with an equal number of rows and columns is a square matrix. Otherwise, a matrix is rectangular. 
+
+\begin{columns}
+
+\column{0.5\textwidth}
+Square Matrix: 
+
+\[
+\begin{bmatrix}
+a & b & c \\ 
+1 & 0 & 0 \\ 
+4 & 8 & 5 \\
+\end{bmatrix}
+\]
+
+\column{0.5\textwidth}
+Rectangular Matrix: 
+
+\[
+\begin{bmatrix}
+a & b & c & d \\ 
+1 & 0 & 0 & 1 \\ 
+\end{bmatrix}
+\]
+
+\end{columns}
+
+# Indexing Data in Matrices 
+
+Like variables matrices are given names. Matrix names are typically capital letters like **$A, B, X, I, \Phi$**. Matrix elements are referenced by the matrix name and the element's row and column number. Generally, this is shown by $a_{i,j}$. 
+
+Suppose we have the following matrix. What are the dimensions of matrix $[B]$ below, and what value is $b_{23}$?
+
+\[
+\begin{bmatrix}
+3&2&8&11&14&19 \\
+9& 81 & 21& 31& 41& 1 \\
+13& 7 & 6 & 4 & 5 & 20
+\end{bmatrix}
+\]
+
+\pause Dimensions are 3 x 6; $b_{23}$ is 21. 
+
+# Elements of Matrices
+
+The elements along the diagonal often are important in matrices. We typically focus upon the diagonal that starts in the upper left and goes down to the lower right. 
+
+\[
+[A]=\begin{bmatrix}
+1 & 3 & 5 \\
+0 & 2 & 4 \\
+0 & 0 & 6
+\end{bmatrix} 
+[B]=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 6
+\end{bmatrix}
+[C]=
+\begin{bmatrix}
+1 & 0 & 0 \\
+3& 2 & 0 \\
+5& 4 & 6
+\end{bmatrix}
+[D]=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0& 0 & 1
+\end{bmatrix}
+\]
+
+
+
+
+# Types of Matrices
+
+We won't get into the details of all sorts of different matrices but it might be helpful to know that there are "special" matrices:
+
+\small 
+
+- Vector Matrices: only one row (row vector) or column (column vector)
+
+- Submatrix: subset of a matrix
+
+- Triangular Matrix: part of matrix is zeros -- all bottom triangle zeros is upper triangular, all upper triangle zeros is lower triangular.
+
+- Diagonal Matrix: only the diagonal is non-zero
+
+- Zero Matrix: everything is zeros
+
+- Identity Matrix ($I$): all zeros except on diagonal AND diagonal is only ones, this is the matrix version of multiplying by 1
+
+- Transpose ($[A]^T$): This is where you flip all the rows/columns. Meaning, if something was row 3, col 2, it will now be row 2, col 3. Done by `reflecting' over the main diagonal (so the diagonal stays the same)
+
+
+# Identifying Matrices
+Define the kinds of matrices below: 
+
+\[
+[A]=\begin{bmatrix}
+1 & 3 & 5 \\
+0 & 2 & 4 \\
+0 & 0 & 6
+\end{bmatrix} 
+[B]=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 6
+\end{bmatrix}
+[C]=
+\begin{bmatrix}
+1 & 0 & 0 \\
+3& 2 & 0 \\
+5& 4 & 6
+\end{bmatrix}
+[D]=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0& 0 & 1
+\end{bmatrix}
+\]
+
+\pause
+
+\textit{A: Upper triangular, B: Zero matrix, C: Lower triangular, D: Identity matrix; Fun fact! A and C are the transpose of each other}
+
+# Adding matrices
+
+Adding and subtracting matrices requires that you have matrices that have the same dimensions as each other. You then add the elements together (or subtract, as applicable). The resulting matrix will have the same dimension as the originals. 
+
+\[
+ \begin{bmatrix}
+1 & 13 & 15 \\
+2 & 4 & 6 
+\end{bmatrix}
++
+\begin{bmatrix}
+2 & 4 & 6 \\
+1 & 3 & 5 
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 & 17 & 23 \\
+3 & 7 & 13 
+\end{bmatrix}
+\]
+
+\[
+ \begin{bmatrix}
+1 & 13 & 15 \\
+2 & 4 & 6 
+\end{bmatrix}
+-
+\begin{bmatrix}
+2 & 4 & 6 \\
+1 & 3 & 5 
+\end{bmatrix}
+=
+\begin{bmatrix}
+-1 & 9 & 9 \\
+1 & 1 & 1 
+\end{bmatrix}
+\]
+
+# Multiplying Matrices
+
+>- Just like in every other matrix operation, before you multiply matrices you must define their dimensions. To determine if you *can* multiply matrices, you need the number of **COLUMNS** in the matrix 1 to be the same as the number of **ROWS** in matrix 2. 
+
+>- You can't swap matrix positions like in regular multiplying. A$\times$B is not the same as B$\times$A. 
+
+>- Let's think about what you *should* end up with. You will end up with a matrix equal to the number of ROWS in the FIRST matrix and the number of COLUMNS in the SECOND matrix. For example, $A_{2\times3}\times B_{3\times3}$ will return a matrix $C_{2\times3}$
+
+>- Now the math gets a bit weird. You go ACROSS the first row of the matrix and multiply it DOWN the first column of the second matrix. Repeat this across each row, column pair.  
+
+# Matrix Multiplication
+
+If you have a matrix setup like this: $A_{rxs} \times B_{sxt}$ then you will get a matrix that is $C_{r \times t}$.
+
+# Matrix Multiplication Example 
+
+\[
+[A]=\begin{bmatrix}
+7 & 8  
+\end{bmatrix} 
+[B]=
+\begin{bmatrix}
+2 & 4 & 6 \\
+1 & 3 & 5 \\
+\end{bmatrix}
+\]
+ 
+
+Let's multiply! You take the row of the first matrix, multiply it by the COLUMN (hence the need to match) of the second matrix, ADD the sum of these products, and that goes into the first cell of the `final' matrix. Then you do the same thing for the next column. 
+\pause
+So, here, it would be: 
+\[
+[C]=\begin{bmatrix}
+7*2+8*1  & 7*4 + 8*3 & 7*6+8*5
+\end{bmatrix}
+\] 
+Note this is a row vector: $[C]=\begin{bmatrix}22 & 52 & 82\end{bmatrix}$
+
+# Multiplying Matrices
+If you have multiple rows in your initial matrix, you just do the same process over again, following the same procedure for each row. Your final matrix will have dimensions determined in the same way. For example, if you have a 2 x 3 and a 3 x 3, you'll have a 2 x 3 as your resulting matrix. \pause
+
+\[
+[A]=\begin{bmatrix}
+7 & 8  \\
+1 & 2
+\end{bmatrix} 
+[B]=
+\begin{bmatrix}
+2 & 4 & 6 \\
+1 & 3 & 5 \\
+\end{bmatrix}
+\]
+
+\pause
+\[
+[C]=\begin{bmatrix}
+7*2+8*1  & 7*4 + 8*3 & 7*6+8*5 \\
+1*2+2*1 & 1*4 + 2*3 & 1*6+2*5
+\end{bmatrix}
+=\begin{bmatrix}
+22 & 52 & 82 \\
+4 & 10 & 16
+\end{bmatrix}
+\] 
+
+# Multiplying Matrices: Practice
+\[
+[A]=
+\begin{bmatrix}
+1 & 3 & 4 \\
+2 & 2 & 8 \\
+\end{bmatrix}
+[B]=
+\begin{bmatrix}
+1 & 3 & 5 \\
+0 & 2 & 4 \\
+0 & 0 & 6
+\end{bmatrix} 
+[C]=
+\begin{bmatrix}
+1 & 0 & 0 \\
+3& 2 & 0 \\
+5& 4 & 6 \\
+1 & 1 & 1
+\end{bmatrix}
+[D]=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0& 0 & 1
+\end{bmatrix}
+\]
+
+Try the following: 
+\begin{itemize}
+\item \textbf{A x B}
+\item \textbf{B x A}
+\item \textbf{A x C}
+\item \textbf{B x D}
+\end{itemize}
+
+# Answers 
+\begin{itemize}
+\item \textbf{A x B} $\begin{bmatrix} 1 & 9 & 41 \\ 2 & 10& 46\end{bmatrix}$
+\item \textbf{B x A} Not possible: 3 x 3 and 2 x 3 (middle numbers must match)
+\item \textbf{A x C} Not possible: 2 x 3 and 4 x 3 (middle numbers must match)
+\item \textbf{B x D} B (D is the identity matrix so you always get back whatever you multiplied it by)
+\end{itemize}
+
+# Matrices: A Rundown 
+
+- Dimensions matter. Different operations place different restrictions on dimensionality. 
+
+- Multiplying matrices does not happen how you would think. Take a minute to think through what matrix multiplication requires. 
+
+- Different types of matrices (especially the transpose and the identity matrices) will become more relevant later on. Remember these! 
+
+- Dividing matrices is even more weird. That's what calculators are for.... 
+
+# Summation 
+Using sums can help us when we're summing a large number of items or when summing more complex functions. 
+
+ Summation rules:
+ \pause
+ \begin{enumerate}
+ \item $\sum_{n=1}^{k} c=kc$ where c is a constant
+\pause
+ \item $\sum_{n=1}^{k} n=\frac{k(k+1)}{2}$
+\pause 
+ \item $\sum_{n=1}^k 4+3n=\sum_{n=1}^k 4 + 3\sum_{n=1}^k n=4k+ 3\frac{k(k+1)}{2}$
+ \end{enumerate}
+ \pause
+ \vspace{2mm}
+ Try:
+ 
+  $\sum_{n=1}^{5} 6$\uncover<5->{  Ans: $6*5=30$}    \hspace{6mm}        $\sum_{n=1}^{4} 2n+3$\uncover<6->{  Ans: $2*(4*5)/2+3*4=32$}
+ 
+# Some Additional Definitions with Summation
+
+- The following section is a bit abstract, but contains some algebraic concepts we set aside for those that might like to learn about formal theory later on.
+
+- It will also be helpful to move on to our next section on *limits*. 
+
+# Sequences and Series
+
+::: {.block}
+## Sequences 
+A sequence is an ordered list of numbers. They can be infinite or finite, but all are \textit{countable}. Written ${x_i}^N_{i=1}$
+::: 
+
+::: {.block}
+## Series 
+A series is the sum of a sequence, written $\Sigma^N_{i=1}x_i$. 
+::: 
+
+# Sequences 
+
+- We refer to the elements of a sequence by their position. For example, the third element would be $x_3$.
+
+- A sequence is generated and represented by some equation wherein each element is a function of the element preceding it. 
+
+- Take the following sequence: $\{1, 2, 5, 26, 677...\}$. This sequence is defined by the following generating equation:$$ \{x_i^2+1\}_{i=1}^\infty$$
+
+- Some sequences are *infinite*, as the sequence above. Others are *finite* and will end at the $n$th term. 
+
+# Series 
+
+- A series will essentially take a sequence and add together each of the numbers, such that our example sequence from the previous slide becomes: $\{1+  2+ 5 + 26 + 677...\}$. 
+
+- Infinite series will sum to $\infty$ given that they are infinite! Shocking! However, we might also specify to know the sum at a given $n$ term. In which case I would probably just tell you to look up a calculator to do it for you.  
+
+- Finite sums can more easily be summed, again likely with a calculator if $N$ is sufficiently large. 
+
+# Limits 
+The sums, sequences, and functions we have visited over the last couple of days all have *limits*. 
+
+Particularly related to series, we say that these series \textbf{converge} while those series that just keep getting bigger and bigger and bigger (or smaller, etc.) \textbf{diverge}. 
+
+\vspace{0.5cm}
+\pause
+$$lim_{N\rightarrow\infty} \sum_{i=1}^N x_i=S$$
+\pause
+Translation: The limit of the sum $x_i$ from $i$ to N as N approaches infinity is S. 
+
+\pause
+We can talk in the same way about sequences $lim_{i\rightarrow\infty}x_i=L$. 
+
+
+# Limits
+
+When we turn to functions, asking about the limit at a particular point asks: 
+
+``What is the slope of the line at this infinitesimally tiny part of the line"?
+
+$lim_{i\rightarrow\infty}f(x)=L$
+
+
+\vspace{0.5cm}
+A second way to ask this is to look at what happens to the slope as as the distance between points approaches zero. However, to actually calculate the derivative, we need to first be sure that the point is differentiable. Again, we will use limits.
+
+
+# Differentiation
+\vspace{3mm}
+
+To differentiate a function, it must be \textit{continuous} on the \textit{interval}. 
+
+Some functions are not differentiable or not differentiable at a certain point.
+
+A function is continuous if:
+
+>- Limit exists 
+
+>- Limit from left equals limit from right 
+
+>- These limits equal the value at the point
+
+
+# Limits
+For us, you should be able to:
+
+- Plug a value in to the limit and see what you get out (check for dividing by zero).
+
+- Recognize an indeterminate limit: $\frac{0}{0}$ or $\frac{\infty}{\infty}$ 
+
+- Compare powers in an indeterminate limit to find what happens: Same degree: limit goes to whatever fraction you get when you divide the top and bottom first terms 
+
+\pause \vspace{2mm}
+Try: $lim_{x\rightarrow4} \frac{x+2}{x+5}$ \hspace{5mm} $lim_{x\rightarrow4} \frac{x^2-4}{x+2}$ 
+
+\pause
+Ans: 6/9, simplifies to 2/3 \hspace{3mm} simplifies to x-2; limit is 2. 
+
+
+# Calculus 
+
+- This is often where we get a lot of nervous faces in the room. But, I can assure you that we are going to stick together in this and everyone will come out knowing some minimal calculus stuff to get you through these quant methods courses. 
+
+# What is calculus? 
+
+>- So basically, calculus is the study of *instantaneous change of a function*. 
+
+*Well, what does that mean?* 
+
+>- On the one hand, we could be interested in *discrete* change. Discrete change tells us the difference between two points on a graph, thus the difference between two observations modeled by a function. 
+
+>- Finding discrete change means finding the slope of two points, or the *secant.* You all are probably familiar with $rise \over run$ from algebra. 
+
+# What is calculus? 
+
+>- But, finding the secant has a limitation. Discrete change only tells about the functional behavior *over an interval*. Instead we might want to find the rate of change at a *very specific moment* in the function. 
+
+>- Consequently, we might also want to find extrema (min and max) of a function, any other critical points, or understand its shape. As you may remember from other courses, these are difficult tasks with merely a function $f(x)$. 
+
+>- Calculus gives us some tools to calculate instantaneous change and other downstream quantities.  
+
+# Limits, Secants, and Capturing Change 
+
+> - Today, we went over limits of functions. As a reminder, the limit of a function $f(x)$ at a given point $x$ is the value of the function as it approaches the given $x$. 
+
+>- Therefore, to capture discrete change we calculate the secant between two points by taking the difference of the functional limits, i.e. $f(x_2)- f(x_1)\over x_2-x_1$. 
+
+# Limits, Secants, and Capturing Change 
+
+>- To capture the instantaneous or continuous rate of change of a function, we *could* take the difference of the limits over iterations, making the interval between each $x$ smaller and smaller. 
+
+\centering
+\begin{tikzpicture}[scale=0.75]
+\begin{axis} [ axis lines* = middle]
+\addplot [domain=-1:4]{(\x)^2};
+\addplot[color=red,mark=*] coordinates {
+		(2,4)};
+\draw[-to] (axis cs:1, 4) -- (axis cs:1.85, 4);
+\draw[to-] (axis cs:2.15, 4) -- (axis cs:3,4);
+\end{axis}
+\end{tikzpicture}
+
+>- However, the concept of **tangents**, and consequentially **derivatives**, makes this easier. 
+
+# Tangents and Derivatives 
+
+>- While a secant is a slope of a given line, a *tangent* is a line that touches the function at a given point. The tangent's slop can tell us about the slope of the primary function, or the instantaneous rate of change, *at that particular point*. 
+
+>- Therefore, the problem becomes *how to find the tangent's slope*. 
+
+
+>- If none of this makes sense, that's okay. We will revisit tomorrow. :) 

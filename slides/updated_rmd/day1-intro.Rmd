@@ -1,0 +1,177 @@
+---
+title: "Day 1: Introduction to Math Camp"
+author: "Sarah Moore and Jason Seawright"
+date: "Math Camp 2022"
+output: beamer_presentation
+urlcolor: purple
+
+header-includes: 
+- \usepackage{soul}
+- \usepackage[T1]{fontenc}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{graphicx}
+- \usepackage{tikz}
+- \usepackage{tkz-fct}   
+- \usepackage{comment}
+- \usepackage{filecontents}
+- \usepackage{xcolor,colortbl}
+- \setbeamertemplate{navigation symbols}{}
+- \usecolortheme{crane}
+- \RequirePackage{etex}
+---
+
+# Day 1 Agenda 
+
+- Who are we? 
+
+- What is math camp? 
+
+- Who are you? 
+
+- What are we going to cover? 
+
+
+# Who are we? 
+
+Co-Instructors: 
+
+## Jason Seawright
+
+- Professor of Political Science and Director of Graduate Studies 
+
+- j-seawright\@northwestern.edu 
+
+## Sarah Moore
+
+- PhD Candidate (ABD) in Political Science and M.S. Candidate in Statistics 
+
+- sarahmoore2022\@u.northwestern.edu
+
+- OH: Everyday during lunch, 30 minutes before and after class start/end 
+
+# Who are we? 
+
+TAs: 
+
+## Noor 
+
+- Sociology PhD Student 
+
+- nooranwarali2025\@u.northwestern.edu
+
+## Jennifer 
+
+- Political Science PhD Student 
+
+- jenniferlin2025\@u.northwestern.edu
+
+# What is math camp? 
+
+- A primer to (re)introduce you to some topics that will be necessary to moving forward in the quantitative methods sequence in Political Science and Sociology. 
+
+- Allow the instructors to assess the needs of the incoming cohort regarding instructional support. 
+
+- Also an opportunity to meet and network with your new grad school colleagues. 
+
+# Now, tell us about you 
+
+Let's get to know each other a bit more: 
+
+- Name
+
+- Pronouns
+
+- Discipline + Subfield and/or intended research area 
+
+- A hobby or interesting fact about yourself  
+
+
+# What are we going to cover? 
+
+Substantive Stuff: 
+
+- Notation, Logic, Sets, and Sequences
+
+- Algebra Review
+
+- Matrices and Pre-Calculus
+
+- Calculus I: Derivatives 
+
+- Calculus II: Integrals 
+
+- Concepts in Probability 
+
+
+# What are we going to cover? 
+
+Technical Stuff: 
+
+- [R](https://rstudio-education.github.io/hopr/starting.html) and [RStudio](https://www.rstudio.com/products/rstudio/)
+
+- [Github](github.com)
+
+- [\LaTeX](https://www.latex-project.org/get/) and [Overleaf](https://www.overleaf.com/login)
+
+\pause 
+
+Other programming platforms that you might want to acquaint yourself with, but won't be covered here are: 
+
+- [Python](https://www.python.org/about/gettingstarted/) (via [Pycharm](https://www.jetbrains.com/pycharm/))
+
+- [STATA](https://www.stata.com/). 
+
+\tiny The debate regarding R versus STATA is long and drawn out throughout various disciplines, for our purposes R is open source (i.e. FREE) and thus much more accessible for long-term use.
+
+# What are we going to cover? 
+
+Big Picture: 
+
+- Refresh knowledge of foundational mathematical concepts
+
+- Establish base knowledge of computational tools used in social science research. 
+
+- Obtain familiarity with expectations of a graduate level course in methods. 
+
+- Build rapport with cohort members, upper level graduate students, and faculty. 
+
+- Think broadly about the potential use of quantitative methods in social science. 
+
+- Reflect on how well you understand and can apply the concepts addressed in math camp.  
+
+# Expectations 
+
+- Come to every session, we will be on time 
+
+- Review materials (text, slides, problem sets)
+
+- Complete problem sets by the scheduled due date 
+
+- Complete R exercises 
+
+
+# Some notes{.slowly}
+
+- While the class is *not* graded, the information is cumulative. 
+
+- This means that your ability to master a topic on one day will depend on whether or not you mastered the preceding days' topics. This feeds into the first weeks of your Intro to Probability and Statistics course as well.  
+
+- Everyone is coming in with completely different experiences and background. Some information that is old news to you may be a topic that someone else has not revisited for many years. 
+
+# Broad Expectations as a Grad Student 
+
+- Read what's assigned, and learn how to skim now. 
+
+- The people around you are your colleagues, not your competition. Our default here is to treat everyone with respect. This includes being kind to *yourself.*
+
+- Be the scholar *you* want to be, not the scholar you think everyone else wants you to be. 
+
+- Do something other than grad school too!!! Enjoy what's left of the Chicago summer, make friends, and maintain a hobby that has **nothing** to do with what you study. 
+
+# Assessment 
+
+Answer what you can! 
+
+
+

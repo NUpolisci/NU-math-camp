@@ -1,0 +1,126 @@
+---
+title: 'Day 8: Review'
+author: "Jason Seawright and Sarah Moore"
+date: "Math Camp 2022"
+output: beamer_presentation
+urlcolor: purple
+
+header-includes: 
+- \usepackage{soul}
+- \usepackage[T1]{fontenc}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{graphicx}
+- \usepackage{tikz}
+- \usepackage{minibox}
+- \usepackage{tkz-fct}   
+- \usepackage{comment}
+- \usepackage{filecontents}
+- \usepackage{xcolor,colortbl}
+- \setbeamertemplate{navigation symbols}{}
+- \usecolortheme{crane}
+---
+
+# Day 8 Agenda 
+
+- REVIEW 
+
+- Success Table
+
+- Take time to address any lingering questions
+
+# Concepts Reviewed 
+
+Let's think abstractly about what each day has taught us to do. 
+
+# ACTIVITY!
+
+We are going to split into groups and each group will have a large poster.
+
+On the poster, I want your group to brainstorm what each day's material achieved. Don't think in terms of specific concepts, like "we learned how to calculate a factorial." 
+
+Instead, focus on what each day contributed to the broader purpose of math camp and, more broadly, doing quantitative social science. 
+
+For example, day 6 on derivative calculus might be "Taught us how to think about changes in functions and how to mathematically understand functional behavior."
+
+# ACTIVITY!
+ 
+Here are each of the major concepts we addressed: 
+
+
+- Notation and Logic
+
+- Sequences and Sets
+
+- Algebra 
+
+- Matrix Algebra and Pre-calculus 
+
+- Derivative Calculus 
+
+- Integral Calculus 
+
+- Concepts in Probability 
+
+At the end, we'll go over each of your posters and leave you with our ideas of what the main takeaways are for each of these 
+
+# Takeaways 
+\small 
+
+- \textbf{Notation and Logic:} How to write things formally and conceive of conceptual boundaries or combinations 
+
+- \textbf{Sequences and Sets:} How to order, group, and subset groups of concepts or numbers
+
+- \textbf{Algebra and Matrix Algebra:} How to perform mathematical operations with one or more variable functions and understanding these operations with different data structures
+
+- \textbf{Precalculus:} How to determine the limiting behavior of algebraic functions  
+
+- \textbf{Derivative Calculus:} How to determine functional behavior at given points
+
+- \textbf{Integral Calculus:} How to determine functional shape and weight at specified intervals  
+
+- \textbf{Concepts in Probability:} How to combine each of these elements to conceptualize the probability structure of different events (we will get to calculation soon!)
+
+
+# How this will translate to upcoming course material 
+
+The probability and stats course will use all of math camp's material to advance your knowledge of applied topics in probability and statistics. 
+
+>- A difficult thing about statistics is that because it is an *applied* mathematical tool, there are many additional constructs and concepts to navigate to ensure you are applying the tool correctly. Or, at least, being honest about how your math is representing reality.
+
+>- Therefore, a major component of this course will be to understand statistical tools that describe and make inferences about reality, finding the level of certainty that you can attribute to your inferences, and how to convey these points to other audiences.
+
+# Upcoming Concepts 
+
+In this class, we will review or cover some of the following concepts: 
+
+- Probability 
+
+  - Laws and Concepts of Probability 
+
+  - Random Variables and Distributions: pmf, pdf, CDF 
+  
+  - Expectation, variance, covariance, correlation 
+
+  - Marginal, Joint, and Conditional Probabilities 
+
+  - Law of Large Numbers (LLN) and Central Limit Theorem (CLT)
+
+- Statistics 
+
+  - Descriptive and Inferential Statistics 
+  - Population, Sample, Sampling Distribution 
+  
+  - Statistics, Estimators, Parameter Estimation, and Confidence Intervals 
+  
+  - Hypothesis Testing and Test Statistics 
+  - Bias, Sampling Variability, Measurement Error, and Power 
+
+# Success Table 
+
+Within each of these broader concepts, there are tertiary, applied operations that we will learn. 
+
+To give you the lay of the land, here is a success table to help you navigate each of the concepts that we'll be discussing in relation to each other, and in relation to the broader skillset that you might want to develop in quantitative social science. 
+
+# Questions?? 
+
