@@ -10,6 +10,6 @@ Day 5: Foundations of Calculus, Derivatives [AM](day5-am.pdf)
 
 Day 6: Foundations of Calculus, Integrals [AM](day6-am.pdf) 
 
-Day 7: Concepts in Probability [AM](day7-am.pdf)/PM
+Day 7: Concepts in Probability [AM](day7-am.pdf)
 
 Day 8: Review and Q&A [AM](day8-am.pdf)
