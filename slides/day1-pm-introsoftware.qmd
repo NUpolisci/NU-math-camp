@@ -1,0 +1,148 @@
+---
+title: "Introduction to Required Software"
+author: "Sarah Moore" 
+format: 
+  revealjs: 
+    theme: solarized
+---
+
+## Agenda 
+
+- Introduction to the software used across this camp and beyond 
+
+- Installing R, RStudio, and GitHub Desktop 
+
+- Creating accounts in Overleaf and GitHub
+
+- Basic features across platforms and interfaces 
+
+## Machine Requirements 
+
+- Most of you will have machines that can handle downloading this software. 
+
+- While I will be able to demonstrate everything via my MacBook with macOS, some processes are a bit different on Windows operating systems. I will try to explain both processes, but please let us know if you need more guidance. 
+
+- If you are unsure about a step or where something is located on your machine, just raise your hand and Jennifer will come around to address the issue. 
+
+- If at the end of class you are unsure of whether your machine has storage, capacity, etc. sufficient to manage these programs for the term, I will stick around for a bit to answer questions and troubleshoot.  
+
+## What is R? 
+
+- R is an open source statistical computing software. 
+
+- We use R to manage data, perform different statistical operations, and visualize data of different types. 
+
+- Over the course of the week and into your respective quantitative methods sequences you will have various opportunities to develop your skills in programming in R. 
+
+## Our Plan with R
+
+- Today we will just focus on getting R and its associated, user-friendly interface, RStudio, onto your machines. 
+
+- Jennifer and Noor will guide you through more tasks over the next few afternoons to cover basic programming concepts in R, managing data, and basic data manipulation. 
+
+- Further opportunities will expose you to more advanced statistical techniques and data visualization. We'll take it easy to start with! 
+
+## Downloading R
+
+- First, let's download R at this link: https://bit.ly/3AILwfa. 
+
+- Be mindful to choose the download that matches your operating system. 
+
+- Take a few minutes to just download this and put it in the proper applications folder on your computer. 
+
+## Base R
+
+- If you open up R you will see it is very obviously a no frills environment. 
+
+- The **Console** that opened up and a potential **Script** are really the only items *necessary* to start programming in R. 
+
+- But, we are about to make a pivot that will make programming in R a lot more accessible, organized, and aesthetically pleasing. 
+
+## RStudio (AKA Posit)
+
+- Most people nowadays *do not* operate R in its barebones environment.
+
+- Instead, people have pivoted toward primarily programming in R (and now other languages) out of RStudio. 
+
+- RStudio is and *integrated development environment* (IDE). This is a fancy way of saying that RStudio facilitates expanded use of R. 
+
+- The specifics of this expansion will become more clear as you interact with RStudio further. 
+
+- RStudio *did* just receive a rebrand as Posit in recent months. I am personally still getting used to this. 
+
+## Downloading RStudio 
+
+- You can access RStudio through either a Desktop version *or* an online server application. I personally like the Desktop version and that is what we will cover here today. You can change this based on your personal preference at a later time. 
+
+- Let's download RStudio Desktop (the free version) from this link: https://bit.ly/3Ry9O2g. 
+
+- Remember again to download the correct application for your operating system. 
+
+- Take some time to download RStudio. Once it's done downloading and its in the correct applications folder on your computer, open it up. 
+
+# Let's Explore!!
+
+## Panel Environment 
+
+- You'll see that RStudio appears to be divided in a 4 panel environment. (You might only have 3 of the 4 right now as the Source panel is not yet open.)
+
+  1. Source 
+  2. Console 
+  3. Environment and History 
+  4. Auxiliary Functions
+
+# Opening a Script 
+
+## Why R? 
+
+- In the past, we have encountered the discussion about *why* R? Other social scientists you might have encountered are either using STATA or SPSS, some highly technical social scientists have gone over to Julia or Python. 
+
+- For us, the first answer is that R is FREE!! Updates are free, additional packages are open source and free. This itself is a huge upside. 
+- Second is the relative age and extensive backlog associated with R and social science. 
+  - Because so many people have been using R for a good amount of time, there are a lot of questions already answered about implementing R in the work we do. This cuts down a lot of troubleshooting and programming time. 
+  
+- Maybe languages such as Python will eventually get there, but the community has just not caught up yet. 
+
+## Github and GitHub Desktop 
+
+- Our downloads continue...
+
+- We will also learn about some methods of version control this week. We'll use Git and its associated platform, GitHub, to do so. 
+
+- Let's visit https://github.com/ to make a GitHub account. 
+
+- Once you have created an account, we'll move over to the Desktop download at https://desktop.github.com/. 
+
+- Once again, download the version pertinent to your operating system. 
+
+## GitHub 
+
+- I won't say too much here as we have a bit of time dedicated to version control. 
+
+- If you want to know more you can visit the R text to get a better feel of what Git and GitHub are. 
+
+## Overleaf 
+
+- The *last* part of this set up is for Overleaf. 
+
+- Overleaf is a web-based platform for document preparation. This is again something that you'll just have to believe that I'll explain more later. 
+
+- But, basically Overleaf will be a way that we can access LaTeX, another software distribution, without downloading it locally on our machine. 
+
+- Let's create an account by visiting https://www.overleaf.com/register. 
+
+# Let's Explore!!
+
+## Rounding Today Out
+
+- Today we've downloaded the basic software applications necessary to get through Math Camp and probably beyond. 
+
+- We've also made accounts that will allow us to further integrate modern scientific software into our workflows. 
+
+- The next week and a half will be dedicated to exploring these tools more. 
+
+
+
+
+
+
