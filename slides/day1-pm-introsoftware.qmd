@@ -4,6 +4,7 @@ author: "Sarah Moore"
 format: 
   revealjs: 
     theme: solarized
+    self-contained: true 
 ---
 
 ## Agenda 
@@ -64,6 +65,8 @@ format:
 
 - Instead, people have pivoted toward primarily programming in R (and now other languages) out of RStudio. 
 
+## RStudio (AKA Posit)
+
 - RStudio is and *integrated development environment* (IDE). This is a fancy way of saying that RStudio facilitates expanded use of R. 
 
 - The specifics of this expansion will become more clear as you interact with RStudio further. 
@@ -77,6 +80,8 @@ format:
 - Let's download RStudio Desktop (the free version) from this link: https://bit.ly/3Ry9O2g. 
 
 - Remember again to download the correct application for your operating system. 
+
+## Downloading RStudio 
 
 - Take some time to download RStudio. Once it's done downloading and its in the correct applications folder on your computer, open it up. 
 
@@ -95,7 +100,7 @@ format:
 
 ## Why R? 
 
-- In the past, we have encountered the discussion about *why* R? Other social scientists you might have encountered are either using STATA or SPSS, some highly technical social scientists have gone over to Julia or Python. 
+- In the past, we have encountered the discussion about *why* R?
 
 - For us, the first answer is that R is FREE!! Updates are free, additional packages are open source and free. This itself is a huge upside. 
 - Second is the relative age and extensive backlog associated with R and social science. 
