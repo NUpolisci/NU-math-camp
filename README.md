@@ -7,7 +7,7 @@ Each succesive days' materials will be housed in the following links:
 
 
 |Day | AM content            | PM Content        |  Materials | Problem Sets |
-|---| -------------         | -------------     | ------------- | ------------- | 
+|---| -------------         | -------------     | -------------------  | ------------- | 
 |1 | **Introduction and Expectations** | Intro to Software | [AM slides](slides/day1-intro.pdf) <br>[ch 1 & 2]()| 
 |2 | **Foundations of Quantitative Social Science** | Markdown, LaTeX, & Version Control  | [AM slides](slides/day2-am.pdf) <br>[ch 3 & 4]()|Pset 1: Due Day 3 [TeX](problem-sets/updated-pset-1.tex)/[.Rmd](problem-sets/updated-pset-1-RMD.Rmd)/[PDF](problem-sets/updated-pset-1.pdf)| 
 |3 | **Algebra Review** | R: Structures, Syntax, & Functions | [AM slides](slides/day3-am.pdf) <br>ch       |Pset 2: Due Day 5 [TeX](problem-sets/updated-pset-2.tex)/[.Rmd](problem-sets/updated-pset-2-RMD.Rmd)/[PDF](problem-sets/updated-pset-2.pdf)| 
