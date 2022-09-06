@@ -15,7 +15,7 @@ Each succesive days' materials will be housed in the following links:
 |5 | **Calculus I: Derivatives**  | R: `tidyverse` 2  | [AM slides](slides/day5-am.pdf) <br>ch  |Pset 3: [TeX](problem-sets/updated-pset-3.tex)/[.Rmd](problem-sets/updated-pset-3-RMD.Rmd)/[PDF](problem-sets/updated-pset-3.pdf)| Day 7| 
 |6 | **Calculus II: Integrals** | No Session | [AM slides](slides/day6-am.pdf) <br>ch | |
 |7 | **Probability**  | No Session | [AM slides](slides/day7-am.pdf) <br>ch |Pset 4: [TeX](problem-sets/updated-pset-4.tex)/[.Rmd](problem-sets/updated-pset-4-RMD.Rmd)/[PDF](problem-sets/updated-pset-4.pdf)| Day 8|
-|8| **Review** | Drop-In Hours w/Sarah | [AM slides](slides/day8-am.pdf) <br>ch | |
+|8| **Review** | Drop-In Hours w/ Sarah | [AM slides](slides/day8-am.pdf) <br>ch | |
 
 [Supplementary Material](supplementary_material/README.md) 
 
