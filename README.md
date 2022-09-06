@@ -6,7 +6,7 @@ In this repository there is a page for each day of work, resources both related 
 Each successive days' materials will be housed in the following links: 
 
 
-|Day | AM content            | PM Content        | Materials &nbsp;  | Problem Sets |
+|Day | AM content            | PM Content        | Materials&nbsp;  | Problem Sets |
 |---| -------------         | -------------     | :-----------------: | ------------- | 
 |1 | **Introduction and Expectations** | Intro to Software |[AM Slides](slides/day1-intro.pdf)<br> [PM Slides](slides/day1-pm.pdf)<br>[ch 1 & 2]()| 
 |2 | **Foundations of Quantitative Social Science** | Markdown, LaTeX, & Version Control  |[AM Slides](slides/day2-am.pdf) <br>[ch 3 & 4]()|Pset 1: Due Day 3 [TeX](problem-sets/updated-pset-1.tex)/[.Rmd](problem-sets/updated-pset-1-RMD.Rmd)/[PDF](problem-sets/updated-pset-1.pdf)| 
