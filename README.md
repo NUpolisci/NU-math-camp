@@ -3,7 +3,7 @@ This is the repository for the Math Camp for the Social Sciences at Northwestern
 
 In this repository there is a page for each day of work, resources both related to and unrelated to this course, and supplementary material that we feel will either provide more background for those newer to quantitative material *or* more challenging material for those that have already had prior exposure to quantitative methods. We will go over this in person to make sure that you don't have any issues. 
 
-Each succesive days' materials will be housed in the following links: 
+Each successive days' materials will be housed in the following links: 
 
 
 |Day | AM content            | PM Content        |  Materials | Problem Sets |
