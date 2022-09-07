@@ -8,7 +8,7 @@ Probability and Statistics:
 
 Coding and Computational Skills: 
 
-- Intros to [Markdown](Markdown_Intro.pdf), LaTeX(LaTeX_Intro.pdf), and [Git](git_Intro.pdf) by Jennifer Lin 
+- Intros to [Markdown](Markdown_Intro.pdf), [LaTeX](LaTeX_Intro.pdf), and [Git](git_Intro.pdf) by Jennifer Lin 
 
 - [R Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) 
 
