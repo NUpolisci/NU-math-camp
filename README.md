@@ -6,16 +6,16 @@ In this repository there is a page for each day of work, resources both related 
 Each successive days' materials will be housed in the following links: 
 
 
-|Day | AM content            | PM Content        | Materials&nbsp;  | Problem Sets |
-|---| -------------         | -------------     | :-----------------: | :-: | 
-|1 | **Introduction and Expectations** | Intro to Software |[AM Slides](slides/day1-intro.pdf)<br> [PM Slides](slides/day1-pm_software-intro.pdf)<br>[ch 1](https://nupolisci.github.io/NU-math-camp/index.html)<br>R: [ch 1 & 2](https://nupolisci.github.io/nu_socscir/index.html)|  
-|2 | **Foundations of Quantitative Social Science** | Markdown, LaTeX, & Version Control  |[AM Slides](slides/day2-pm_markdown-latex-vscontrol.pdf)<br> [PM Slides](slides/day2-pm_markdown-latex-vscontrol.pdf)<br>[ch 2-4](https://nupolisci.github.io/NU-math-camp/a-broad-introduction-to-social-science.html)<br>R:[ch 3 & 4](https://nupolisci.github.io/nu_socscir/ch3.html)|Pset 1: Due Day 3<br>[TeX](problem-sets/updated-pset-1.tex)/[.Rmd](problem-sets/updated-pset-1-RMD.Rmd)/[PDF](problem-sets/updated-pset-1.pdf)| 
-|3 | **Algebra Review** | R: Structures, Syntax, & Functions |[AM Slides](slides/day3-am.pdf) <br>[ch 4 & 5](https://nupolisci.github.io/NU-math-camp/sequences-and-sets.html)<br>R:[ch 5 & 6](https://nupolisci.github.io/nu_socscir/ch5.html)|Pset 2: Due Day 5<br>[TeX](problem-sets/updated-pset-2.tex)/[.Rmd](problem-sets/updated-pset-2-RMD.Rmd)/[PDF](problem-sets/updated-pset-2.pdf)| 
-|4 | **Matrices and Pre-Calculus** | R: `tidyverse` 1     |[AM Slides](slides/day4-am.pdf) <br>[ch 6 & 7]()<br>R: [ch 8](https://nupolisci.github.io/nu_socscir/ch8.html) |
-|5 | **Calculus I: Derivatives**  | R: `tidyverse` 2 + Data Management Considerations |[AM Slides](slides/day5-am.pdf) <br>[ch 8]()<br>R: [ch 7](https://nupolisci.github.io/nu_socscir/ch7.html)  |Pset 3: Due Day 7<br>[TeX](problem-sets/updated-pset-3.tex)/[.Rmd](problem-sets/updated-pset-3-RMD.Rmd)/[PDF](problem-sets/updated-pset-3.pdf)|  
-|6 | **Calculus II: Integrals** | No Session |[AM Slides](slides/day6-am.pdf) <br>[ch 9]()| 
-|7 | **Probability**  | No Session |[AM Slides](slides/day7-am.pdf) <br>[ch 10]() |Pset 4: Due Day 8 <br>[TeX](problem-sets/updated-pset-4.tex)/[.Rmd](problem-sets/updated-pset-4-RMD.Rmd)/[PDF](problem-sets/updated-pset-4.pdf)| 
-|8| **Review** | Drop-In Hours w/ Sarah |[AM Slides](slides/day8-am.pdf)|
+|Day | AM content            | PM Content        |Problem Sets |
+|---| :-------------:         | :-------------:     | :-: | 
+|1 | **Introduction and Expectations**<br>[Slides](slides/day1-intro.pdf)<br>Text: [Chapter 1](https://nupolisci.github.io/NU-math-camp/index.html) | Intro to Software<br>[Slides](slides/day1-pm_software-intro.pdf)<br>Text: [Chapters 1 & 2](https://nupolisci.github.io/nu_socscir/index.html)|  
+|2 | **Foundations of Quantitative Social Science** <br>[Slides](slides/day2-pm_markdown-latex-vscontrol.pdf)<br>Text: [Chapters 2-4](https://nupolisci.github.io/NU-math-camp/a-broad-introduction-to-social-science.html)| Markdown, LaTeX, & Version Control<br>[Slides](slides/day2-pm_markdown-latex-vscontrol.pdf)<br>Text: [Chapters 3 & 4](https://nupolisci.github.io/nu_socscir/ch3.html)|Pset 1: Due Day 3<br>[TeX](problem-sets/updated-pset-1.tex)/[.Rmd](problem-sets/updated-pset-1-RMD.Rmd)/[PDF](problem-sets/updated-pset-1.pdf)| 
+|3 | **Algebra Review**<br>[Slides](slides/day3-am.pdf)<br>Text: [Chapters 4 & 5](https://nupolisci.github.io/NU-math-camp/sequences-and-sets.html)<br>| R: Structures, Syntax, & Functions<br>Text: [Chapters 5 & 6](https://nupolisci.github.io/nu_socscir/ch5.html)|Pset 2: Due Day 5<br>[TeX](problem-sets/updated-pset-2.tex)/[.Rmd](problem-sets/updated-pset-2-RMD.Rmd)/[PDF](problem-sets/updated-pset-2.pdf)| 
+|4 | **Matrices and Pre-Calculus**<br> [Slides](slides/day4-am.pdf) <br>Text:[Chapters 6 & 7]()| R: `tidyverse` 1<br>Text: [Chapter 8]  |(https://nupolisci.github.io/nu_socscir/ch8.html) |
+|5 | **Calculus I: Derivatives**<br>[Slides](slides/day5-am.pdf) <br>Text: [Chapter 8]()| R: `tidyverse` 2 + Data Management Considerations<br>Text: [Chapter 7](https://nupolisci.github.io/nu_socscir/ch7.html)  |Pset 3: Due Day 7<br>[TeX](problem-sets/updated-pset-3.tex)/[.Rmd](problem-sets/updated-pset-3-RMD.Rmd)/[PDF](problem-sets/updated-pset-3.pdf)|  
+|6 | **Calculus II: Integrals**<br>[Slides](slides/day6-am.pdf) <br>Text: [Chapter 9]()| No Session| 
+|7 | **Probability** [Slides](slides/day7-am.pdf) <br>Text: [Chapter 10]() | No Session |Pset 4: Due Day 8 <br>[TeX](problem-sets/updated-pset-4.tex)/[.Rmd](problem-sets/updated-pset-4-RMD.Rmd)/[PDF](problem-sets/updated-pset-4.pdf)| 
+|8| **Review**<br>[Slides](slides/day8-am.pdf)| |Drop-In Hours w/ Sarah |
 
 [R and other Computational Exercises](r-exercises/README.md)
 
