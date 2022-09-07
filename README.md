@@ -17,7 +17,7 @@ Each successive days' materials will be housed in the following links:
 |7 | **Probability**  | No Session |[AM Slides](slides/day7-am.pdf) <br>ch |Pset 4: Due Day 8 <br>[TeX](problem-sets/updated-pset-4.tex)/[.Rmd](problem-sets/updated-pset-4-RMD.Rmd)/[PDF](problem-sets/updated-pset-4.pdf)| 
 |8| **Review** | Drop-In Hours w/ Sarah |[AM Slides](slides/day8-am.pdf) <br>ch |
 
-[R and other Computational Exercises](r-exercises/REAME.md)
+[R and other Computational Exercises](r-exercises/README.md)
 
 [Supplementary Material](supplementary_material/README.md) 
 
