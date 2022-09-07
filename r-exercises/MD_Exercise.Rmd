@@ -1,0 +1,97 @@
+---
+title: "Practice with R Markdown"
+author: "NAME"
+date: "`r Sys.Date()`"
+output: pdf_document
+fontsize: 12pt
+urlcolor: blue
+---
+
+Whether it is your first time working with R Markdown or if you had some exposure from before, this exercise is designed to help you refresh your knowledge and hone in on your skills. 
+
+# Question 1: Writing in Markdown
+
+R Markdown is, at core, markdown. In this exercise, introduce yourself. In this process, be sure to bold your name and italicize your subfield. List at least 2 fun facts about yourself, using ordered or unordered list and bold-italicize the one that you think is the most fun fact about yourself.
+
+
+
+# Question 2: There is No R Markdown without the R
+
+This secnd ecercise is all about the R part of R Markdown. Below, I have several chunks of code. Don't worry about what the code actually does. We are going to practice including and excluding the code chunks from the output. We will visit the Anscombe Quartet Example.
+
+## Code Chunks
+
+### A. Including Code Chunks
+
+Sometimes, it is helpful to show your readers where you data come from. Below, give the chunk an informative name. You will notice that the code shows automatically.
+
+```{r}
+data("anscombe")
+```
+
+### B. Excluding Code Chunks
+
+Sometimes, code in your markdon files do not need to be shared. Below is some code that has nothing to do with the task at hand. Use `Echo` again to hide this from the paper
+
+```{r}
+hello <- "hello"
+```
+
+## Evaluating Code
+
+### C. Excluding Warnings and Messages
+
+Sometimes, when R code runs, there are various warnings and messges. They do not look pretty. Use `warnings` and `messages` to suppress the messages from the code below. Make the best judgment about whether to display this code and apply it to your answer.
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+```
+
+### D. Evaluating Code
+
+There are some chunks of code that are sometimes just for just for show but are not evaluated. For example, if you want to do some quick demonstrations but not get an answer, you can use `eval` to help you. Use the `eval` argument to prevent R from evaluating the following chunk of code:
+
+```{r}
+mean(anscombe$x1)
+```
+
+## Putting it Together
+
+Finally, the grand finale. If you did everything correctly from above, the following code should generate a nice graph. Use your best judgement about whether to include the code, the wanrings and other features for the best possible output.
+
+```{r}
+anscombe_tidy <- anscombe %>%
+    mutate(observation = seq_len(n())) %>%
+    gather(key, value, -observation) %>%
+    separate(key, c("variable", "set"), 1, convert = TRUE) %>%
+    mutate(set = c("I", "II", "III", "IV")[set]) %>%
+    spread(variable, value)
+
+ggplot(anscombe_tidy, aes(x, y)) +
+  geom_point() +
+  facet_wrap(~ set) +
+  geom_smooth(method = "lm", se = FALSE)+
+  xlab("X")+
+  ylab("Y")+
+  labs(
+    title = "Anscombe's Quartet",
+    subtitle = "of 'Identical' Simple Linear Regressions"
+  )+
+  theme_bw()+
+  theme(
+    plot.title         = element_text(hjust = 0.5, size = 20, colour="black", face = "bold"),
+    plot.subtitle      = element_text(hjust = 0.5, size = 16, colour="black", face = "bold"),
+    legend.title       = element_text(hjust = 0.5, size = 14, colour="black", face = "bold"),
+    plot.caption       = element_text(size = 10, colour="black"),
+    axis.title         = element_text(size = 14, colour="black"),
+    axis.text.x        = element_text(size = 12, colour="black", angle = 0, hjust = 0.5),
+    axis.text.y        = element_text(size = 12, colour="black"),
+    legend.position    = 'bottom',
+    legend.direction   = "horizontal",
+    legend.text        = element_text(size = 12, colour="black")
+  )
+```
+
+

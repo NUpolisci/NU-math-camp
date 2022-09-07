@@ -1,0 +1,90 @@
+% ---------------------------------
+% Describe document characteristics
+% ---------------------------------
+
+\documentclass[12pt]{article}
+
+% Classic packages
+
+\usepackage{fullpage} %full page typesetting -- defaults to 1 inch margins
+\usepackage{setspace} %allows for non-singlespacing
+\usepackage{latexsym} %extra symbols
+\usepackage{rotating} %rotation for figures
+\usepackage{longtable} %tables that fill more than a single page
+\usepackage{natbib} %better bibliographies
+\usepackage{authblk} %author and affiliation in opening
+\usepackage{lscape} % For Landscape options
+
+% Shortcut Commands
+
+\newcommand\e{\emph} %Italics
+\newcommand\tb{\textbf} %Bold
+\newcommand\un{\underline} %Underline
+\newcommand\txt{\texttt} %Code
+\newcommand\tsc{\textsc} %Small Caps
+
+% Change Section Header looks
+
+\usepackage[rm, sc]{titlesec} % titles are non-bold, small, caps
+\titleformat*{\subsection}{\itshape} % subsection titles are italic
+\titleformat*{\paragraph}{\itshape}  % paragraph titles are italic
+
+% Links
+\usepackage{hyperref} %hypertext links in the document
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	citecolor=black
+}
+
+% Graphics
+\usepackage{graphicx} %graphics capabilities
+\graphicspath{ {Images/} } % Use the Images folder to hold images
+
+% Tables
+\usepackage{tabulary}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float}
+
+% Math
+\usepackage{amsmath} % math functions
+\usepackage{amssymb} % math symbols
+
+% Multiple Colmns
+\usepackage{multicol}
+
+% ---------------------------------
+% Document Parameters
+% ---------------------------------
+
+% Spacing
+%\doublespacing
+
+% Name and Title
+\title{Practice with \LaTeX}
+\author{NAME}
+\affil{Northwestern University}
+\date{\today} %For Date to Today
+
+% ---------------------------------
+% Writing
+% ---------------------------------
+
+\begin{document}
+
+% Title creation
+\maketitle
+
+% Consult the slides for this section. Replicate the paragraph shown using LaTeX code, formatting it exactly as you see it. 
+% Hint: To escape auto indentation, use \noindent before the paragraph starts
+
+
+
+\end{document}
+
+
+
+
