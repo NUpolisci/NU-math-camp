@@ -14,7 +14,7 @@ Each successive days' materials will be housed in the following links:
 |4 | **Matrices and Pre-Calculus**<br> [Slides](slides/day4-am.pdf) <br>Text:[Chapters 6 & 7]()| **R: `tidyverse` 1**<br>Text: [Chapter 8](https://nupolisci.github.io/nu_socscir/ch8.html) ||
 |5 | **Calculus I: Derivatives**<br>[Slides](slides/day5-am.pdf) <br>Text: [Chapter 8]()| **R: `tidyverse` 2 + Data Management Considerations**<br>Text: [Chapter 7](https://nupolisci.github.io/nu_socscir/ch7.html)  |Pset 3: Due Day 7<br>[TeX](problem-sets/updated-pset-3.tex)/[.Rmd](problem-sets/updated-pset-3-RMD.Rmd)/[PDF](problem-sets/updated-pset-3.pdf)|  
 |6 | **Calculus II: Integrals**<br>[Slides](slides/day6-am.pdf) <br>Text: [Chapter 9]()| **No Session**| 
-|7 | **Probability** [Slides](slides/day7-am.pdf) <br>Text: [Chapter 10]() | **No Session** |Pset 4: Due Day 8 <br>[TeX](problem-sets/updated-pset-4.tex)/[.Rmd](problem-sets/updated-pset-4-RMD.Rmd)/[PDF](problem-sets/updated-pset-4.pdf)| 
+|7 | **Concepts in Probability**<br>[Slides](slides/day7-am.pdf) <br>Text: [Chapter 10]() | **No Session** |Pset 4: Due Day 8 <br>[TeX](problem-sets/updated-pset-4.tex)/[.Rmd](problem-sets/updated-pset-4-RMD.Rmd)/[PDF](problem-sets/updated-pset-4.pdf)| 
 |8| **Review**<br>[Slides](slides/day8-am.pdf)| |**Drop-In Hours w/ Sarah** |
 
 [R and other Computational Exercises](r-exercises/README.md)
