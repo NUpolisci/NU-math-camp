@@ -1,5 +1,18 @@
 Here are some additional resources that might help you if you are feeling behind *or* if you would like to learn more. 
 
+Additional Chapters from [Moore and Siegel(2013)](https://people.duke.edu/~das76/moosiebook.html): 
+
+- [Algebra](mooresiegel_algebra.pdf)
+
+- [Functions](mooresiegel_functions.pdf) 
+
+- [Pre-Calculus](mooresiegel_precalc.pdf) 
+
+- [Derivatives](mooresiegel_derivatives.pdf) 
+
+- [Integrals](mooresiegel_integrals.pdf) 
+
+
 Probability and Statistics: 
 
 - [Duke's Mathematics for Political and Social Research](https://people.duke.edu/~das76/Mathematics%20for%20Political%20and%20Social%20Research%20Syllabus_Siegel.pdf) with YouTube links
