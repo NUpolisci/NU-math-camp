@@ -1,5 +1,11 @@
 Here are some additional resources that might help you if you are feeling behind *or* if you would like to learn more. 
 
+More about *necessary* and *sufficient* conditions, especially their situation in social science: 
+
+[Mahoney, Kimball, and Koivu (2008)](mahoneyetal(2008)_TheLogicOfHistoricalExplanationintheSocialSciences.pdf)
+
+[Mahoney (2012)](Mahoney(2012)_processtracing.pdf)
+
 Additional Chapters from [Moore and Siegel(2013)](https://people.duke.edu/~das76/moosiebook.html): 
 
 - [Algebra](mooresiegel_algebra.pdf)
