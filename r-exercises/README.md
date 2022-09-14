@@ -15,4 +15,4 @@
 
 ## Day 6 
 
-[Full Workflow](data-exercise.Rmd) 
+[Full Workflow](full-data-exercise.Rmd) 
