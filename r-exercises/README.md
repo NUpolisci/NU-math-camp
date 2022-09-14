@@ -8,3 +8,11 @@
 ## Day 3
 
 [Syntax](Syntax_and_Functions.R) + Accompanying [ANES Data](ANES_2020.csv)
+
+## Day 5
+
+[tidyverse](tidyverse.pptx)
+
+## Day 6 
+
+[Full Workflow](data-exercise.Rmd) 

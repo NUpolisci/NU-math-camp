@@ -1,0 +1,315 @@
+---
+title: "Math Camp Workflow Exercise"
+author: "Sarah Moore"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Data Science Exercise 
+
+## "I have a job for you..." 
+
+It's late Tuesday night, the evening after your first day of graduate school, when you receive an email from a professor that you know, but like you *don't really* know. The subject is vague: "I have a job for you...".
+
+Ok... 
+
+So, you open it and read the following. 
+
+*Welcome to Northwestern! I am in need of an RA to do some data tasks. I figured that you should be learning this stuff about now,  so it might be a good opportunity to put you to work! The pay is $24/hour. Here's what I'd be asking you to do:*
+
+1. Download some [data](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-13/bigfoot.csv) from [this tidytuesday post](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-09-13). 
+
+2. Go through the data and get a feel of what the variables are about. 
+
+3. Sort the data by date. See if you can get a by-year count of observations...
+
+4. Can you also get a count of observations in each state? Do any counties have more than one observation? Which counties have the most over time? 
+
+5. What's the mean number of sightings or observations per year? 
+
+6. I need you to save the following data for me: the mean visibility, moon phase, and windspeed? 
+
+7. You'll see some testimonies included in the "observed" column. What are the 4 most recent testimonies? 
+
+8. This might be a little advanced, but maybe you can make some graphs: 
+
+  - Bar graph of observations per season (none of the base R stuff... my associates only want to see ggplot2 graphics...)
+  
+  - Line graph of observations per year since the beginning of the dataset
+  
+... the graphics would be even BETTER if we can have them ready for print. I'm thinking New York Times or  Wall Street Journal style? 
+  
+*I don't use Github, but I need to make this information accessible **FAST**. If you can push this to your GitHub repository soon, my other associates will take it from there.*
+
+You're even more puzzled than you were to begin with, but you spent too much money on your new snow boots and winter coat in preparation for Chicago winter that you *really* can't turn down the opportunity for some more money. 
+
+What's the worst that can happen? So, you get started... 
+
+## Step One: Get the Data 
+
+So, I know I need to get the data. And I remember Jennifer taught me how to load it directly from GitHub. But I kind of want to have a local copy on my computer? So I can put everything on Github later. 
+
+I'll just deal with this later...let's load in the data. Let's name the dataframe something intuitive that makes sense for now. I'll also make sure to load in the tidyverse because it seems like I'll take a look at it. I can also use `glimpse()` to view the data names and types. 
+
+```{r, eval= T, echo=T}
+library(tidyverse)
+prof_data<-read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-13/bigfoot.csv")
+
+glimpse(prof_data)
+
+```
+
+... So, that told me nothing. I guess I probably should have taken a look at the information about the data first? (**YES, ALWAYS!**). 
+
+## [CHECK OUT THE METADATA](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-09-13)
+
+This is a dataset... about Bigfoot? Ok, well at least it comes from a reputable-sounding source, Bigfoot Field Researchers Organization. And there's this [article](https://timothyrenner.github.io/datascience/2017/06/30/finding-bigfoot.html)? Great! 
+
+So, I really don't have much more information than this. The data are about Bigfoot sightings around the US and North America. There are variables about the location of the sighting, the report provided, environmental and climate data. Ok, well I guess as long as this is ethical research, it's still research! 
+
+Now that I know what this is, I want to save this data to my computer so I can save the changes I might make to it and don't have to continually download it from the tidytuesday post. 
+
+```{r, eval=TRUE}
+# i want to rename the data now that I know what it's about... something that makes recall of it easy, like "bigfoot" 
+
+bigfoot<- prof_data
+
+# need to find out what the working directory is set to 
+
+#getwd()
+
+#setwd("/Users/sarahmoore/Desktop")
+```
+
+## Sort the data by date. See if you can get a by-year count of observations...
+
+Next the professor asked if I would sort the data by date and count how many reports were made by year. 
+
+I think there is some verb in `dplyr` that I can use to do this... maybe `arrange()`? I guess I can do this on the date variable, but how can I get the year out of there? 
+
+```{r, eval=T}
+# can explore more of the data if we want, but for our purposes glimpse() let us know enough (5021 obs. of 28 var.)
+
+# what does arrange() do? 
+#?arrange
+
+# let's arrange the data 
+
+bigfoot %>%
+  arrange(date) -> bigfoot_sorted
+
+# you notice that there are a lot of blanks in the date column when you do this, what can we do to change these to NAs instead of blank rows? 
+
+sum(bigfoot_sorted$date=="")
+
+bigfoot_sorted$date[bigfoot_sorted$date==""]<-NA
+
+sum(is.na(bigfoot_sorted$date))
+
+# once we have changed this value we will need to resort and save the arranged data. 
+
+bigfoot_sorted %>%
+  arrange(date) -> bigfoot_sorted
+
+#View(bigfoot_sorted)
+# can alternatively do it in descending order. which makes sens that the prof would want? 
+
+bigfoot_sorted %>%
+  arrange(desc(date)) -> bigfoot_desc_sorted
+
+##########################
+
+# let's stick to the ascending date arrangement
+
+# now, we can move on to the issue of the per year count. 
+
+# as it stands, the data is in Y-M-D format. we need to think through how to get the date out of there and then count the observations there. 
+#install.packages("lubridate", dep = T)
+
+library(lubridate)
+
+bigfoot_sorted$date <- ymd(bigfoot_sorted$date)
+
+bigfoot_sorted$year <- year(bigfoot_sorted$date)
+
+bigfoot_sorted$month <-  month(bigfoot_sorted$date)
+  
+# and then count by year and save it 
+
+bigfoot_sorted %>% 
+  group_by(year) %>% 
+  count() -> bigfoot_yearly
+
+```
+## Now let's continue to summarize some of the data as the professor asked
+
+So, now I have manipulated the data a bit. 
+
+Now, I guess I can do most of the rest of the tasks. First, I will check out the geographical distribution like the professor asked. I want to look at the state level and the county level numbers. When we do the county-level count, let's keep the state name so that we know where they actually are and don't confuse similarly named counties in different states.  
+
+```{r, eval = T}
+
+# state-level count we can also arrange it in the pipe 
+
+bigfoot_sorted %>% 
+  count(state) %>% 
+  arrange(desc(n)) -> bigfoot_state_n
+
+# county-level count with state data 
+
+bigfoot_sorted %>% 
+  count(county, state) %>% 
+  arrange(desc(n)) -> bigfoot_county_n
+```
+
+## Mean sightings per year 
+
+The professor had also asked for the per year sightings and then the mean number. 
+
+We can also just return to the yearly intermediate dataset just to limit the amount of work we have to redo. 
+```{r, eval = T}
+
+mean(bigfoot_yearly$n, na.rm = T) 
+
+```
+
+## Mean atmospheric variables 
+
+The professor also asked for me find the following: the mean visibility, moon phase, and windspeed. I can save this as `mean_atmospheric_var`. 
+
+```{r, eval=T}
+
+# i can do this all through the same summarize verb 
+
+bigfoot_sorted %>% 
+  summarize(mean_vis = mean(visibility, na.rm = T), 
+            mean_moon = mean(moon_phase, na.rm = T), 
+            mean_windspeed = mean(wind_speed, na.rm = T)) -> mean_atmospheric_var
+
+# i could also just want to select these variables in case I need to revisit them on their own later. what are some other variables i would need to give the data context? 
+names(bigfoot_sorted)
+
+bigfoot_sorted %>%
+  select(latitude, longitude, visibility, moon_phase, wind_speed, season)-> atmospheric_conditions
+
+```
+
+## We've seen the numbers, but what are people *saying*? 
+
+I remember that I saved that object about the descending date order data. The professor asked for the 4 most recent testimonies. 
+
+```{r}
+#bigfoot_desc_sorted
+```
+
+## Now I'll get to do some graphs :) 
+
+I've heard something about `ggplot2`. I don't know anything about it, so I'm really going to copy and paste what others are doing and add in my own frills and data as I can. I'll just go back to my trusty `bigfoot_sorted`
+
+```{r, eval= T}
+library(ggplot2)
+library(ggthemes)
+
+# start with the base plot, no frills
+# i should also make sure that the NAs aren't included 
+
+bigfoot_sorted %>% 
+  filter(!is.na(year)) %>%
+  ggplot(aes(x=season)) + 
+  geom_bar() 
+```
+
+```{r, eval =T }
+# let's add a theme 
+  
+bigfoot_sorted %>% 
+  filter(!is.na(year)) %>%
+  ggplot(aes(x=season)) + 
+  geom_bar() + 
+  theme_wsj()
+```
+
+```{r, eval=T}
+# now some labels 
+
+bigfoot_sorted %>% 
+  filter(!is.na(year)) %>%
+  ggplot(aes(x=season)) + 
+  geom_bar() + 
+  labs(x= "Season", y = "Sightings per Season", title = "Seasonal Sightings of Bigfoot Across North America") + 
+  theme_wsj()
+```
+
+```{r, eval= T}
+# now change some text to fit
+max(bigfoot_yearly$n)
+
+bigfoot_sorted %>% 
+  filter(!is.na(year)) %>%
+  ggplot(aes(x=season)) + 
+  geom_bar() + 
+  labs(x= "Season", y = "Sightings per Season", title = "Seasonal Sightings\nof Bigfoot\nAcross North America")-> bigfoot_seasonal_sightings
+```
+
+
+
+Now, you should get to that line graph... 
+```{r, eval= T}
+# start with the base plot, no frills
+# you should also make sure that the NAs aren't included 
+
+bigfoot_yearly %>% 
+  filter(!is.na(year)) %>%
+  ggplot(aes(x=year, y = n)) + 
+  geom_line() 
+
+# let's add a theme 
+  
+bigfoot_yearly %>% 
+  filter(!is.na(year)) %>%
+  ggplot(aes(x=year, y = n)) + 
+  geom_line() + 
+  theme_wsj()
+
+# now some labels 
+
+bigfoot_yearly %>% 
+  filter(!is.na(year)) %>%
+  ggplot(aes(x=year, y = n)) + 
+  geom_line() + 
+  theme_wsj() + 
+  labs(x= "Year", y = "Sightings per Year", title = "Yearly Bigfoot Sightings Across North America")
+
+# now change some text to fit
+max(bigfoot_yearly$n)
+
+bigfoot_yearly %>% 
+  filter(!is.na(year)) %>%
+  ggplot(aes(x=year, y= n)) + 
+  geom_line() + 
+  theme_wsj() + 
+  labs(x= "Year", y = "Sightings per Year", title = "Yearly Bigfoot Sightings\nAcross North America")->yearly_bigfoot_sightings
+
+```
+## Now to GitHub? 
+
+... Now I have to figure out this GitHub thing??? 
+
+Wait. I just got another email... 
+
+*I also need you to upload the pictures from this GitHub to the new repo. These are my most useful colleagues in this work and I need to acknowledge that: https://bit.ly/3QCn1GE*
+
+Well ok. So, I guess I'll go to this link and download this picture on to my computer and go from there. 
+
+
+```{r, include=T, eval = F}
+
+# i think now I just want to save all this stuff? 
+
+#setwd("/Users/sarahmoore/Desktop/bigfoot/")
+#write.csv(bigfoot_sorted, "bigfoot_data_sorted.csv")
+
+#ggsave("bigfoot_seasonal_sightings.png", bigfoot_seasonal_sightings)
+
+```
+
