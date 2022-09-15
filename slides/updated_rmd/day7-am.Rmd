@@ -30,12 +30,6 @@ header-includes:
 
 - Random variables-- discrete and continuous 
 
-# -- 
-
-Previous days have been very math heavy and reviews of basic concepts from classes you may have taken long ago. Today's class is more concept heavy and may visit material you have never been exposed to before. We will review many of these things a second time around in 403. 
-
-It's okay if this is just greasing the wheels. 
-
 # Probability Theory and the Social Sciences 
 
 >- Probability theory is foundational to quantitative social science, as it is a means to derive the uncertainty of an outcome given a set of potential outcomes. 
@@ -86,7 +80,7 @@ A list of ALL possible outcomes.
 
 # Annotating Probability 
 
-Probability and statistics will rely on the set notation we reviewed in Day 3. Revisit those slides in case you get stumped. 
+Probability and statistics will rely on the set notation we reviewed in Day 2. Revisit those slides in case you get stumped. 
 
 # Calculating Probability 
 
@@ -152,7 +146,7 @@ $$ P(A \cap B) = 0$$}
 
 # Mutual Exclusivity 
 
-We can visualize mutual exclusivity as a Venn diagram, revisiting some of the ideas from our Logic section: 
+We can visualize mutual exclusivity as a Venn diagram, revisiting some of the ideas from our set theory: 
 
 \begin{figure}
 \centering
@@ -212,11 +206,11 @@ Each of the urns has 2 red balls, 2 white balls, and 4 black balls. What is the 
 
 The concept of \textbf{random variables} is one of the most important and fundamental aspects to modeling quantitative social science. 
 
-A random variable is any concept whose value can be modeled probabilistically. The potential range of values of a given random variable and the values' associated probability structure is the probability distribution. 
+A random variable is any concept whose outcome can be modeled by some *rule* or *function*. The potential range of values of a given random variable and the values' associated probability structure is the **probability distribution.**
 
 Probability distributions can be modeled as equations. The type of distribution function associated with a given probability structure will depend on whether a random variable is \textbf{discrete} or \textbf{continuous}. More on this to come. 
 
-\uncover<2->{What are some examples of random variables that we might encounter in the social sciences?}
+**What are some examples of random variables that we might encounter in the social sciences?**
 
 # Probability Distributions and Additional Terminology 
 
@@ -228,26 +222,26 @@ For example, in a Bernoulli distribution, often used for measuring the likelihoo
 
 Random variables (r.v.) take on different functional forms given the types of quantities or values that they represent. 
 
-\uncover<2->{\textbf{Discrete} r.v. model countable, distinct values.}
+\textbf{Discrete} r.v. model countable, distinct values.
 
-\uncover<3->{Examples of discrete r.v. include the number of children in a classroom, the number of crosswalks in a neighborhood, or the number of degrees that a person holds.}
+Examples of discrete r.v. include the number of children in a classroom, the number of crosswalks in a neighborhood, or the number of degrees that a person holds.
 
-\uncover<4->{The associated probability distribution of a discrete r.v. is the \textbf{probability mass function (p.m.f.)}.}
+The associated probability distribution of a discrete r.v. is the \textbf{probability mass function (p.m.f.)}.
 
-\uncover<5->{Discrete r.v. are graphically shown via \textbf{histograms}, which are bar chart representations of frequencies over a range of values.}
+Discrete r.v. are graphically shown via \textbf{histograms}, which are bar chart representations of frequencies over a range of values.
 
 # Histograms 
-\small :et's say we surveyed members of the Political Science Dept. for the number of dogs each person has in their household. The following graph shows the frequency of each value given by the surveyed individuals. 
+\small Let's say we surveyed members of the Political Science Dept. for the number of dogs each person has in their household. The following graph shows the frequency of each value given by the surveyed individuals. 
 
-![An Example of a Histogram](images/dogs.png){width=60%}
+![An Example of a Histogram](images/dogs.png){width=80%}
 
 # Probability Mass Functions (p.m.f.)
 
 A \textbf{probability mass function (p.m.f.)} is the way to functionally describe the probability associated with each potential value ($k$) of a discrete r.v. $X$.\footnote{Formally, $P(X=x_i)=p_i$} 
 
-\uncover<2->{Remember that the probabilities are bounded as [0,1] and that all the total probability of all values in a sample space $\Omega$ sum to 1. }
+Remember that the probabilities are bounded as [0,1] and that all the total probability of all values in a sample space $\Omega$ sum to 1.
 
-\uncover<3->{We can think through an applied example, using the previous histogram's data.}
+We can think through an applied example, using the previous histogram's data.
 
 # p.m.f. Example 
 
@@ -273,7 +267,7 @@ No. of Dogs & Frequency\\
 \end{tabular}
 \end{table}
 
-\uncover<2->{Given what we know about the distribution, what is the probability that any faculty member cares for 1 dog? Suppose that this data accounts for all the professors in the department. }
+Given what we know about the distribution, what is the probability that any faculty member cares for 1 dog? Suppose that this data accounts for all the professors in the department.
 
 # p.m.f. Example 
 
@@ -290,7 +284,7 @@ p(x)=\begin{cases}
     \end{cases}
 \end{equation*}
 
-\uncover<2->{What is the probability that any faculty member cares for 1 dog?}
+What is the probability that any faculty member cares for 1 dog?
 
 \tiny{Notice that we can include the probabilities of 1 and 2 together on the same line because they are equal, this does not mean that is the sum of those probabilities.} 
 
@@ -314,13 +308,13 @@ ggplot(dogs, aes(dogs))+
 
 \textbf{Continuous} r.v. can take on an uncountable, infinite range of values. 
 
-\uncover<2->{Examples of continuous r.v. include annual rainfall in Chicago, gross domestic product, or the amount of oil imported to a country on a monthly basis.} 
+Examples of continuous r.v. include annual rainfall in Chicago, gross domestic product, or the amount of oil imported to a country on a monthly basis. 
 
-\uncover<3->{The functional form of a continuous r.v. is given by the \textbf{probability density function} (p.d.f.).} 
+The functional form of a continuous r.v. is given by the \textbf{probability density function} (p.d.f.).
 
-\uncover<4->{Given that a continuous r.v. has an infinite range of possible values, it is not possible to calculate the probability at any specific value. Instead, we calculate the probability given a function of a \textbf{density curve}.}
+Given that a continuous r.v. has an infinite range of possible values, it is not possible to calculate the probability at any specific value. Instead, we calculate the probability given a function of a \textbf{density curve}.
 
-\uncover<5->{A density curve is a smoothed line that displays a distribution function.}
+A density curve is a smoothed line that displays a distribution function.
 
 # Density Curve 
 
@@ -336,19 +330,19 @@ normal_curve<-ggplot(x, aes(x))+stat_function(fun=dnorm)+xlab("Value")+ylab("Den
 
 # Probability Density Function (p.d.f.) \footnote{https://online.stat.psu.edu/stat414/lesson/14/14.1}
 
-\uncover<1->{Given that any given value of a continuous r.v. $X$ has a zero probability,\footnote{Formally, this is $P(X=x)=0$.} we think differently about what a probability function models for a continuous r.v.}
+Given that any given value of a continuous r.v. $X$ has a zero probability,\footnote{Formally, this is $P(X=x)=0$.} we think differently about what a probability function models for a continuous r.v.
 
-\uncover<2->{In a \textbf{probability density function (p.d.f.)} of a continuous r.v. we define the probability over a range of potential values.}
+In a \textbf{probability density function (p.d.f.)} of a continuous r.v. we define the probability over a range of potential values.
 
 # Probability Density Function (p.d.f.) 
 
-We can motivate understanding the p.d.f. with an example. Let's say that you have some data on $CO_2$ emissions by each country over the last 10 years. The possibilities of any given country having a specific value of emissions, let's say 106.52 million tons, is 0. Instead, we can estimate the probability that any given country had less than 106 million tons in 2020.  
+We can motivate understanding the p.d.f. with an example. Let's say that you have some data on $CO_2$ emissions by each country. The possibilities of any given country having a specific value of emissions, let's say 106.52 million tons, is 0. Instead, we can estimate the probability that any given country had less than 106 million tons in 2020.  
 
-\uncover<2->{So, what we really hope to estimate is $Pr(X<106 \text{million}\space t)$.} 
+So, what we really hope to estimate is $Pr(X<106 \text{million}\space t)$.
 
 # p.d.f. Example, cont'd. 
 
-The below curve is country-level emissions data from 2020. The dotted line shows our threshold value of 106 million tons.\footnote{The data has been log transformed for readability, meaning all values are just taken as their natural log.}
+The below curve is 2020 country-level emissions data. The dotted line shows our threshold value of 106 million tons.\footnote{The data has been ln transformed for readability, meaning all values are just taken as their natural log.}
 
 ![Density: Log $CO_2$ Emissions by Country, 2020](images/emissions_curve.png){width=70%}
 
@@ -367,7 +361,7 @@ log(106000000)#18.47895
 
 # p.d.f. Example, cont'd. 
 
-To find the probability that a given country's 2020 emissions were less than 106 million tons, we then find the area under the curve to the left of our threshold value.
+To find the probability that a given country's 2020 emissions for were less than 106 million tons, we then find the area under the curve to the left of our threshold value.
 
 We will leave the actual calculation for a later time, but just by looking at this curve, what do you think the probability is that a country's emissions were less than 106 million tons?
 
@@ -383,21 +377,19 @@ What percentage of the curve do you feel is accounted for up to the dotted line?
 
 While this example was motivated by a fairly easy range of values, others might be more tricky. 
 
-\uncover<2->{Instead, we might think about the probability of lying within a range of two values, such that we need to calculate $P(a<X<b)$.}
+Instead, we might think about the probability of lying within a range of two values, such that we need to calculate $P(a<X<b)$.
 
-\uncover<3->{We will cover all of this more in depth at a later time, but for now this is enough to see as to how the previous days' concepts tie into probability.} 
-
-\uncover<4->{Here is the takeaway: \textbf{We can model probability and likelihoods via functions. Calculating probability at given values then becomes an issue of finding a function's location and behavior at that value.} This is a lot, and you won't get it all right now, THAT'S OK!}
+Here is the takeaway: \textbf{We can model probability and likelihoods via functions. Calculating probability at given values then becomes an issue of finding a function's location and behavior at that value.} This is a lot, and you won't get it all right now, THAT'S OK!
 
 
 # Discussion 
 
 Why do we need to know the difference between discrete r.v. and continuous r.v.? 
 
-\uncover<2->{A lot of how social science models things is dependent on the types of variables modeled and how we measure them.} 
+A lot of how social science models things is dependent on the types of variables modeled and how we measure them. 
 
-\uncover<3->{For example, how we model the probability of a vote choice between two candidates (i.e. a discrete variable) is different than how we would model the variation in resource depletion per year (i.e. a continuous variable).}
+For example, how we model the probability of a vote choice between two candidates (i.e. a discrete variable) is different than how we would model the variation in resource depletion per year (i.e. a continuous variable).
 
-\uncover<4->{Understanding the underlying probability structure of different variable types will be an important foundation for developing more advanced modelling skills down the road.}
+Understanding the underlying probability structure of different variable types will be an important foundation for developing more advanced modelling skills down the road.
 
-\uncover<5->{Even still, understanding types of random variables and the appropriate tools to assess their behavior is important in rudimentary analyses-- such as t-tests.}
+Even still, understanding types of random variables and the appropriate tools to assess their behavior is important in rudimentary analyses-- such as t-tests.

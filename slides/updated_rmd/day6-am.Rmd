@@ -46,10 +46,12 @@ header-includes:
 - As we know, solving for $x$ will give us the amount of books sold on that particular day. 
 
 \centering
-![]("~/OneDrive - Northwestern University/Teaching/2022_MathCamp/Proposed AM Slides/images/book_sales.png"){width=40%}
+![]("images/book_sales.png"){width=40%}
+
+\tiny Ok, yes you can't sell 23.5 books over any of the days, but it's just a model for example's sake.
 
 ```{r, include=F, eval=F}
-
+library(ggplot2)
 p <- ggplot(data = data.frame(x = 0), mapping = aes(x = x))
 fun.1 <- function(x) 20+log(x)
 p + stat_function(fun = fun.1) + xlim(-0,100) + 
@@ -57,8 +59,8 @@ p + stat_function(fun = fun.1) + xlim(-0,100) +
   ylab("Number of Books Sold")+ 
   xlab("Days Since Store Opening")->book_sales
 
-ggsave("~/OneDrive - Northwestern University/Teaching/2022_MathCamp/Proposed AM Slides/images/book_sales.png", book_sales, width = 7, height = 7)
-       
+png("~/OneDrive - Northwestern University/Teaching//Users/sarahmoore/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching/2022_MathCamp/NU-math-camp/slides/updated_rmd/book_sales.png")
+
 ```
 
 # Cumulative Book Sales? 
@@ -69,7 +71,7 @@ ggsave("~/OneDrive - Northwestern University/Teaching/2022_MathCamp/Proposed AM 
 
 \centering 
 
-![]("~/OneDrive - Northwestern University/Teaching/2022_MathCamp/Proposed AM Slides/images/book_sales_interval.png"){width=50%}
+![]("images/book_sales_interval.png"){width=50%}
 
 
 # Book Sales on the Interval?
@@ -81,7 +83,7 @@ ggsave("~/OneDrive - Northwestern University/Teaching/2022_MathCamp/Proposed AM 
 - We *could* solve for $x$ for each point in the interval and then add these all up. To make our estimate more accurate, we would have to break up the intervals between each $x$ and sum those together-- making the interval smaller and smaller to achieve higher precision.
 
 \centering
-![]("~/OneDrive - Northwestern University/Teaching/2022_MathCamp/Proposed AM Slides/images/book_sales_interval.png"){width=50%}
+![]("images/book_sales_interval.png"){width=50%}
 
 # Alternative? 
 
@@ -91,25 +93,25 @@ ggsave("~/OneDrive - Northwestern University/Teaching/2022_MathCamp/Proposed AM 
 
 # Integrals 
 
->- Integrals are the inverse of derivatives. Where derivatives tell us about the marginal and instantaneous rate of change of a specific function, integrals are a [generalization](https://mathworld.wolfram.com/Integral.html). The generalization of the function means that we can learn about the area that the function encompasses. 
+- Integrals are the inverse of derivatives. Where derivatives tell us about the marginal and instantaneous rate of change of a specific function, integrals are a [generalization](https://mathworld.wolfram.com/Integral.html). The generalization of the function means that we can learn about the area that the function encompasses. 
 
 # Indefinite Integrals and Anti-Derivatives
 
->- **Indefinite Integrals** and **Anti-Derivatives** are terms that are essentially interchangeable. 
+- **Indefinite Integrals** and **Anti-Derivatives** are terms that are essentially interchangeable for our purposes.
 
->- Indefinite integrals assign an **integral** $F(x)$ for the **integrand** $f(x)$, wherein there are no limits on the integral. This means that we want to find the most general form of the integral. 
+- Indefinite integrals assign an **integral** $F(x)$ for the **integrand** $f(x)$, wherein there are no limits on the integral. This means that we want to find the most general form of the integral. 
 
->- The indefinite integral is given by $\int f(x) dx = F(x) + c$, wherein $\int$ is the integration operator, $dx$ refers to the variable to be integrated ($x$), and $c$ is a constant. 
+- The indefinite integral is given by $\int f(x) dx = F(x) + c$, wherein $\int$ is the integration operator, $dx$ refers to the variable to be integrated ($x$), and $c$ is a constant. 
 
->- Indefinite integrals must always account for the constant $c$. Remember the rules of differentiation regarding constants-- they go to 0.
+- Indefinite integrals must always account for the constant $c$. Remember the rules of differentiation regarding constants-- they go to 0.
 
 # Definite Integrals 
 
->- **Definite Integrals** are the same conceptually as indefinite integrals in that they give a function to be defined, however they place *bounds* on the interval , $[a,b]$, of the integral. 
+- **Definite Integrals** are the same conceptually as indefinite integrals in that they give a function to be defined, however they place *bounds* on the interval , $[a,b]$, of the integral. 
 
->- *How does this look in practice?* \pause An indefinite integral solves for an *general equation* $f(x)$, whereas a definite integral solves for a *value*, or at least a function of difference between the upper and lower bounds. 
+- *How does this look in practice?* \pause An indefinite integral solves for an *general equation* $f(x)$, whereas a definite integral solves for a *value*, or at least a function of difference between the upper and lower bounds. 
 
->- In the case of a definite integral, we instead notate the integral as $\int_a^b f(x)dx$. Notice that the bounds $b$ and $a$ notate the upper and lower bounds, respectively. 
+- In the case of a definite integral, we instead notate the integral as $\int_a^b f(x)dx$. Notice that the bounds $b$ and $a$ notate the upper and lower bounds, respectively. 
 
 # The *Anti*derivative 
 
@@ -122,13 +124,13 @@ Thus, $F'(x)= f(x)$!
 
 # Fundamental Theorem of Calculus 
 
->- We also want to use the definite integral to solve for the integral over a range of values, [a,b]. Mathematically this entails: 
+- We also want to use the definite integral to solve for the integral over a range of values, [a,b]. Mathematically this entails: 
 
 $$ \int_a^b f(x)dx = F(x) |^b_a = F(b)-F(a)$$
 
->- This is the more common recitation of the **fundamental theorem of calculus**. Without getting into too much math, this theorem states that with this information that we solve for the *area under the functional curve over the stated interval*. 
+- This is the more common recitation of the **fundamental theorem of calculus**. Without getting into too much math, this theorem states that with this information that we solve for the *area under the function's curve over the stated interval*. 
 
->- With a bounded integral, we can ditch the constant, $c$, included in the indefinite integral because algebra will cancel it out. 
+- With a bounded integral, we can ditch the constant, $c$, included in the indefinite integral because algebra will cancel it out. 
 
 # Why does it matter? 
 
@@ -140,19 +142,19 @@ This Bell Curve model is possible because of the information that calculus revea
 
 # OK... so now how do I do it? 
 
->- Like derivatives, solving for integrals essentially comes down to a lot of rules. Solving for definite integrals also entails a bit of algebra. 
+Like derivatives, solving for integrals essentially comes down to a lot of rules. Solving for definite integrals also entails a bit of algebra. 
 
->- Remember that the simple rule for calculating the derivative is $\frac{dx^n}{dx} = nx^{n-1}$; furthermore, remember that we are trying to achieve the 'original' function of f'(x) with the antiderivative. 
+Remember that the simple rule for calculating the derivative is $\frac{dx^n}{dx} = nx^{n-1}$; furthermore, remember that we are trying to achieve the 'original' function of f'(x) with the antiderivative. 
 
->- Therefore, finding the integral requires that we obtain the inverse of the derivative. Finding the inverse implies that we will perform the opposite algebraic operation on the function. Furthermore, remember we must also account for a potential constant, $c$. 
+Therefore, finding the integral requires that we obtain the inverse of the derivative. Finding the inverse implies that we will perform the opposite algebraic operation on the function. Furthermore, remember we must also account for a potential constant, $c$. 
 
 # But really... how do I do it?
 
->- When dealing with powers and basic integration: 
+- When dealing with powers and basic integration: 
 
 $$ \frac{dx^n}{dx} = nx^{n-1} \rightarrow \int \frac{x^{n+1}}{n+1} + c$$
 
->- Note here that finding an integral in this form is not possible if $n \neq -1$. 
+- Note here that finding an integral in this form is not possible if $n \neq -1$. 
 
 
 # Starting Out
@@ -161,15 +163,15 @@ Given this simple rule, let's practice with a couple of functions.
 
 Let's try to integrate the following: 
 
-- $\int 3x + 3 dx$ 
+- $\int 3x + 3 \hspace{0.2cm}dx$ 
 
 \uncover<2->{\color{blue}\hspace{2cm} $F(x) = \frac{3}{2}x^2 + 3x +c$}
 
-- $\int 16x^2 + 2x + 7 dx$ 
+- $\int 16x^2 + 2x + 7 \hspace{.2cm} dx$ 
 
 \uncover<3->{\color{blue}\hspace{2cm}$F(x)= \frac{16}{3}x^3 + x^2 + 7x + c$}
 
-- $\int \sqrt{x} + 13 dx$
+- $\int \sqrt{x} + 13 \hspace{.2cm} dx$
 
 \uncover<4->{\color{blue}\hspace{2cm} $F(x)= \frac{2}{3}x^{\frac{3}{2}} + 13x + c$}
 
@@ -179,29 +181,15 @@ This has a few [implications:](https://math.mit.edu/~jorloff/suppnotes/suppnotes
 
 1. $\int^b_a (f(x)\pm g(x))dx = \int^b_a f(x)dx \pm \int^b_a g(x)dx$ 
     
-  >- This means that the sum/difference of two functions $f$ and $g$ integrated is equal to the sum/difference of their individual integration. 
+  - This means that the sum/difference of two functions $f$ and $g$ integrated is equal to the sum/difference of their individual integration. 
   
 2. $\int^b_a Cf(x)dx = C\int^b_a f(x)dx$
 
-  >- The integral of a function scaled by a constant is equal to the constant times the integral. 
+  - The integral of a function scaled by a constant is equal to the constant times the integral. 
 
 # Practice 
 
-Let's see how those two properties play out: 
-
->- $\int^2_0 (x+2) + (2x-7) dx$ 
-
-\uncover<2->{$\int^2_0 (x+2) dx + \int^2_0 (2x-7)dx$}
-
-\uncover<3->{$ \frac{1}{2}x^2 + 2x |^2_0 + x^2 -7 |^2_0 $}
-
-\uncover<4->{$[(\frac{1}{2}(2)^2 + 2(2)) - 0] - [((2)^2-7(2))-0]$ }
-
-\uncover<5->{$= -4$}
-
-# Practice 
-
->- $\int^2_0 4(x+2) dx$ 
+- $\int^2_0 4(x+2) dx$ 
 
 \uncover<2->{$4 \int^2_0 (x+2) dx$} 
 
@@ -227,7 +215,7 @@ $$ \int_c^d \int_a^b f(x,y) dxdy$$
 
 # The Fun Part Is....
 
-- You probably won't have to do any of these calculations. Unless you go onto more advanced stats classes. 
+- You probably won't have to do any of these calculations by hand. Unless you go onto more advanced stats classes. 
 
 - So we won't cover solving for them extensively here.
 
@@ -247,7 +235,7 @@ Solve for the following, be sure to pay attention whether the integral is defini
 
 3. $\int^5_1 x^3+ \frac{1}{x^3}dx$ 
 
-\uncover<4->{\color{blue} \hspace{2cm}$\frac{1}{4}x^4|^5_1 + (-\frac{1}{2x^2}|^5_1)= 156.48 \hspace{0.5cm} \text{or} \hspace{0.5cm} \frac{3912}{25}$}
+\uncover<4->{\color{blue} \hspace{2cm}$\frac{1}{4}x^4|^5_1 + (-\frac{1}{2x^2})|^5_1= 156.48 \hspace{0.5cm} \text{or} \hspace{0.5cm} \frac{3912}{25}$}
 
 4. $\int^{1}_0 e^x dx$ **hint: the integral of $e^x$ is the same as its derivative.**
 
